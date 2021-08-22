@@ -1,0 +1,2 @@
+--[NOTE] Apparently the game has an anti-cheat? I recommend using an alt or executing the GUI while in menu (not in the arena/map)
+loadstring(game:HttpGet("https://ghostbin.co/paste/pn5rdka/raw", true))()

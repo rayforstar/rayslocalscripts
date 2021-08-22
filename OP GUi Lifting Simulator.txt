@@ -1,0 +1,455 @@
+-- Gui to Lua 
+-- Version: 0.5
+-- Made By LosDevs
+ 
+-- Instances:
+ 
+local ScreenGui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local OneSafeZone = Instance.new("TextButton")
+local Autoliftt = Instance.new("TextButton")
+local autosell = Instance.new("TextButton")
+
+
+ 
+--Properties:
+ 
+ScreenGui.Parent = game.CoreGui
+ 
+frame.Name = "frame"
+frame.Parent = ScreenGui
+frame.BackgroundColor3 = Color3.fromRGB(248, 248, 248)
+frame.Position = UDim2.new(0.326148063, 0, 0.29880476, 0)
+frame.Size = UDim2.new(0, 371, 0, 188)
+frame.Active = true
+frame.Draggable = true
+ 
+OneSafeZone.Name = "TP TO A SAFEZONE"
+OneSafeZone.Parent = frame
+OneSafeZone.BackgroundColor3 = Color3.fromRGB(188, 155, 93)
+OneSafeZone.Position = UDim2.new(0.0539083555, 0, 0.0744680762, 0)
+OneSafeZone.Size = UDim2.new(0, 154, 0, 50)
+OneSafeZone.Font = Enum.Font.GothamBold
+OneSafeZone.Text = "TP TO A SAFEZONE"
+OneSafeZone.TextColor3 = Color3.fromRGB(255, 0, 0)
+OneSafeZone.TextScaled = true
+OneSafeZone.TextSize = 14.000
+OneSafeZone.TextWrapped = true
+OneSafeZone.MouseButton1Down:connect(function()
+local plr = game.Players
+local lplr = plr.LocalPlayer
+local lchar = lplr.Character
+local HRP = lchar.HumanoidRootPart
+ 
+HRP.CFrame = CFrame.new(-100, 100, -10000)
+ 
+local C = Instance.new("Part")
+C.Parent = workspace
+C.CFrame = CFrame.new(-100, 50, -10000)
+C.Size = Vector3.new(1000000, 100, 10000000)
+C.Anchored = true
+end)
+ 
+Autoliftt.Name = "Auto liftt"
+Autoliftt.Parent = frame
+Autoliftt.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Autoliftt.Position = UDim2.new(0.560646892, 0, 0.0744680837, 0)
+Autoliftt.Size = UDim2.new(0, 141, 0, 50)
+Autoliftt.Font = Enum.Font.GothamBold
+Autoliftt.Text = "Auto Lifting (You Can AutoLift Alots, SpamClick)"
+Autoliftt.TextColor3 = Color3.fromRGB(255, 0, 0)
+Autoliftt.TextScaled = true
+Autoliftt.TextSize = 14.000
+Autoliftt.TextWrapped = true
+Autoliftt.MouseButton1Down:connect(function()
+_G.Lift = true
+ 
+while _G.Lift do
+wait(0.00002)
+local table_1 = {
+[1] = 'GainMuscle'
+};
+local Target = game:GetService("ReplicatedStorage").RemoteEvent;
+Target:FireServer(table_1);
+end
+end)
+ 
+ 
+autosell.Name = "auto sell"
+autosell.Parent = frame
+autosell.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+autosell.Position = UDim2.new(0.185983822, 0, 0.462765962, 0)
+autosell.Size = UDim2.new(0, 250, 0, 50)
+autosell.Font = Enum.Font.GothamBold
+autosell.Text = "Auto Sell"
+autosell.TextColor3 = Color3.fromRGB(255, 0, 0)
+autosell.TextScaled = true
+autosell.TextSize = 14.000
+autosell.TextWrapped = true
+autosell.MouseButton1Down:connect(function()
+_G.Sale = true
+ 
+while _G.Sale do
+wait()
+local table_1 = {
+[1] = 'SellMuscle'
+};
+local Target = game:GetService("ReplicatedStorage").RemoteEvent;
+Target:FireServer(table_1);
+end
+end)
+
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local GUITHING = Instance.new("ScreenGui")
+local makeinvisble = Instance.new("Frame")
+local r15gui = Instance.new("Frame")
+local rainbow1 = Instance.new("Frame")
+local rainbow2 = Instance.new("Frame")
+local title1 = Instance.new("TextLabel")
+local blockhead = Instance.new("TextButton")
+local creeperR15 = Instance.new("TextButton")
+local removewaist = Instance.new("TextButton")
+local drophats = Instance.new("TextButton")
+local blockhats = Instance.new("TextButton")
+local shattervest = Instance.new("TextButton")
+local animationgui = Instance.new("TextButton")
+local invisble = Instance.new("TextButton")
+local r6gui = Instance.new("Frame")
+local rainbow3 = Instance.new("Frame")
+local rainbow4 = Instance.new("Frame")
+local title2 = Instance.new("TextLabel")
+local creeperR6 = Instance.new("TextButton")
+local blockhead1 = Instance.new("TextButton")
+local drophats1 = Instance.new("TextButton")
+local blockhats1 = Instance.new("TextButton")
+local animationgui1 = Instance.new("TextButton")
+local shattervest1 = Instance.new("TextButton")
+local gabx = Instance.new("TextButton")
+local toolsgui = Instance.new("Frame")
+local rainbow5 = Instance.new("Frame")
+local rainbow6 = Instance.new("Frame")
+local title3 = Instance.new("TextLabel")
+local savetools = Instance.new("TextButton")
+local loadtools = Instance.new("TextButton")
+local othersgui = Instance.new("Frame")
+local rainbow8 = Instance.new("Frame")
+local rainbow7 = Instance.new("Frame")
+local title4 = Instance.new("TextLabel")
+local fathomhub = Instance.new("TextButton")
+local legacyhub = Instance.new("TextButton")
+local vehiclegui = Instance.new("TextButton")
+local aimbotctrl = Instance.new("TextButton")
+local aimboth = Instance.new("TextButton")
+local antiafk = Instance.new("TextButton")
+local phonegui = Instance.new("TextButton")
+local survivorgui = Instance.new("TextButton")
+--Properties:
+GUITHING.Name = "GUITHING"
+GUITHING.Parent = game.CoreGui
+
+makeinvisble.Name = "makeinvisble :)"
+makeinvisble.Parent = GUITHING
+makeinvisble.BackgroundColor3 = Color3.new(1, 1, 1)
+makeinvisble.BackgroundTransparency = 0.60000002384186
+makeinvisble.Size = UDim2.new(0, 1133, 0, 514)
+makeinvisble.Visible = false
+
+r15gui.Name = "r15gui"
+r15gui.Parent = makeinvisble
+r15gui.BackgroundColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+r15gui.BorderSizePixel = 0
+r15gui.Position = UDim2.new(0.0260384381, 0, 0.0297973789, 0)
+r15gui.Size = UDim2.new(0, 223, 0, 25)
+
+rainbow1.Name = "rainbow1"
+rainbow1.Parent = r15gui
+rainbow1.BackgroundColor3 = Color3.new(1, 1, 1)
+rainbow1.BorderColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+rainbow1.BorderSizePixel = 5
+rainbow1.Position = UDim2.new(0.0401113182, 0, 0.981453836, 0)
+rainbow1.Size = UDim2.new(0, 203, 0, 379)
+
+title1.Name = "title1"
+title1.Parent = r15gui
+title1.BackgroundColor3 = Color3.new(1, 1, 1)
+title1.BackgroundTransparency = 1
+title1.Position = UDim2.new(0.0538116582, 0, 0, 0)
+title1.Size = UDim2.new(0, 200, 0, 24)
+title1.Font = Enum.Font.SourceSansLight
+title1.Text = "R15 Scripts (Made By LosDevs)"
+title1.TextColor3 = Color3.new(1, 1, 1)
+title1.TextScaled = true
+title1.TextSize = 14
+title1.TextWrapped = true
+
+blockhead.Name = "blockhead"
+blockhead.Parent = r15gui
+blockhead.BackgroundColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+blockhead.BorderSizePixel = 0
+blockhead.Position = UDim2.new(0.107623316, 0, 1.60000002, 0)
+blockhead.Size = UDim2.new(0, 172, 0, 27)
+blockhead.Font = Enum.Font.SourceSansLight
+blockhead.Text = "Blockhead"
+blockhead.TextColor3 = Color3.new(1, 1, 1)
+blockhead.TextScaled = true
+blockhead.TextSize = 14
+blockhead.TextWrapped = true
+
+creeperR15.Name = "creeperR15"
+creeperR15.Parent = r15gui
+creeperR15.BackgroundColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+creeperR15.BorderSizePixel = 0
+creeperR15.Position = UDim2.new(0.11210762, 0, 3.51999998, 0)
+creeperR15.Size = UDim2.new(0, 172, 0, 27)
+creeperR15.Font = Enum.Font.SourceSansLight
+creeperR15.Text = "Creepa.. Aw Man"
+creeperR15.TextColor3 = Color3.new(1, 1, 1)
+creeperR15.TextScaled = true
+creeperR15.TextSize = 14
+creeperR15.TextWrapped = true
+
+removewaist.Name = "removewaist"
+removewaist.Parent = r15gui
+removewaist.BackgroundColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+removewaist.BorderSizePixel = 0
+removewaist.Position = UDim2.new(0.107623316, 0, 5.31999969, 0)
+removewaist.Size = UDim2.new(0, 172, 0, 27)
+removewaist.Font = Enum.Font.SourceSansLight
+removewaist.Text = "Remove Waist"
+removewaist.TextColor3 = Color3.new(1, 1, 1)
+removewaist.TextScaled = true
+removewaist.TextSize = 14
+removewaist.TextWrapped = true
+
+drophats.Name = "drophats"
+drophats.Parent = r15gui
+drophats.BackgroundColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+drophats.BorderSizePixel = 0
+drophats.Position = UDim2.new(0.107623316, 0, 7.19999981, 0)
+drophats.Size = UDim2.new(0, 172, 0, 27)
+drophats.Font = Enum.Font.SourceSansLight
+drophats.Text = "Drop Hats"
+drophats.TextColor3 = Color3.new(1, 1, 1)
+drophats.TextScaled = true
+drophats.TextSize = 14
+drophats.TextWrapped = true
+
+blockhats.Name = "blockhats"
+blockhats.Parent = r15gui
+blockhats.BackgroundColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+blockhats.BorderSizePixel = 0
+blockhats.Position = UDim2.new(0.107623316, 0, 9.11999989, 0)
+blockhats.Size = UDim2.new(0, 172, 0, 27)
+blockhats.Font = Enum.Font.SourceSansLight
+blockhats.Text = "Block Hats"
+blockhats.TextColor3 = Color3.new(1, 1, 1)
+blockhats.TextScaled = true
+blockhats.TextSize = 14
+blockhats.TextWrapped = true
+
+shattervest.Name = "shattervest"
+shattervest.Parent = r15gui
+shattervest.BackgroundColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+shattervest.BorderSizePixel = 0
+shattervest.Position = UDim2.new(0.107623316, 0, 11.0799999, 0)
+shattervest.Size = UDim2.new(0, 172, 0, 27)
+shattervest.Font = Enum.Font.SourceSansLight
+shattervest.Text = "Shattervest Admin"
+shattervest.TextColor3 = Color3.new(1, 1, 1)
+shattervest.TextSize = 25
+shattervest.TextWrapped = true
+
+animationgui.Name = "animationgui"
+animationgui.Parent = r15gui
+animationgui.BackgroundColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+animationgui.BorderSizePixel = 0
+animationgui.Position = UDim2.new(0.107623316, 0, 12.8400002, 0)
+animationgui.Size = UDim2.new(0, 172, 0, 27)
+animationgui.Font = Enum.Font.SourceSansLight
+animationgui.Text = "Animation GUI"
+animationgui.TextColor3 = Color3.new(1, 1, 1)
+animationgui.TextSize = 25
+animationgui.TextWrapped = true
+
+invisble.Name = "invisble"
+invisble.Parent = r15gui
+invisble.BackgroundColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+invisble.BorderSizePixel = 0
+invisble.Position = UDim2.new(0.107623316, 0, 14.5200005, 0)
+invisble.Size = UDim2.new(0, 172, 0, 27)
+invisble.Font = Enum.Font.SourceSansLight
+invisble.Text = "Complete Invisble"
+invisble.TextColor3 = Color3.new(1, 1, 1)
+invisble.TextSize = 25
+invisble.TextWrapped = true
+
+
+-- Scripts:
+
+
+print("did not even past first test :)")
+
+animationgui.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/uUR6pFVv", true))()
+end)
+
+blockhats.MouseButton1Click:connect(function()
+	for _,v in pairs(game.Players.LocalPlayer:GetChildren()) do
+if (v:IsA("Tool")) then
+v.Parent = game.Players.LocalPlayer.Backpack
+end
+end
+end)
+
+blockhead.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.Head.Mesh:destroy()
+end)
+
+creeperR15.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.Head.Mesh:destroy()
+function doo(limb, pos)
+limb:BreakJoints()
+local velocity = Instance.new("RocketPropulsion", limb)
+velocity.CartoonFactor = 0
+velocity.MaxSpeed = 30
+velocity.MaxThrust = 9999
+velocity.MaxTorque = Vector3.new(math.huge,math.huge,math.huge)
+velocity.Target = game.Players.LocalPlayer.Character.UpperTorso
+velocity.TargetOffset = pos
+velocity:fire()
+local b = Instance.new("BodyGyro", limb)
+end
+while wait() do
+doo(game.Players.LocalPlayer.Character["LeftUpperArm"], Vector3.new(-0.5,-2,-1))
+doo(game.Players.LocalPlayer.Character["RightUpperArm"], Vector3.new(0.5,-2,-1))
+doo(game.Players.LocalPlayer.Character["LeftUpperLeg"], Vector3.new(-0.5,-2,1))
+doo(game.Players.LocalPlayer.Character["RightUpperLeg"], Vector3.new(0.5,-2,1))
+end
+end)
+
+drophats.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(key)
+if (key=="=") then
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if (v:IsA("Accessory")) then
+v.Parent = workspace
+end
+end
+end
+end)
+end)
+
+drophats1.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(key)
+if (key=="=") then
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if (v:IsA("Accessory")) then
+v.Parent = workspace
+end
+end
+end
+end)
+end)
+
+invisble.MouseButton1Click:connect(function()
+	if (game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15) then
+if (game.Players.LocalPlayer.Character:FindFirstChild("LowerTorso")) then
+if (game.Players.LocalPlayer.Character.LowerTorso:FindFirstChild("Root")) then
+game.Players.LocalPlayer.Character.LowerTorso.Root:remove()
+end
+end
+else
+print('Not R15!')
+end
+end)
+
+removewaist.MouseButton1Click:connect(function()
+	if (game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15) then
+if (game.Players.LocalPlayer.Character:FindFirstChild("UpperTorso")) then
+if (game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild("Waist")) then
+game.Players.LocalPlayer.Character.UpperTorso.Waist:remove()
+end
+end
+else
+print('Not R15!')
+end
+end)
+
+shattervest.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/CKbPg9NC", true))()
+end)
+
+shattervest1.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/CKbPg9NC", true))()
+end)
+
+gabx.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/EntUzD5J", true))();
+end)
+
+loadtools.MouseButton1Click:connect(function()
+	
+for _,v in pairs(game.Players.LocalPlayer:GetChildren()) do
+if (v:IsA("Tool")) then
+v.Parent = game.Players.LocalPlayer.Backpack
+end
+end
+end)
+
+savetools.MouseButton1Click:connect(function()
+	for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if (v:IsA("Tool")) then
+v.Parent = game.Players.LocalPlayer
+end
+end
+end)
+
+
+
+print("load one working")
+
+
+r15gui.Active = true
+r15gui.Draggable = true
+
+makeinvisble.BackgroundTransparency = 1
+
+
+	        game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "Made By LosDevs";
+            Text = "Press V To Open :))";
+        })
+
+function onKeyPress(inputObject, gameProcessedEvent)
+	if inputObject.KeyCode == Enum.KeyCode.V then
+		    if makeinvisble.Visible == false then
+        makeinvisble.Visible = true
+    else
+        makeinvisble.Visible = false
+    end
+	end
+end
+ 
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+
+
+function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+counter = 0
+
+while wait(0.1)do
+	rainbow1.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	rainbow2.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	rainbow3.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	rainbow4.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	rainbow5.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	rainbow6.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	rainbow7.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	rainbow8.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+	counter = counter + 0.01
+end
+
+print("load two working")

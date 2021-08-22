@@ -1,0 +1,21 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+AutofarmTab = library:CreateTab("Autofarm")
+AutofarmTab:CreateToggle("Farm those titans cheeks", function(bool)
+   lol = bool
+end)
+
+spawn(function()
+   while wait() do
+       if lol then
+           Titans = game.workspace.map.titans.Titan.Nape.CFrame
+           game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Titans
+           wait(0.1)
+           local A_1 = 230.30793952942
+           local A_2 = game:GetService("Workspace").map.titans.Titan.Nape
+           local A_3 = 97.948051452637
+           local A_4 = "bakuretsu la~ la~ la~ explosion"
+           local Event = game:GetService("Workspace").GameScript.DamageTitan
+           Event:FireServer(A_1, A_2, A_3, A_4)
+       end
+   end
+end)

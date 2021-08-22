@@ -1,0 +1,20 @@
+function idek()
+   local script = getsenv(game:GetService("Players").LocalPlayer.Backpack.ODMG)
+   local cannonball = script.cannonhit
+   local oldfunc = script.bladehit
+       
+   script.bladehit = function(...)
+       local args = {...}
+           
+       if args[2].Parent and args[2].Parent:FindFirstChild("Nape") then
+           args[2] = args[2].Parent.Nape
+       end
+       
+       return oldfunc(unpack(args))
+   end
+
+end
+   idek()
+game.Players.LocalPlayer.Backpack.ChildAdded:Connect(function()
+   idek()
+end)

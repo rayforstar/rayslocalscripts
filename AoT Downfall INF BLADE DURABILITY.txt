@@ -1,0 +1,14 @@
+local mt = getrawmetatable(game)
+
+setreadonly(mt,false)
+local name = mt.__namecall
+
+mt.__namecall = newcclosure(function(...)
+   local args = {...}
+   
+   if tostring(args[1]) == "EjectBlade" or tostring(args[1]) == "EjectBlades" then
+       return nil
+   end
+   
+   return name(unpack(args))
+end)

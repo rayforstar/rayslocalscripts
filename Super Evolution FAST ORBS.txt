@@ -1,0 +1,13 @@
+-- Setting
+Amount = 3 -- Decrease if you lag or get disconnected
+
+-- Variables
+local reward = workspace.Rewards:FindFirstChild("Group Reward") or game.ReplicatedStorage:FindFirstChild("Group Reward")
+local sex = getsenv(game.Players.LocalPlayer.PlayerScripts.PlanetLoopTouched)
+
+-- Lets gooo
+game:GetService("RunService").RenderStepped:Connect(function()
+    for i = 1, Amount do
+        game.ReplicatedStorage.Events.LoopTouched:FireServer(reward.Reward,sex.makecode(),"1")
+    end
+end)

@@ -1,0 +1,1 @@
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/rayforstar/scripts/main/aimlock'),true))()

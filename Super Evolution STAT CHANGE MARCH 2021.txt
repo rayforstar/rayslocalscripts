@@ -1,0 +1,11 @@
+-- Infinite Zeni/Coins
+game.ReplicatedStorage.Events.DropTouched:FireServer("COIN", 1e17, "MBAYI", "CoinTreasure")
+
+-- Infinite Orbs
+game.ReplicatedStorage.Events.DropTouched:FireServer("ORB", 1e17, "MBAYI", "CoinTreasure")
+
+-- Stat Change
+local amount = "1e8"
+for i,v in pairs({"Agility","Endurance","Power","Energy"}) do
+    game.ReplicatedStorage.Events.HeroTraining:FireServer("90210",v,amount)
+end

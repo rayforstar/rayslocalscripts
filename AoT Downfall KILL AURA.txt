@@ -1,0 +1,17 @@
+function idek()      
+  local script = getsenv(game:GetService("Players").LocalPlayer.Backpack.ODMG)
+  local cannonball = script.cannonhit
+  local oldfunc = script.bladehit
+   
+  while wait(1) do
+      for i,v in pairs(game:GetService("Workspace").map.titans:GetChildren()) do
+          if v:FindFirstChild("Nape") then
+              cannonball(v.Nape)
+          end
+      end
+  end
+end
+  idek()
+game.Players.LocalPlayer.Backpack.ChildAdded:Connect(function()
+  idek()
+end)

