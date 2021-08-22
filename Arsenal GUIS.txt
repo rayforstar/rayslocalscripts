@@ -1,0 +1,10 @@
+[+] Arsenal GUIS
+--
+[+] Owl Hub
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt"))()
+--
+[+] Dark Hub
+loadstring(game:HttpGet(("https://darkhub.xyz/script"), true))()
+--
+[+] Project Evolution
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/Loader.lua", true))()

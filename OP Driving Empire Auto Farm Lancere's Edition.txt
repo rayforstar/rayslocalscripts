@@ -1,0 +1,91 @@
+-- If you have any questions/need help, dm me on discord: Lancere#1521You have to change the number at the bottom of the script to 					 	 	 	 
+-- whatever you require. I forgot to mention this in the first one, but don't set the speed to faster than your car can go. Here is a 
+-- video guide: https://youtu.be/hWK_5yvYEqU Here are some examples: 
+-- 150 Mph: 300
+-- 316 Mph: 635 (What is in the code already since it is tweaked to my car)
+-- 297 Mph: 600 (Kinda weird eh)
+-- 200 Mph: 400
+-- 249 Mph: 500 etc.
+-- before you execute, look at the bottom of the script to change it to your liking, and face your car towards the new ice race and get 
+-- in it. Then execute.
+-- shawnjbragdon#0001
+-- send me some scripting requests, i'll try to get to them.
+-- don't request me some "Happy" rbworld "Crap"
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+
+local LocalPlayer = Players.LocalPlayer
+local Character = LocalPlayer.Character
+local Humanoid = Character:FindFirstChildWhichIsA("Humanoid")
+
+local SeatPart = Humanoid.SeatPart
+local Vehicle = SeatPart.Parent
+local Wheels = Vehicle:FindFirstChild("Wheels")
+local Body = Vehicle:FindFirstChild("Body")
+
+if SeatPart:FindFirstAncestor("Body") then
+Vehicle = SeatPart:FindFirstAncestor("Body").Parent
+Wheels = (Wheels ~= nil and Wheels) or Vehicle:FindFirstChild("Wheels")
+end
+
+if game.PlaceId == 3351674303 then
+Wheels = Vehicle:FindFirstChild("Core")
+end
+
+Vehicle.PrimaryPart = SeatPart
+
+local function GetWheelVelocity()
+if game.PlaceId == 3351674303 then
+return Wheels:GetChildren()[1]["Wheel"].Velocity, Wheels:GetChildren()[1]["Wheel"].RotVelocity
+end
+for index, value in pairs(Wheels:GetDescendants()) do
+if value:IsA("BasePart") then
+return value.Velocity, value.RotVelocity
+end
+end
+end
+
+local function SetWheelVelocity(Velocity, RotVelocity)
+for index, value in pairs(Wheels:GetDescendants()) do
+pcall(function()
+value.Velocity = Velocity
+if RotVelocity ~= nil then
+value.RotVelocity = RotVelocity
+end
+end)
+end
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Driving Empire Autofarm:Edited by Lancere#1521",
+Text = "Thank you for using, if you have any ideas &/or suggestions please message me @ shawnjbragdon#0001 on discord.",
+Duration = 30,
+Button1 = "Continue",
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Continuation",
+Text = "If you need help with setting the speed and whatnot, send me a dm Lancere#1521.",
+Duration = 30,
+Button1 = "Ight",
+})
+
+Connection = game:GetService("RunService").Stepped:Connect(function()
+if not Vehicle or not Vehicle.Parent or not Humanoid.SeatPart then
+Connection:Disconnect()
+return
+end
+local Speed = ((10/12) * (60/88)) * SeatPart.Velocity.Magnitude
+if SeatPart.Position.X > -14294.7607 then
+Character.Parent = Vehicle
+Vehicle:MoveTo(Vector3.new(-17157.2793, 43.1872673, 2611.22705))
+Character.Parent = workspace
+end
+if Speed < 550 then --If your car goes faster than 550, change it to something bigger. Otherwise, leave it alone.
+local WV = GetWheelVelocity()
+SetWheelVelocity(Vector3.new(635, WV["Y"], 635 / -29.1940043308)) --Change the "635"s to whatever number you need.
+end
+end)

@@ -1,0 +1,50 @@
+--[[
+Fully automatic money/miles farm
+TODO:
+Add auto respawn vehicle
+]]
+local waitTime = 3 --This will be the time it takes (seconds) until your car resets. See line 37
+--Do not change anything below :)
+local hint = Instance.new('Hint', Workspace) hint.Text = "Vehicle Simulator Autofarm loading..."
+local found = false
+local go = true
+
+function findVehicle() --Finds your vehicle
+    while not found do --Loops until your vehicle has been found
+        local vehicles = Workspace.Vehicles:getChildren()
+        for i=1,#vehicles do
+            if vehicles[i]:findFirstChild'owner' then
+                if vehicles[i].owner.Value == game:GetService'Players'.LocalPlayer.Name then -- Found your vehicle
+                    found                                 = true --Setting found to true so loop breaks
+                    vehicle                               = vehicles[i] -- Declares vehicle variable to your vehicle
+                    vehStats                              = vehicle.Handling -- Declares vehStats variable to vehicle stats folder
+                    vehStats.MaxSpeed.Value               = 700
+                    vehStats.Torque.Value                 = 30000
+                    vehStats.SteeringRadiusConstant.Value = 120000000
+                elseif vehicles[i + 1] == nil and not found then
+                    --Autorespawn would go here
+                    hint.Text = "Please spawn and enter your vehicle!" --Your vehicle does not exist in the Workspace
+                end
+            end
+        end
+        wait(1) --Waiting before checking again so we don't crash
+    end
+    wait(2) --We've found the car. Waiting so the car can be properly placed on the highway
+    vehicle.PrimaryPart = vehicle.Chassis.VehicleSeat
+end
+
+function farm() --This is where the magic happens :)
+    hint.Text = "Finished loading! Autofarm initialized."
+    while wait(waitTime) do --Waits x seconds before resetting car
+        vehicle:SetPrimaryPartCFrame(CFrame.new(-2470,60,777)) --Teleports vehicle to highway
+        game:GetService'VirtualUser':SetKeyUp("w") --Resets W key
+        game:GetService'VirtualUser':SetKeyDown("w") --Presses W key to go forward
+    end
+end
+findVehicle() --Calls the findVehicle function
+while go do
+    if not pcall(farm()) then --Calls farm function & checks for errors
+        found = false  --If it errors, it sets found to false and continues looking for your vehicle.
+        findVehicle() 
+    end
+end

@@ -1,0 +1,370 @@
+--YEALETFNG
+
+-- Instances:
+
+local LegendarySwordsRPG2GUI = Instance.new("ScreenGui")
+local OpenFrame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local MainFrame = Instance.new("Frame")
+local OpenGetAnySwordButton = Instance.new("TextButton")
+local InfiniteShardsButton = Instance.new("TextButton")
+local HealthAndStatsButton = Instance.new("TextButton")
+local StrengthUpgradeButton = Instance.new("TextButton")
+local OpenInfiniteRebirthsButton = Instance.new("TextButton")
+local BestArmorButton = Instance.new("TextButton")
+local InfiniteCoinsButton = Instance.new("TextButton")
+local CloseMainFrameButton = Instance.new("TextButton")
+local GetAnySwordFrame = Instance.new("Frame")
+local Get_Flaming_Halberd = Instance.new("TextButton")
+local Get_Shai_Sword = Instance.new("TextButton")
+local Get_Magma_Spear = Instance.new("TextButton")
+local Get_Thorned_Axe = Instance.new("TextButton")
+local GetBestSwordsInGameText = Instance.new("TextLabel")
+local InfiniteRebirthsFrame = Instance.new("Frame")
+local OnceExecutedWarning = Instance.new("TextLabel")
+local ExecuteRebirths = Instance.new("TextButton")
+
+--Properties:
+
+
+--DRAGGABLES
+
+OpenFrame.Draggable = true
+OpenFrame.Active = true
+MainFrame.Draggable = true
+MainFrame.Active = true
+InfiniteRebirthsFrame.Draggable = true
+InfiniteRebirthsFrame.Active = true
+GetAnySwordFrame.Draggable = true
+GetAnySwordFrame.Active = true
+
+
+LegendarySwordsRPG2GUI.Name = "LegendarySwordsRPG2GUI"
+LegendarySwordsRPG2GUI.Parent = game.CoreGui
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = LegendarySwordsRPG2GUI
+OpenFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+OpenFrame.BorderColor3 = Color3.new(0, 0, 0)
+OpenFrame.BorderSizePixel = 5
+OpenFrame.Position = UDim2.new(0, 0, 0.280095369, 0)
+OpenFrame.Size = UDim2.new(0, 168, 0, 66)
+
+
+TextButton.Parent = OpenFrame
+TextButton.BackgroundColor3 = Color3.new(1, 0.87451, 0.415686)
+TextButton.BackgroundTransparency = 0.20000000298023
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0535714291, 0, 0.121212125, 0)
+TextButton.Size = UDim2.new(0, 152, 0, 50)
+TextButton.Font = Enum.Font.GothamSemibold
+TextButton.Text = "Open"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextScaled = true
+TextButton.TextSize = 14
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+MainFrame.Visible = true -- Makes the gui visible
+OpenFrame.Visible = false -- Makes the open button invisible
+end)
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = LegendarySwordsRPG2GUI
+MainFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+MainFrame.BorderColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderSizePixel = 5
+MainFrame.Position = UDim2.new(0.128285363, 0, 0.280095339, 0)
+MainFrame.Size = UDim2.new(0, 153, 0, 371)
+MainFrame.Visible = false
+
+OpenGetAnySwordButton.Name = "OpenGetAnySwordButton"
+OpenGetAnySwordButton.Parent = MainFrame
+OpenGetAnySwordButton.BackgroundColor3 = Color3.new(1, 0.890196, 0.333333)
+OpenGetAnySwordButton.BackgroundTransparency = 0.40000000596046
+OpenGetAnySwordButton.BorderColor3 = Color3.new(0, 0, 0)
+OpenGetAnySwordButton.BorderSizePixel = 5
+OpenGetAnySwordButton.Position = UDim2.new(0.0392156877, 0, 0.0215633418, 0)
+OpenGetAnySwordButton.Size = UDim2.new(0, 140, 0, 45)
+OpenGetAnySwordButton.Font = Enum.Font.GothamSemibold
+OpenGetAnySwordButton.Text = "Get any sword"
+OpenGetAnySwordButton.TextColor3 = Color3.new(1, 1, 1)
+OpenGetAnySwordButton.TextScaled = true
+OpenGetAnySwordButton.TextSize = 14
+OpenGetAnySwordButton.TextWrapped = true
+OpenGetAnySwordButton.MouseButton1Down:connect(function()
+GetAnySwordFrame.Visible = true -- Makes the gui visible
+MainFrame.Visible = false -- Makes the open button invisible
+end)
+
+InfiniteShardsButton.Name = "InfiniteShardsButton"
+InfiniteShardsButton.Parent = MainFrame
+InfiniteShardsButton.BackgroundColor3 = Color3.new(1, 0.890196, 0.333333)
+InfiniteShardsButton.BackgroundTransparency = 0.40000000596046
+InfiniteShardsButton.BorderColor3 = Color3.new(0, 0, 0)
+InfiniteShardsButton.BorderSizePixel = 5
+InfiniteShardsButton.Position = UDim2.new(0.0392156877, 0, 0.339622617, 0)
+InfiniteShardsButton.Size = UDim2.new(0, 140, 0, 45)
+InfiniteShardsButton.Font = Enum.Font.GothamSemibold
+InfiniteShardsButton.Text = "Infinite Shards"
+InfiniteShardsButton.TextColor3 = Color3.new(1, 1, 1)
+InfiniteShardsButton.TextScaled = true
+InfiniteShardsButton.TextSize = 14
+InfiniteShardsButton.TextWrapped = true
+InfiniteShardsButton.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.RemoteFunctions.SwordSystem:FireServer("Buy", "Shards", -999999999, "Thorned Axe")
+end)
+
+HealthAndStatsButton.Name = "HealthAndStatsButton"
+HealthAndStatsButton.Parent = MainFrame
+HealthAndStatsButton.BackgroundColor3 = Color3.new(1, 0.890196, 0.333333)
+HealthAndStatsButton.BackgroundTransparency = 0.40000000596046
+HealthAndStatsButton.BorderColor3 = Color3.new(0, 0, 0)
+HealthAndStatsButton.BorderSizePixel = 5
+HealthAndStatsButton.Position = UDim2.new(0.0392156877, 0, 0.501347721, 0)
+HealthAndStatsButton.Size = UDim2.new(0, 140, 0, 30)
+HealthAndStatsButton.Font = Enum.Font.GothamSemibold
+HealthAndStatsButton.Text = "Health stats + Upgrade Points"
+HealthAndStatsButton.TextColor3 = Color3.new(1, 1, 1)
+HealthAndStatsButton.TextScaled = true
+HealthAndStatsButton.TextSize = 14
+HealthAndStatsButton.TextWrapped = true
+HealthAndStatsButton.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.RemoteFunctions.UR_ANTIHACK:FireServer("Health", "One", 2e7, 2147000000)
+end)
+
+StrengthUpgradeButton.Name = "StrengthUpgradeButton"
+StrengthUpgradeButton.Parent = MainFrame
+StrengthUpgradeButton.BackgroundColor3 = Color3.new(1, 0.890196, 0.333333)
+StrengthUpgradeButton.BackgroundTransparency = 0.40000000596046
+StrengthUpgradeButton.BorderColor3 = Color3.new(0, 0, 0)
+StrengthUpgradeButton.BorderSizePixel = 5
+StrengthUpgradeButton.Position = UDim2.new(0.0392156877, 0, 0.630727768, 0)
+StrengthUpgradeButton.Size = UDim2.new(0, 140, 0, 30)
+StrengthUpgradeButton.Font = Enum.Font.GothamSemibold
+StrengthUpgradeButton.Text = "Strength stats + Upgrade Points"
+StrengthUpgradeButton.TextColor3 = Color3.new(1, 1, 1)
+StrengthUpgradeButton.TextScaled = true
+StrengthUpgradeButton.TextSize = 14
+StrengthUpgradeButton.TextWrapped = true
+StrengthUpgradeButton.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.RemoteFunctions.UR_ANTIHACK:FireServer("Strength", "One", 2e9, 2e9)
+end)
+
+OpenInfiniteRebirthsButton.Name = "OpenInfiniteRebirthsButton"
+OpenInfiniteRebirthsButton.Parent = MainFrame
+OpenInfiniteRebirthsButton.BackgroundColor3 = Color3.new(1, 0.890196, 0.333333)
+OpenInfiniteRebirthsButton.BackgroundTransparency = 0.40000000596046
+OpenInfiniteRebirthsButton.BorderColor3 = Color3.new(0, 0, 0)
+OpenInfiniteRebirthsButton.BorderSizePixel = 5
+OpenInfiniteRebirthsButton.Position = UDim2.new(0.0392156877, 0, 0.760107815, 0)
+OpenInfiniteRebirthsButton.Size = UDim2.new(0, 140, 0, 30)
+OpenInfiniteRebirthsButton.Font = Enum.Font.GothamSemibold
+OpenInfiniteRebirthsButton.Text = "Infinte Rebirths"
+OpenInfiniteRebirthsButton.TextColor3 = Color3.new(1, 1, 1)
+OpenInfiniteRebirthsButton.TextScaled = true
+OpenInfiniteRebirthsButton.TextSize = 14
+OpenInfiniteRebirthsButton.TextWrapped = true
+OpenInfiniteRebirthsButton.MouseButton1Down:connect(function()
+InfiniteRebirthsFrame.Visible = true -- Makes the gui visible
+MainFrame.Visible = false -- Makes the open button invisible
+end)
+
+BestArmorButton.Name = "BestArmorButton"
+BestArmorButton.Parent = MainFrame
+BestArmorButton.BackgroundColor3 = Color3.new(1, 0.890196, 0.333333)
+BestArmorButton.BackgroundTransparency = 0.40000000596046
+BestArmorButton.BorderColor3 = Color3.new(0, 0, 0)
+BestArmorButton.BorderSizePixel = 5
+BestArmorButton.Position = UDim2.new(0.0392156877, 0, 0.88409704, 0)
+BestArmorButton.Size = UDim2.new(0, 140, 0, 30)
+BestArmorButton.Font = Enum.Font.GothamSemibold
+BestArmorButton.Text = "Best Armor"
+BestArmorButton.TextColor3 = Color3.new(1, 1, 1)
+BestArmorButton.TextScaled = true
+BestArmorButton.TextSize = 14
+BestArmorButton.TextWrapped = true
+BestArmorButton.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.RemoteFunctions.ArmorSystem:FireServer("Doom Bringer")
+end)
+
+InfiniteCoinsButton.Name = "InfiniteCoinsButton"
+InfiniteCoinsButton.Parent = MainFrame
+InfiniteCoinsButton.BackgroundColor3 = Color3.new(1, 0.890196, 0.333333)
+InfiniteCoinsButton.BackgroundTransparency = 0.40000000596046
+InfiniteCoinsButton.BorderColor3 = Color3.new(0, 0, 0)
+InfiniteCoinsButton.BorderSizePixel = 5
+InfiniteCoinsButton.Position = UDim2.new(0.0392156877, 0, 0.177897558, 0)
+InfiniteCoinsButton.Size = UDim2.new(0, 140, 0, 45)
+InfiniteCoinsButton.Font = Enum.Font.GothamSemibold
+InfiniteCoinsButton.Text = "Infinite Coins"
+InfiniteCoinsButton.TextColor3 = Color3.new(1, 1, 1)
+InfiniteCoinsButton.TextScaled = true
+InfiniteCoinsButton.TextSize = 14
+InfiniteCoinsButton.TextWrapped = true
+InfiniteCoinsButton.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.RemoteFunctions.SwordSystem:FireServer("Buy", "Gold",-9999999999, "Iron")
+end)
+
+CloseMainFrameButton.Name = "CloseMainFrameButton"
+CloseMainFrameButton.Parent = MainFrame
+CloseMainFrameButton.BackgroundColor3 = Color3.new(1, 0, 0)
+CloseMainFrameButton.BackgroundTransparency = 0.20000000298023
+CloseMainFrameButton.BorderColor3 = Color3.new(0, 0, 0)
+CloseMainFrameButton.BorderSizePixel = 5
+CloseMainFrameButton.Position = UDim2.new(0.0392156877, 0, -0.169811323, 0)
+CloseMainFrameButton.Size = UDim2.new(0, 140, 0, 45)
+CloseMainFrameButton.Font = Enum.Font.GothamSemibold
+CloseMainFrameButton.Text = "Close"
+CloseMainFrameButton.TextColor3 = Color3.new(1, 1, 1)
+CloseMainFrameButton.TextScaled = true
+CloseMainFrameButton.TextSize = 14
+CloseMainFrameButton.TextWrapped = true
+CloseMainFrameButton.MouseButton1Down:connect(function()
+MainFrame.Visible = false-- Makes the gui visible
+OpenFrame.Visible = true-- Makes the open button invisible
+end)
+
+GetAnySwordFrame.Name = "GetAnySwordFrame"
+GetAnySwordFrame.Parent = LegendarySwordsRPG2GUI
+GetAnySwordFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+GetAnySwordFrame.BorderColor3 = Color3.new(0, 0, 0)
+GetAnySwordFrame.BorderSizePixel = 5
+GetAnySwordFrame.Position = UDim2.new(0.247183979, 0, 0.280095339, 0)
+GetAnySwordFrame.Size = UDim2.new(0, 231, 0, 371)
+GetAnySwordFrame.Visible = false
+
+Get_Flaming_Halberd.Name = "Get_Flaming_Halberd"
+Get_Flaming_Halberd.Parent = GetAnySwordFrame
+Get_Flaming_Halberd.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Get_Flaming_Halberd.BorderColor3 = Color3.new(0, 0, 0)
+Get_Flaming_Halberd.BorderSizePixel = 0
+Get_Flaming_Halberd.Position = UDim2.new(0, 0, 0.905660391, 0)
+Get_Flaming_Halberd.Size = UDim2.new(0, 231, 0, 35)
+Get_Flaming_Halberd.Font = Enum.Font.GothamSemibold
+Get_Flaming_Halberd.Text = "Flaming Halberd /6MIL DMG"
+Get_Flaming_Halberd.TextColor3 = Color3.new(1, 1, 1)
+Get_Flaming_Halberd.TextScaled = true
+Get_Flaming_Halberd.TextSize = 14
+Get_Flaming_Halberd.TextWrapped = true
+Get_Flaming_Halberd.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.RemoteFunctions.SwordSystem:FireServer("Buy", "Gold", 0, "Flaming Halberd")
+GetAnySwordFrame.Visible = false
+OpenFrame.Visible = true
+end)
+
+Get_Shai_Sword.Name = "Get_Shai_Sword"
+Get_Shai_Sword.Parent = GetAnySwordFrame
+Get_Shai_Sword.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Get_Shai_Sword.BorderColor3 = Color3.new(0, 0, 0)
+Get_Shai_Sword.BorderSizePixel = 0
+Get_Shai_Sword.Position = UDim2.new(0, 0, 0.789757431, 0)
+Get_Shai_Sword.Size = UDim2.new(0, 231, 0, 35)
+Get_Shai_Sword.Font = Enum.Font.GothamSemibold
+Get_Shai_Sword.Text = "Shai Sword /2MIL DMG"
+Get_Shai_Sword.TextColor3 = Color3.new(1, 1, 1)
+Get_Shai_Sword.TextScaled = true
+Get_Shai_Sword.TextSize = 14
+Get_Shai_Sword.TextWrapped = true
+Get_Shai_Sword.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.RemoteFunctions.SwordSystem:FireServer("Buy", "Gold", 0, "Shai Sword")
+GetAnySwordFrame.Visible = false
+OpenFrame.Visible = true
+end)
+
+Get_Magma_Spear.Name = "Get_Magma_Spear"
+Get_Magma_Spear.Parent = GetAnySwordFrame
+Get_Magma_Spear.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Get_Magma_Spear.BorderColor3 = Color3.new(0, 0, 0)
+Get_Magma_Spear.BorderSizePixel = 0
+Get_Magma_Spear.Position = UDim2.new(0, 0, 0.560646892, 0)
+Get_Magma_Spear.Size = UDim2.new(0, 231, 0, 35)
+Get_Magma_Spear.Font = Enum.Font.GothamSemibold
+Get_Magma_Spear.Text = "Magma Spear / 800 DMG"
+Get_Magma_Spear.TextColor3 = Color3.new(1, 1, 1)
+Get_Magma_Spear.TextScaled = true
+Get_Magma_Spear.TextSize = 14
+Get_Magma_Spear.TextWrapped = true
+Get_Magma_Spear.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.RemoteFunctions.SwordSystem:FireServer("Buy", "Gold", 0, "Magma Spear")
+GetAnySwordFrame.Visible = false
+OpenFrame.Visible = true
+end)
+
+Get_Thorned_Axe.Name = "Get_Thorned_Axe"
+Get_Thorned_Axe.Parent = GetAnySwordFrame
+Get_Thorned_Axe.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Get_Thorned_Axe.BorderColor3 = Color3.new(0, 0, 0)
+Get_Thorned_Axe.BorderSizePixel = 0
+Get_Thorned_Axe.Position = UDim2.new(0, 0, 0.676549852, 0)
+Get_Thorned_Axe.Size = UDim2.new(0, 231, 0, 35)
+Get_Thorned_Axe.Font = Enum.Font.GothamSemibold
+Get_Thorned_Axe.Text = "Thorned Axe / 7500 DMG"
+Get_Thorned_Axe.TextColor3 = Color3.new(1, 1, 1)
+Get_Thorned_Axe.TextScaled = true
+Get_Thorned_Axe.TextSize = 14
+Get_Thorned_Axe.TextWrapped = true
+Get_Thorned_Axe.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.RemoteFunctions.SwordSystem:FireServer("Buy", "Gold", 0, "Thorned Axe")
+GetAnySwordFrame.Visible = false
+OpenFrame.Visible = true
+end)
+
+GetBestSwordsInGameText.Name = "GetBestSwordsInGameText"
+GetBestSwordsInGameText.Parent = GetAnySwordFrame
+GetBestSwordsInGameText.BackgroundColor3 = Color3.new(1, 1, 1)
+GetBestSwordsInGameText.BackgroundTransparency = 1
+GetBestSwordsInGameText.BorderSizePixel = 0
+GetBestSwordsInGameText.Position = UDim2.new(0.0649350658, 0, 0.0215633418, 0)
+GetBestSwordsInGameText.Size = UDim2.new(0, 200, 0, 193)
+GetBestSwordsInGameText.Font = Enum.Font.GothamSemibold
+GetBestSwordsInGameText.Text = "Get the top swords in the game! Well, at least my top picks..."
+GetBestSwordsInGameText.TextColor3 = Color3.new(1, 1, 1)
+GetBestSwordsInGameText.TextScaled = true
+GetBestSwordsInGameText.TextSize = 14
+GetBestSwordsInGameText.TextWrapped = true
+
+InfiniteRebirthsFrame.Name = "InfiniteRebirthsFrame"
+InfiniteRebirthsFrame.Parent = LegendarySwordsRPG2GUI
+InfiniteRebirthsFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+InfiniteRebirthsFrame.BorderColor3 = Color3.new(0, 0, 0)
+InfiniteRebirthsFrame.BorderSizePixel = 5
+InfiniteRebirthsFrame.Position = UDim2.new(0.246999994, 0, 0.280000001, 0)
+InfiniteRebirthsFrame.Size = UDim2.new(0, 231, 0, 371)
+InfiniteRebirthsFrame.Visible = false
+
+OnceExecutedWarning.Name = "OnceExecutedWarning"
+OnceExecutedWarning.Parent = InfiniteRebirthsFrame
+OnceExecutedWarning.BackgroundColor3 = Color3.new(1, 1, 1)
+OnceExecutedWarning.BackgroundTransparency = 1
+OnceExecutedWarning.BorderSizePixel = 0
+OnceExecutedWarning.Position = UDim2.new(0.0649350658, 0, 0.0215633418, 0)
+OnceExecutedWarning.Size = UDim2.new(0, 200, 0, 265)
+OnceExecutedWarning.Font = Enum.Font.GothamSemibold
+OnceExecutedWarning.Text = "Once you execute this script, you WILL ONLY BE ALBE to DISABLE if you leave the game, and rejoin."
+OnceExecutedWarning.TextColor3 = Color3.new(1, 1, 1)
+OnceExecutedWarning.TextScaled = true
+OnceExecutedWarning.TextSize = 14
+OnceExecutedWarning.TextWrapped = true
+
+ExecuteRebirths.Name = "ExecuteRebirths"
+ExecuteRebirths.Parent = InfiniteRebirthsFrame
+ExecuteRebirths.BackgroundColor3 = Color3.new(1, 1, 1)
+ExecuteRebirths.BackgroundTransparency = 1
+ExecuteRebirths.BorderSizePixel = 0
+ExecuteRebirths.Position = UDim2.new(0.0649350658, 0, 0.805929899, 0)
+ExecuteRebirths.Size = UDim2.new(0, 200, 0, 50)
+ExecuteRebirths.Font = Enum.Font.SourceSans
+ExecuteRebirths.Text = "Execute Rebirths"
+ExecuteRebirths.TextColor3 = Color3.new(1, 1, 1)
+ExecuteRebirths.TextScaled = true
+ExecuteRebirths.TextSize = 14
+ExecuteRebirths.TextWrapped = true
+ExecuteRebirths.MouseButton1Down:connect(function()
+while true do
+
+wait(0.1)
+game.Players.LocalPlayer.RemoteFunctions.RebirthSystem:FireServer()
+end
+InfiniteRebirthsFrame.Visible = false
+OpenFrame.Visible = true
+end)

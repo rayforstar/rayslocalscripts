@@ -1,0 +1,147 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local ANime = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local AutoAttack = Instance.new("TextButton")
+local title = Instance.new("TextButton")
+local FarmButton = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local Useless = Instance.new("TextButton")
+local Useless_2 = Instance.new("TextButton")
+local Useless_3 = Instance.new("TextButton")
+local credit = Instance.new("TextButton")
+local AutoAttack_2 = Instance.new("TextButton")
+local runService = game:GetService('RunService')
+local Stepped
+ThugFarming = false
+PoliceFarming = false
+StudentFarming = false
+ArmedThugFarming = false
+GuardFarming = false
+HooliganFarming = false
+
+--Properties:
+ANime.Name = "ANime"
+ANime.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ANime
+Main.BackgroundColor3 = Color3.new(0.145098, 0.145098, 0.145098)
+Main.Position = UDim2.new(0.644680917, 0, 0.326530665, 0)
+Main.Size = UDim2.new(0, 254, 0, 371)
+Main.Active = true
+Main.Draggable = true
+
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.new(0.184314, 0.184314, 0.184314)
+TextBox.BorderColor3 = Color3.new(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0845812708, 0, 0.141340971, 0)
+TextBox.Size = UDim2.new(0, 207, 0, 30)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.new(1, 1, 1)
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.TextSize = 14
+TextBox.TextStrokeColor3 = Color3.new(1, 1, 1)
+
+AutoAttack.Name = "AutoAttack"
+AutoAttack.Parent = Main
+AutoAttack.BackgroundColor3 = Color3.new(0.184314, 0.184314, 0.184314)
+AutoAttack.BorderColor3 = Color3.new(0, 0, 0)
+AutoAttack.BorderSizePixel = 0
+AutoAttack.Position = UDim2.new(0.0885182768, 0, 0.371967554, 0)
+AutoAttack.Size = UDim2.new(0, 199, 0, 26)
+AutoAttack.Font = Enum.Font.SourceSans
+AutoAttack.Text = "Auto Attack"
+AutoAttack.TextColor3 = Color3.new(1, 1, 1)
+AutoAttack.TextSize = 14
+AutoAttack.MouseButton1Down:connect(function()
+	 while true do
+wait(0.2)
+local A_1 = "m1"
+local A_2 = 
+{
+	["air"] = false, 
+	["mousehit"] = CFrame.new(-1297.67261, 42.0521507, 230.235413, -0.191643953, 0.602968991, -0.774403632, -0, 0.789028704, 0.614356339, 0.981464624, 0.117737681, -0.151212558)
+}
+local Event = game:GetService("Players").LocalPlayer.Backpack.ServerTraits.Input
+Event:FireServer(A_1, A_2)
+end
+
+end)
+
+
+title.Name = "title"
+title.Parent = Main
+title.BackgroundColor3 = Color3.new(0.184314, 0.184314, 0.184314)
+title.BorderColor3 = Color3.new(0, 0, 0)
+title.BorderSizePixel = 0
+title.Position = UDim2.new(0, 0, -8.22576212e-08, 0)
+title.Size = UDim2.new(0, 254, 0, 31)
+title.Font = Enum.Font.Fantasy
+title.Text = "Anime Battle Arena"
+title.TextColor3 = Color3.new(1, 1, 1)
+title.TextSize = 20
+title.TextWrapped = true
+
+FarmButton.Name = "FarmButton"
+FarmButton.Parent = Main
+FarmButton.BackgroundColor3 = Color3.new(0.184314, 0.184314, 0.184314)
+FarmButton.BorderColor3 = Color3.new(0, 0, 0)
+FarmButton.BorderSizePixel = 0
+FarmButton.Position = UDim2.new(0.290897369, 0, 0.238857299, 0)
+FarmButton.Size = UDim2.new(0, 95, 0, 29)
+FarmButton.Font = Enum.Font.SourceSans
+FarmButton.Text = "Farm Player"
+FarmButton.TextColor3 = Color3.new(1, 1, 1)
+FarmButton.TextSize = 14
+FarmButton.MouseButton1Click:connect(function()
+	if ThugFarming == false then
+ThugFarming = true
+FarmButton.BackgroundColor3 = Color3.fromRGB(52, 255, 21)
+else
+ThugFarming = false
+FarmButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Stepped:Disconnect()
+end
+
+if ThugFarming then
+Stepped = runService.Stepped:Connect(function()
+   for i,v in pairs(workspace.Live:GetChildren()) do
+if string.find(v.Name, TextBox.Text) and v:FindFirstChild("HumanoidRootPart") then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame - v.HumanoidRootPart.CFrame.lookVector * 2
+local VirtualUser=game:service'VirtualUser'
+VirtualUser:ClickButton1(Vector2.new())
+end
+end
+end)
+end
+end)
+
+credit.Name = "credit"
+credit.Parent = Main
+credit.BackgroundColor3 = Color3.new(0.105882, 0.105882, 0.105882)
+credit.BackgroundTransparency = 1
+credit.BorderColor3 = Color3.new(0, 0, 0)
+credit.Position = UDim2.new(0.513715148, 0, 0.735848904, 0)
+credit.Size = UDim2.new(0, 175, 0, 26)
+credit.Font = Enum.Font.SourceSans
+credit.Text = ""
+credit.TextColor3 = Color3.new(1, 1, 1)
+credit.TextSize = 14
+
+AutoAttack_2.Name = "AutoAttack"
+AutoAttack_2.Parent = Main
+AutoAttack_2.BackgroundColor3 = Color3.new(0.184314, 0.184314, 0.184314)
+AutoAttack_2.BorderColor3 = Color3.new(0, 0, 0)
+AutoAttack_2.BorderSizePixel = 0
+AutoAttack_2.Position = UDim2.new(0.0845812708, 0, 0.490565926, 0)
+AutoAttack_2.Size = UDim2.new(0, 199, 0, 26)
+AutoAttack_2.Font = Enum.Font.SourceSans
+AutoAttack_2.Text = "Script By.cHaco"
+AutoAttack_2.TextColor3 = Color3.new(1, 1, 1)
+AutoAttack_2.TextSize = 14
+-- Scripts:

@@ -1,0 +1,141 @@
+--IMPOSSIBLE OBBY SCRIPT
+--YEALETFNG#1693
+
+
+-- Instances:
+
+local VibeCheck = Instance.new("ScreenGui")
+local OpenFrame = Instance.new("Frame")
+local Logo = Instance.new("ImageLabel")
+local OpenButton = Instance.new("TextButton")
+local RemoveGUI = Instance.new("TextButton")
+local MainFrame = Instance.new("Frame")
+local Logo2 = Instance.new("ImageLabel")
+local CloseButton = Instance.new("TextButton")
+local ExecuteScript = Instance.new("TextButton")
+
+--Properties:
+
+VibeCheck.Name = "VibeCheck"
+VibeCheck.Parent = game.CoreGui
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = VibeCheck
+OpenFrame.BackgroundColor3 = Color3.new(0.603922, 0.0784314, 0.67451)
+OpenFrame.BackgroundTransparency = 0.25
+OpenFrame.BorderColor3 = Color3.new(0.407843, 0.0509804, 0.462745)
+OpenFrame.BorderSizePixel = 5
+OpenFrame.Position = UDim2.new(0.397371709, 0, 0.184743747, 0)
+OpenFrame.Size = UDim2.new(0, 256, 0, 127)
+OpenFrame.Draggable = true
+OpenFrame.Active = true
+
+Logo.Name = "Logo"
+Logo.Parent = OpenFrame
+Logo.BackgroundColor3 = Color3.new(1, 1, 1)
+Logo.BackgroundTransparency = 1
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0.0546875, 0, 0.047244098, 0)
+Logo.Size = UDim2.new(0, 227, 0, 57)
+Logo.Image = "http://www.roblox.com/asset/?id=4575481701"
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = OpenFrame
+OpenButton.BackgroundColor3 = Color3.new(0.129412, 0.603922, 0.0235294)
+OpenButton.BorderColor3 = Color3.new(0.0901961, 0.423529, 0.0117647)
+OpenButton.BorderSizePixel = 5
+OpenButton.Position = UDim2.new(0.06640625, 0, 0.61811024, 0)
+OpenButton.Size = UDim2.new(0, 131, 0, 32)
+OpenButton.Font = Enum.Font.Cartoon
+OpenButton.Text = "Open"
+OpenButton.TextColor3 = Color3.new(1, 1, 1)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14
+OpenButton.TextWrapped = true
+OpenButton.MouseButton1Down:connect(function()
+MainFrame.Visible = true -- Makes the gui visible
+OpenFrame.Visible = false -- Makes the open button invisible
+end)
+
+
+RemoveGUI.Name = "RemoveGUI"
+RemoveGUI.Parent = OpenFrame
+RemoveGUI.BackgroundColor3 = Color3.new(0.721569, 0, 0)
+RemoveGUI.BorderColor3 = Color3.new(0.454902, 0, 0)
+RemoveGUI.BorderSizePixel = 5
+RemoveGUI.Position = UDim2.new(0.673645258, 0, 0.610517502, 0)
+RemoveGUI.Size = UDim2.new(0, 68, 0, 32)
+RemoveGUI.Font = Enum.Font.Cartoon
+RemoveGUI.Text = "Remove GUI"
+RemoveGUI.TextColor3 = Color3.new(1, 1, 1)
+RemoveGUI.TextScaled = true
+RemoveGUI.TextSize = 14
+RemoveGUI.TextWrapped = true
+RemoveGUI.MouseButton1Down:connect(function()
+print("Wait a second to delete the VIBE CHECK GUI")
+wait(1)
+VibeCheck:Remove()
+print("VIBE CHECK GUI REMOVED")
+end)
+
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = VibeCheck
+MainFrame.BackgroundColor3 = Color3.new(0.603922, 0.0784314, 0.67451)
+MainFrame.BackgroundTransparency = 0.25
+MainFrame.BorderColor3 = Color3.new(0.407843, 0.0509804, 0.462745)
+MainFrame.BorderSizePixel = 5
+MainFrame.Position = UDim2.new(0.39674592, 0, 0.356376648, 0)
+MainFrame.Size = UDim2.new(0, 395, 0, 196)
+MainFrame.Visible = false
+MainFrame.Draggable = true
+MainFrame.Active = true
+
+Logo2.Name = "Logo2"
+Logo2.Parent = MainFrame
+Logo2.BackgroundColor3 = Color3.new(1, 1, 1)
+Logo2.BackgroundTransparency = 1
+Logo2.BorderSizePixel = 0
+Logo2.Position = UDim2.new(0.0369659811, 0, 0.0574481748, 0)
+Logo2.Size = UDim2.new(0, 227, 0, 57)
+Logo2.Image = "http://www.roblox.com/asset/?id=4575481701"
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = MainFrame
+CloseButton.BackgroundColor3 = Color3.new(0.721569, 0, 0)
+CloseButton.BorderColor3 = Color3.new(0.454902, 0, 0)
+CloseButton.BorderSizePixel = 5
+CloseButton.Position = UDim2.new(0.673645198, 0, 0.0829584524, 0)
+CloseButton.Size = UDim2.new(0, 117, 0, 45)
+CloseButton.Font = Enum.Font.Cartoon
+CloseButton.Text = "Close"
+CloseButton.TextColor3 = Color3.new(1, 1, 1)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14
+CloseButton.TextWrapped = true
+CloseButton.MouseButton1Down:connect(function()
+MainFrame.Visible = false-- Makes the gui visible
+OpenFrame.Visible = true-- Makes the open button invisible
+end)
+
+
+ExecuteScript.Name = "ExecuteScript"
+ExecuteScript.Parent = MainFrame
+ExecuteScript.BackgroundColor3 = Color3.new(0.0666667, 0.360784, 0.721569)
+ExecuteScript.BorderColor3 = Color3.new(0.0313726, 0.188235, 0.380392)
+ExecuteScript.BorderSizePixel = 5
+ExecuteScript.Position = UDim2.new(0.0457970724, 0, 0.506427824, 0)
+ExecuteScript.Size = UDim2.new(0, 365, 0, 63)
+ExecuteScript.Font = Enum.Font.Cartoon
+ExecuteScript.Text = "Remove Kill Parts"
+ExecuteScript.TextColor3 = Color3.new(1, 1, 1)
+ExecuteScript.TextScaled = true
+ExecuteScript.TextSize = 14
+ExecuteScript.TextWrapped = true
+ExecuteScript.MouseButton1Down:connect(function()
+for i,v in pairs(game.Workspace:GetChildren()) do
+    if v:IsA("Part") and v:FindFirstChild("Script") then
+       v:Destroy()
+    end
+end
+end)

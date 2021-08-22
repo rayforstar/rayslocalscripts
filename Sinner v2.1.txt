@@ -1,0 +1,2936 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local SinnerV21 = Instance.new("ScreenGui")
+local Show = Instance.new("TextButton")
+local MainFrame = Instance.new("Frame")
+local Frames = Instance.new("Frame")
+local SinnerScripts = Instance.new("Frame")
+local TweenExecutor = Instance.new("TextButton")
+local TopText = Instance.new("TextLabel")
+local ExecutorFrame = Instance.new("Frame")
+local Buttons = Instance.new("Frame")
+local SinnerScripts_2 = Instance.new("TextButton")
+local VerifyExecutor = Instance.new("TextLabel")
+local AlwaysServerSide = Instance.new("TextButton")
+local Tick = Instance.new("Frame")
+local Clear = Instance.new("TextButton")
+local Execute = Instance.new("TextButton")
+local CodeScroll = Instance.new("ScrollingFrame")
+local Lines = Instance.new("TextLabel")
+local Code = Instance.new("TextBox")
+local Globals = Instance.new("TextLabel")
+local Strings = Instance.new("TextLabel")
+local RemoteHighlight = Instance.new("TextLabel")
+local Numbers = Instance.new("TextLabel")
+local Keywords = Instance.new("TextLabel")
+local Custom = Instance.new("TextLabel")
+local Comments = Instance.new("TextLabel")
+local R6 = Instance.new("TextButton")
+local load = Instance.new("Frame")
+local Spawn = Instance.new("TextButton")
+local Listbox = Instance.new("Frame")
+local ListboxFrame = Instance.new("ScrollingFrame")
+local Formater = Instance.new("UIListLayout")
+local Vereus = Instance.new("TextButton")
+local LunarGauntlet = Instance.new("TextButton")
+local GodofShapes = Instance.new("TextButton")
+local IceGiant = Instance.new("TextButton")
+local SuperSSV5 = Instance.new("TextButton")
+local WhATANOTHERONE = Instance.new("TextButton")
+local ShucklusterKnife = Instance.new("TextButton")
+local Topk3k = Instance.new("TextButton")
+local StarGlitcher = Instance.new("TextButton")
+local Inferno = Instance.new("TextButton")
+local VoidBoss = Instance.new("TextButton")
+local KoolaidMan = Instance.new("TextButton")
+local NootNoot = Instance.new("TextButton")
+local SwordMaster = Instance.new("TextButton")
+local Excalibur = Instance.new("TextButton")
+local RealityGlitcher = Instance.new("TextButton")
+local Bloxwatch = Instance.new("TextButton")
+local GorruptVectorist = Instance.new("TextButton")
+local QuantomAdmin = Instance.new("TextButton")
+local EyoZen = Instance.new("TextButton")
+local RedBloodScythe = Instance.new("TextButton")
+local Shacklusterwheelies = Instance.new("TextButton")
+local LaserPistol = Instance.new("TextButton")
+local Nuke = Instance.new("TextButton")
+local Pumpkin = Instance.new("TextButton")
+local VuxulForest = Instance.new("TextButton")
+local GhossDeeriTitan = Instance.new("TextButton")
+local PurpleGod = Instance.new("TextButton")
+local RedSword = Instance.new("TextButton")
+local DominusCorona = Instance.new("TextButton")
+local NineTailedfoxunit = Instance.new("TextButton")
+local DualPinkGuns = Instance.new("TextButton")
+local ReaperV2 = Instance.new("TextButton")
+local GrabKnifeV4 = Instance.new("TextButton")
+local KitchenGun = Instance.new("TextButton")
+local Zamazu = Instance.new("TextButton")
+local InsaneGenocidalManiac = Instance.new("TextButton")
+local ExecutionerBrutallus = Instance.new("TextButton")
+local Ecomode = Instance.new("TextButton")
+local DexExplorer = Instance.new("TextButton")
+local MustardGas = Instance.new("TextButton")
+local Goner = Instance.new("TextButton")
+local ShadowLord = Instance.new("TextButton")
+local DarkSwordShield = Instance.new("TextButton")
+local NuclearGun = Instance.new("TextButton")
+local ZeusStaff = Instance.new("TextButton")
+local Assassin = Instance.new("TextButton")
+local RedTitan = Instance.new("TextButton")
+local BomberManUltra = Instance.new("TextButton")
+local TreeSmasher = Instance.new("TextButton")
+local Blindreaper = Instance.new("TextButton")
+local SBModerator = Instance.new("TextButton")
+local FallenAnger = Instance.new("TextButton")
+local ChatHax = Instance.new("TextButton")
+local Glock = Instance.new("TextButton")
+local DualBinarySword = Instance.new("TextButton")
+local Yupia = Instance.new("TextButton")
+local BrutalOverlord = Instance.new("TextButton")
+local SoulReaper = Instance.new("TextButton")
+local Chara = Instance.new("TextButton")
+local RuinEX = Instance.new("TextButton")
+local GodSlayer = Instance.new("TextButton")
+local GoodCopBadCop = Instance.new("TextButton")
+local MMLAdminmodified = Instance.new("TextButton")
+local BloodHarvester = Instance.new("TextButton")
+local Etheralglitcherv2 = Instance.new("TextButton")
+local BlueSword = Instance.new("TextButton")
+local UltimateTrollingGUIRemake = Instance.new("TextButton")
+local ChaoticGlitcher = Instance.new("TextButton")
+local RainbowTitan = Instance.new("TextButton")
+local VaporGun = Instance.new("TextButton")
+local ThomasTheTankEngine = Instance.new("TextButton")
+local Rogue = Instance.new("TextButton")
+local AbsylumV2 = Instance.new("TextButton")
+local SuicideGun = Instance.new("TextButton")
+local CaducustheFallenGod = Instance.new("TextButton")
+local GoldenGun = Instance.new("TextButton")
+local InfiniteYield = Instance.new("TextButton")
+local GreenKatana = Instance.new("TextButton")
+local Glock22 = Instance.new("TextButton")
+local PurpleHeartSword = Instance.new("TextButton")
+local NeptunianV = Instance.new("TextButton")
+local UniversalGlitcher = Instance.new("TextButton")
+local DeathNote = Instance.new("TextButton")
+local SSGUI = Instance.new("TextButton")
+local SkullKid = Instance.new("TextButton")
+local _smoothinputframe = Instance.new("ScrollingFrame")
+local Settings = Instance.new("ImageButton")
+local SettingsFrame = Instance.new("Frame")
+local Border = Instance.new("Frame")
+local TopText_2 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Setting1 = Instance.new("TextLabel")
+local check = Instance.new("TextButton")
+local Setting2 = Instance.new("TextLabel")
+local check_2 = Instance.new("TextButton")
+local BorderHorizontal = Instance.new("Frame")
+local Title = Instance.new("Frame")
+local Hide = Instance.new("TextButton")
+local Liner = Instance.new("Frame")
+local Version = Instance.new("TextLabel")
+local SinnerName = Instance.new("TextLabel")
+local PanelLeft = Instance.new("Frame")
+local ErrorMessage = Instance.new("Frame")
+local Border_2 = Instance.new("Frame")
+local TopText_3 = Instance.new("TextLabel")
+local Error = Instance.new("TextLabel")
+local Dismiss = Instance.new("TextButton")
+local ErrorFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+--Properties:
+SinnerV21.Name = "Sinner V2.1"
+SinnerV21.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SinnerV21.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SinnerV21.ResetOnSpawn = false
+
+Show.Name = "Show"
+Show.Parent = SinnerV21
+Show.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Show.BorderSizePixel = 0
+Show.Position = UDim2.new(0.00700000022, 0, 0.933000028, 0)
+Show.Size = UDim2.new(0, 72, 0, 35)
+Show.Font = Enum.Font.SourceSansSemibold
+Show.Text = "SHOW"
+Show.TextColor3 = Color3.new(1, 1, 1)
+Show.TextSize = 27
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = SinnerV21
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.new(0.192157, 0.192157, 0.192157)
+MainFrame.BorderSizePixel = 0
+MainFrame.Draggable = true
+MainFrame.Position = UDim2.new(0.56400001, -296, 0.435000002, -158)
+MainFrame.Selectable = true
+MainFrame.Size = UDim2.new(0, 593, 0, 381)
+MainFrame.Visible = false
+
+Frames.Name = "Frames"
+Frames.Parent = MainFrame
+Frames.BackgroundColor3 = Color3.new(1, 1, 1)
+Frames.BackgroundTransparency = 1
+Frames.ClipsDescendants = true
+Frames.Position = UDim2.new(0.00505902199, 0, 0.113956563, 0)
+Frames.Size = UDim2.new(0.994940996, 0, 0.886043429, 0)
+
+SinnerScripts.Name = "SinnerScripts"
+SinnerScripts.Parent = Frames
+SinnerScripts.BackgroundColor3 = Color3.new(0.227451, 0.227451, 0.227451)
+SinnerScripts.BorderSizePixel = 0
+SinnerScripts.Position = UDim2.new(-1.00508475, 0, -0.0118489536, 0)
+SinnerScripts.Size = UDim2.new(0, 590, 0, 337)
+
+TweenExecutor.Name = "TweenExecutor"
+TweenExecutor.Parent = SinnerScripts
+TweenExecutor.BackgroundColor3 = Color3.new(0.152941, 0.490196, 1)
+TweenExecutor.BackgroundTransparency = 1
+TweenExecutor.BorderSizePixel = 0
+TweenExecutor.Position = UDim2.new(0.909100235, 0, 0.0107154734, 0)
+TweenExecutor.Size = UDim2.new(0, 41, 0, 29)
+TweenExecutor.Font = Enum.Font.Code
+TweenExecutor.Text = "<"
+TweenExecutor.TextColor3 = Color3.new(1, 1, 1)
+TweenExecutor.TextScaled = true
+TweenExecutor.TextSize = 24
+TweenExecutor.TextWrapped = true
+
+TopText.Name = "TopText"
+TopText.Parent = SinnerScripts
+TopText.BackgroundColor3 = Color3.new(1, 1, 1)
+TopText.BackgroundTransparency = 1
+TopText.Position = UDim2.new(0, 0, 0.0148367956, 0)
+TopText.Size = UDim2.new(0, 525, 0, 27)
+TopText.Font = Enum.Font.SourceSansSemibold
+TopText.Text = "SS Scripts"
+TopText.TextColor3 = Color3.new(1, 1, 1)
+TopText.TextScaled = true
+TopText.TextSize = 19
+TopText.TextWrapped = true
+
+ExecutorFrame.Name = "ExecutorFrame"
+ExecutorFrame.Parent = Frames
+ExecutorFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ExecutorFrame.BackgroundTransparency = 0.89999997615814
+ExecutorFrame.Position = UDim2.new(-0.00392839313, 0, 0.000904873013, 0)
+ExecutorFrame.Size = UDim2.new(0, 590, 0, 337)
+
+Buttons.Name = "Buttons"
+Buttons.Parent = ExecutorFrame
+Buttons.BackgroundColor3 = Color3.new(1, 1, 1)
+Buttons.BackgroundTransparency = 1
+Buttons.Position = UDim2.new(0.0257009342, 0, 0.776539087, 0)
+Buttons.Size = UDim2.new(0, 405, 0, 36)
+
+SinnerScripts_2.Name = "SinnerScripts"
+SinnerScripts_2.Parent = Buttons
+SinnerScripts_2.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+SinnerScripts_2.BorderColor3 = Color3.new(0.141176, 0.141176, 0.141176)
+SinnerScripts_2.BorderSizePixel = 0
+SinnerScripts_2.Position = UDim2.new(0.496419519, 0, 0.333333284, 0)
+SinnerScripts_2.Size = UDim2.new(0, 86, 0, 36)
+SinnerScripts_2.Font = Enum.Font.SourceSansSemibold
+SinnerScripts_2.Text = "Script Hub"
+SinnerScripts_2.TextColor3 = Color3.new(1, 1, 1)
+SinnerScripts_2.TextScaled = true
+SinnerScripts_2.TextSize = 24
+SinnerScripts_2.TextWrapped = true
+
+VerifyExecutor.Name = "VerifyExecutor"
+VerifyExecutor.Parent = Buttons
+VerifyExecutor.BackgroundColor3 = Color3.new(1, 1, 1)
+VerifyExecutor.BackgroundTransparency = 1
+VerifyExecutor.Position = UDim2.new(0.778395057, 0, 0.472222209, 0)
+VerifyExecutor.Size = UDim2.new(0, 129, 0, 24)
+VerifyExecutor.Font = Enum.Font.SourceSans
+VerifyExecutor.Text = "Executor: Server-sided"
+VerifyExecutor.TextColor3 = Color3.new(0.160784, 0.870588, 0.219608)
+VerifyExecutor.TextSize = 18
+
+AlwaysServerSide.Name = "AlwaysServerSide"
+AlwaysServerSide.Parent = Buttons
+AlwaysServerSide.BackgroundColor3 = Color3.new(0.741176, 0.741176, 0.741176)
+AlwaysServerSide.ClipsDescendants = true
+AlwaysServerSide.Position = UDim2.new(1.13581491, 0, 0.361111045, 4)
+AlwaysServerSide.Size = UDim2.new(0, 22, 0, 22)
+AlwaysServerSide.Font = Enum.Font.SourceSans
+AlwaysServerSide.Text = ""
+AlwaysServerSide.TextColor3 = Color3.new(0, 0, 0)
+AlwaysServerSide.TextSize = 14
+
+Tick.Name = "Tick"
+Tick.Parent = AlwaysServerSide
+Tick.BackgroundColor3 = Color3.new(0.160784, 0.447059, 0.792157)
+Tick.Position = UDim2.new(0, 2, 0, 2)
+Tick.Size = UDim2.new(0, 18, 0, 18)
+
+Clear.Name = "Clear"
+Clear.Parent = Buttons
+Clear.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+Clear.BorderColor3 = Color3.new(0.141176, 0.141176, 0.141176)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.256913543, 0, 0.333333343, 0)
+Clear.Size = UDim2.new(0, 79, 0, 37)
+Clear.Font = Enum.Font.SourceSansSemibold
+Clear.Text = "CLEAR"
+Clear.TextColor3 = Color3.new(1, 1, 1)
+Clear.TextSize = 24
+
+Execute.Name = "Execute"
+Execute.Parent = Buttons
+Execute.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+Execute.BorderColor3 = Color3.new(0.141176, 0.141176, 0.141176)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(-0.00154320989, 0, 0.333333343, 0)
+Execute.Size = UDim2.new(0, 85, 0, 37)
+Execute.Font = Enum.Font.SourceSansSemibold
+Execute.Text = "EXECUTE"
+Execute.TextColor3 = Color3.new(1, 1, 1)
+Execute.TextSize = 24
+
+CodeScroll.Name = "CodeScroll"
+CodeScroll.Parent = ExecutorFrame
+CodeScroll.Active = true
+CodeScroll.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+CodeScroll.BorderColor3 = Color3.new(0.32549, 0.32549, 0.32549)
+CodeScroll.BorderSizePixel = 3
+CodeScroll.Position = UDim2.new(0.0259999428, 0, 0.0429703817, 0)
+CodeScroll.Size = UDim2.new(0, 568, 0, 248)
+CodeScroll.BottomImage = ""
+CodeScroll.CanvasSize = UDim2.new(0, 207, 0, 34)
+CodeScroll.ScrollBarThickness = 5
+CodeScroll.TopImage = ""
+
+Lines.Name = "Lines"
+Lines.Parent = CodeScroll
+Lines.Active = true
+Lines.BackgroundColor3 = Color3.new(0.227451, 0.227451, 0.227451)
+Lines.BorderColor3 = Color3.new(0.290196, 0.290196, 0.290196)
+Lines.Size = UDim2.new(0, 17, 0, 1000)
+Lines.Font = Enum.Font.Cartoon
+Lines.Text = "1\n2\n"
+Lines.TextColor3 = Color3.new(0.580392, 0.580392, 0.580392)
+Lines.TextSize = 19
+Lines.TextWrapped = true
+Lines.TextYAlignment = Enum.TextYAlignment.Top
+
+Code.Name = "Code"
+Code.Parent = CodeScroll
+Code.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
+Code.BorderColor3 = Color3.new(0.168627, 0.415686, 0.678431)
+Code.BorderSizePixel = 0
+Code.Position = UDim2.new(0, 18, 0, 0)
+Code.Size = UDim2.new(0, 600, 0, 300)
+Code.ClearTextOnFocus = false
+Code.Font = Enum.Font.Code
+Code.MultiLine = true
+Code.PlaceholderText = "Execute your code here"
+Code.Text = "print(\"Hello world!\")\n"
+Code.TextColor3 = Color3.new(1, 1, 1)
+Code.TextSize = 17
+Code.TextXAlignment = Enum.TextXAlignment.Left
+Code.TextYAlignment = Enum.TextYAlignment.Top
+
+Globals.Name = "Globals"
+Globals.Parent = Code
+Globals.BackgroundColor3 = Color3.new(1, 1, 1)
+Globals.BackgroundTransparency = 1
+Globals.Size = UDim2.new(1, 0, 1, 0)
+Globals.ZIndex = 5
+Globals.Font = Enum.Font.Code
+Globals.Text = "print                \n"
+Globals.TextColor3 = Color3.new(0.188235, 0.6, 0.87451)
+Globals.TextSize = 17
+Globals.TextXAlignment = Enum.TextXAlignment.Left
+Globals.TextYAlignment = Enum.TextYAlignment.Top
+
+Strings.Name = "Strings"
+Strings.Parent = Code
+Strings.BackgroundColor3 = Color3.new(1, 1, 1)
+Strings.BackgroundTransparency = 1
+Strings.Size = UDim2.new(1, 0, 1, 0)
+Strings.Font = Enum.Font.Code
+Strings.Text = "      \"Hello world!\" \n"
+Strings.TextColor3 = Color3.new(1, 0.180392, 0.647059)
+Strings.TextSize = 17
+Strings.TextXAlignment = Enum.TextXAlignment.Left
+Strings.TextYAlignment = Enum.TextYAlignment.Top
+
+RemoteHighlight.Name = "RemoteHighlight"
+RemoteHighlight.Parent = Code
+RemoteHighlight.BackgroundColor3 = Color3.new(1, 1, 1)
+RemoteHighlight.BackgroundTransparency = 1
+RemoteHighlight.Size = UDim2.new(1, 0, 1, 0)
+RemoteHighlight.ZIndex = 2
+RemoteHighlight.Font = Enum.Font.Code
+RemoteHighlight.Text = "                     \n"
+RemoteHighlight.TextColor3 = Color3.new(1, 0.984314, 0.894118)
+RemoteHighlight.TextSize = 17
+RemoteHighlight.TextXAlignment = Enum.TextXAlignment.Left
+RemoteHighlight.TextYAlignment = Enum.TextYAlignment.Top
+
+Numbers.Name = "Numbers"
+Numbers.Parent = Code
+Numbers.BackgroundColor3 = Color3.new(1, 1, 1)
+Numbers.BackgroundTransparency = 1
+Numbers.Size = UDim2.new(1, 0, 1, 0)
+Numbers.ZIndex = 3
+Numbers.Font = Enum.Font.Code
+Numbers.Text = "                     \n"
+Numbers.TextColor3 = Color3.new(0.537255, 1, 0.341176)
+Numbers.TextSize = 17
+Numbers.TextXAlignment = Enum.TextXAlignment.Left
+Numbers.TextYAlignment = Enum.TextYAlignment.Top
+
+Keywords.Name = "Keywords"
+Keywords.Parent = Code
+Keywords.BackgroundColor3 = Color3.new(1, 1, 1)
+Keywords.BackgroundTransparency = 1
+Keywords.Size = UDim2.new(1, 0, 1, 0)
+Keywords.ZIndex = 4
+Keywords.Font = Enum.Font.Code
+Keywords.Text = "                     \n"
+Keywords.TextColor3 = Color3.new(0.247059, 0.682353, 0.972549)
+Keywords.TextSize = 17
+Keywords.TextXAlignment = Enum.TextXAlignment.Left
+Keywords.TextYAlignment = Enum.TextYAlignment.Top
+
+Custom.Name = "Custom"
+Custom.Parent = Code
+Custom.BackgroundColor3 = Color3.new(1, 1, 1)
+Custom.BackgroundTransparency = 1
+Custom.Size = UDim2.new(1, 0, 1, 0)
+Custom.ZIndex = 6
+Custom.Font = Enum.Font.Code
+Custom.Text = "                     \n"
+Custom.TextColor3 = Color3.new(0.890196, 0.968628, 0.172549)
+Custom.TextSize = 17
+Custom.TextXAlignment = Enum.TextXAlignment.Left
+Custom.TextYAlignment = Enum.TextYAlignment.Top
+
+Comments.Name = "Comments"
+Comments.Parent = Code
+Comments.BackgroundColor3 = Color3.new(1, 1, 1)
+Comments.BackgroundTransparency = 1
+Comments.Size = UDim2.new(1, 0, 1, 0)
+Comments.ZIndex = 7
+Comments.Font = Enum.Font.Code
+Comments.Text = "                     \n"
+Comments.TextColor3 = Color3.new(0.231373, 0.784314, 0.231373)
+Comments.TextSize = 17
+Comments.TextXAlignment = Enum.TextXAlignment.Left
+Comments.TextYAlignment = Enum.TextYAlignment.Top
+
+R6.Name = "R6"
+R6.Parent = ExecutorFrame
+R6.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+R6.BorderColor3 = Color3.new(0.141176, 0.141176, 0.141176)
+R6.BorderSizePixel = 0
+R6.Position = UDim2.new(0.928813577, 0, 0.899109781, 0)
+R6.Size = UDim2.new(0, 35, 0, 25)
+R6.Font = Enum.Font.SourceSansSemibold
+R6.Text = "R6"
+R6.TextColor3 = Color3.new(1, 1, 1)
+R6.TextScaled = true
+R6.TextSize = 14
+R6.TextWrapped = true
+
+load.Name = "load"
+load.Parent = ExecutorFrame
+load.BackgroundColor3 = Color3.new(0.2, 0.588235, 1)
+load.BorderSizePixel = 0
+load.Position = UDim2.new(0.0246415995, 0, 0.0238400921, 0)
+load.Size = UDim2.new(0, 570, 0, 5)
+load.Visible = false
+
+Spawn.Name = "Spawn"
+Spawn.Parent = ExecutorFrame
+Spawn.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+Spawn.BorderColor3 = Color3.new(0.141176, 0.141176, 0.141176)
+Spawn.BorderSizePixel = 0
+Spawn.Position = UDim2.new(0.927118659, 0, 0.807121634, 0)
+Spawn.Size = UDim2.new(0, 35, 0, 25)
+Spawn.Font = Enum.Font.SourceSansSemibold
+Spawn.Text = "SPAWN"
+Spawn.TextColor3 = Color3.new(1, 1, 1)
+Spawn.TextScaled = true
+Spawn.TextSize = 14
+Spawn.TextWrapped = true
+
+Listbox.Name = "Listbox"
+Listbox.Parent = ExecutorFrame
+Listbox.BackgroundColor3 = Color3.new(0.227451, 0.227451, 0.227451)
+Listbox.BorderSizePixel = 0
+Listbox.Position = UDim2.new(-1.00115633, 0, 0.083086051, 0)
+Listbox.Size = UDim2.new(0, 576, 0, 304)
+
+ListboxFrame.Name = "ListboxFrame"
+ListboxFrame.Parent = Listbox
+ListboxFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ListboxFrame.BackgroundTransparency = 1
+ListboxFrame.BorderSizePixel = 0
+ListboxFrame.Position = UDim2.new(0, 0, 0.101587296, 0)
+ListboxFrame.Size = UDim2.new(0, 589, 0, 273)
+ListboxFrame.CanvasSize = UDim2.new(0, 0, 0, 2236)
+ListboxFrame.ScrollBarThickness = 2
+ListboxFrame.ScrollingEnabled = false
+
+Formater.Name = "Formater"
+Formater.Parent = ListboxFrame
+
+Vereus.Name = "Vereus"
+Vereus.Parent = ListboxFrame
+Vereus.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Vereus.BorderSizePixel = 0
+Vereus.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Vereus.Size = UDim2.new(0, 577, 0, 25)
+Vereus.Font = Enum.Font.SourceSansSemibold
+Vereus.Text = "VEREUS"
+Vereus.TextColor3 = Color3.new(1, 1, 1)
+Vereus.TextSize = 14
+
+LunarGauntlet.Name = "Lunar Gauntlet"
+LunarGauntlet.Parent = ListboxFrame
+LunarGauntlet.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+LunarGauntlet.BorderSizePixel = 0
+LunarGauntlet.Position = UDim2.new(0, 0, 0.0158730168, 0)
+LunarGauntlet.Size = UDim2.new(0, 577, 0, 25)
+LunarGauntlet.Font = Enum.Font.SourceSansSemibold
+LunarGauntlet.Text = "LUNAR GAUNTLET"
+LunarGauntlet.TextColor3 = Color3.new(1, 1, 1)
+LunarGauntlet.TextSize = 14
+
+GodofShapes.Name = "God of Shapes"
+GodofShapes.Parent = ListboxFrame
+GodofShapes.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+GodofShapes.BorderSizePixel = 0
+GodofShapes.Position = UDim2.new(0, 0, 0.0158730168, 0)
+GodofShapes.Size = UDim2.new(0, 577, 0, 25)
+GodofShapes.Font = Enum.Font.SourceSansSemibold
+GodofShapes.Text = "GOD OF SHAPES"
+GodofShapes.TextColor3 = Color3.new(1, 1, 1)
+GodofShapes.TextSize = 14
+
+IceGiant.Name = "Ice Giant"
+IceGiant.Parent = ListboxFrame
+IceGiant.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+IceGiant.BorderSizePixel = 0
+IceGiant.Position = UDim2.new(0, 0, 0.0158730168, 0)
+IceGiant.Size = UDim2.new(0, 577, 0, 25)
+IceGiant.Font = Enum.Font.SourceSansSemibold
+IceGiant.Text = "ICE GIANT"
+IceGiant.TextColor3 = Color3.new(1, 1, 1)
+IceGiant.TextSize = 14
+
+SuperSSV5.Name = "Super SS V5"
+SuperSSV5.Parent = ListboxFrame
+SuperSSV5.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+SuperSSV5.BorderSizePixel = 0
+SuperSSV5.Position = UDim2.new(0, 0, 0.0158730168, 0)
+SuperSSV5.Size = UDim2.new(0, 577, 0, 25)
+SuperSSV5.Font = Enum.Font.SourceSansSemibold
+SuperSSV5.Text = "SUPER SS V5"
+SuperSSV5.TextColor3 = Color3.new(1, 1, 1)
+SuperSSV5.TextSize = 14
+
+WhATANOTHERONE.Name = "WhAT ANOTHER ONE"
+WhATANOTHERONE.Parent = ListboxFrame
+WhATANOTHERONE.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+WhATANOTHERONE.BorderSizePixel = 0
+WhATANOTHERONE.Position = UDim2.new(0, 0, 0.0158730168, 0)
+WhATANOTHERONE.Size = UDim2.new(0, 577, 0, 25)
+WhATANOTHERONE.Font = Enum.Font.SourceSansSemibold
+WhATANOTHERONE.Text = "WHAT ANOTHER ONE"
+WhATANOTHERONE.TextColor3 = Color3.new(1, 1, 1)
+WhATANOTHERONE.TextSize = 14
+
+ShucklusterKnife.Name = "Shuckluster Knife"
+ShucklusterKnife.Parent = ListboxFrame
+ShucklusterKnife.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ShucklusterKnife.BorderSizePixel = 0
+ShucklusterKnife.Position = UDim2.new(0, 0, 0.0158730168, 0)
+ShucklusterKnife.Size = UDim2.new(0, 577, 0, 25)
+ShucklusterKnife.Font = Enum.Font.SourceSansSemibold
+ShucklusterKnife.Text = "SHUCKLUSTER KNIFE"
+ShucklusterKnife.TextColor3 = Color3.new(1, 1, 1)
+ShucklusterKnife.TextSize = 14
+
+Topk3k.Name = "Topk3k"
+Topk3k.Parent = ListboxFrame
+Topk3k.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Topk3k.BorderSizePixel = 0
+Topk3k.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Topk3k.Size = UDim2.new(0, 577, 0, 25)
+Topk3k.Font = Enum.Font.SourceSansSemibold
+Topk3k.Text = "TOPK3K"
+Topk3k.TextColor3 = Color3.new(1, 1, 1)
+Topk3k.TextSize = 14
+
+StarGlitcher.Name = "Star Glitcher"
+StarGlitcher.Parent = ListboxFrame
+StarGlitcher.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+StarGlitcher.BorderSizePixel = 0
+StarGlitcher.Position = UDim2.new(0, 0, 0.0158730168, 0)
+StarGlitcher.Size = UDim2.new(0, 577, 0, 25)
+StarGlitcher.Font = Enum.Font.SourceSansSemibold
+StarGlitcher.Text = "STAR GLITCHER"
+StarGlitcher.TextColor3 = Color3.new(1, 1, 1)
+StarGlitcher.TextSize = 14
+
+Inferno.Name = "Inferno"
+Inferno.Parent = ListboxFrame
+Inferno.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Inferno.BorderSizePixel = 0
+Inferno.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Inferno.Size = UDim2.new(0, 577, 0, 25)
+Inferno.Font = Enum.Font.SourceSansSemibold
+Inferno.Text = "INFERNO"
+Inferno.TextColor3 = Color3.new(1, 1, 1)
+Inferno.TextSize = 14
+
+VoidBoss.Name = "Void Boss"
+VoidBoss.Parent = ListboxFrame
+VoidBoss.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+VoidBoss.BorderSizePixel = 0
+VoidBoss.Position = UDim2.new(0, 0, 0.0158730168, 0)
+VoidBoss.Size = UDim2.new(0, 577, 0, 25)
+VoidBoss.Font = Enum.Font.SourceSansSemibold
+VoidBoss.Text = "VOID BOSS"
+VoidBoss.TextColor3 = Color3.new(1, 1, 1)
+VoidBoss.TextSize = 14
+
+KoolaidMan.Name = "Koolaid Man"
+KoolaidMan.Parent = ListboxFrame
+KoolaidMan.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+KoolaidMan.BorderSizePixel = 0
+KoolaidMan.Position = UDim2.new(0, 0, 0.0158730168, 0)
+KoolaidMan.Size = UDim2.new(0, 577, 0, 25)
+KoolaidMan.Font = Enum.Font.SourceSansSemibold
+KoolaidMan.Text = "KOOLAID MAN"
+KoolaidMan.TextColor3 = Color3.new(1, 1, 1)
+KoolaidMan.TextSize = 14
+
+NootNoot.Name = "Noot Noot"
+NootNoot.Parent = ListboxFrame
+NootNoot.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+NootNoot.BorderSizePixel = 0
+NootNoot.Position = UDim2.new(0, 0, 0.0158730168, 0)
+NootNoot.Size = UDim2.new(0, 577, 0, 25)
+NootNoot.Font = Enum.Font.SourceSansSemibold
+NootNoot.Text = "NOOT NOOT"
+NootNoot.TextColor3 = Color3.new(1, 1, 1)
+NootNoot.TextSize = 14
+
+SwordMaster.Name = "Sword Master"
+SwordMaster.Parent = ListboxFrame
+SwordMaster.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+SwordMaster.BorderSizePixel = 0
+SwordMaster.Position = UDim2.new(0, 0, 0.0158730168, 0)
+SwordMaster.Size = UDim2.new(0, 577, 0, 25)
+SwordMaster.Font = Enum.Font.SourceSansSemibold
+SwordMaster.Text = "SWORD MASTER"
+SwordMaster.TextColor3 = Color3.new(1, 1, 1)
+SwordMaster.TextSize = 14
+
+Excalibur.Name = "Excalibur"
+Excalibur.Parent = ListboxFrame
+Excalibur.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Excalibur.BorderSizePixel = 0
+Excalibur.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Excalibur.Size = UDim2.new(0, 577, 0, 25)
+Excalibur.Font = Enum.Font.SourceSansSemibold
+Excalibur.Text = "EXCALIBUR"
+Excalibur.TextColor3 = Color3.new(1, 1, 1)
+Excalibur.TextSize = 14
+
+RealityGlitcher.Name = "Reality Glitcher"
+RealityGlitcher.Parent = ListboxFrame
+RealityGlitcher.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+RealityGlitcher.BorderSizePixel = 0
+RealityGlitcher.Position = UDim2.new(0, 0, 0.0158730168, 0)
+RealityGlitcher.Size = UDim2.new(0, 577, 0, 25)
+RealityGlitcher.Font = Enum.Font.SourceSansSemibold
+RealityGlitcher.Text = "REALITY GLITCHER"
+RealityGlitcher.TextColor3 = Color3.new(1, 1, 1)
+RealityGlitcher.TextSize = 14
+
+Bloxwatch.Name = "Bloxwatch"
+Bloxwatch.Parent = ListboxFrame
+Bloxwatch.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Bloxwatch.BorderSizePixel = 0
+Bloxwatch.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Bloxwatch.Size = UDim2.new(0, 577, 0, 25)
+Bloxwatch.Font = Enum.Font.SourceSansSemibold
+Bloxwatch.Text = "BLOXWATCH"
+Bloxwatch.TextColor3 = Color3.new(1, 1, 1)
+Bloxwatch.TextSize = 14
+
+GorruptVectorist.Name = "Gorrupt Vectorist"
+GorruptVectorist.Parent = ListboxFrame
+GorruptVectorist.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+GorruptVectorist.BorderSizePixel = 0
+GorruptVectorist.Position = UDim2.new(0, 0, 0.0158730168, 0)
+GorruptVectorist.Size = UDim2.new(0, 577, 0, 25)
+GorruptVectorist.Font = Enum.Font.SourceSansSemibold
+GorruptVectorist.Text = "GORRUPT VECTORIST"
+GorruptVectorist.TextColor3 = Color3.new(1, 1, 1)
+GorruptVectorist.TextSize = 14
+
+QuantomAdmin.Name = "Quantom Admin"
+QuantomAdmin.Parent = ListboxFrame
+QuantomAdmin.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+QuantomAdmin.BorderSizePixel = 0
+QuantomAdmin.Position = UDim2.new(0, 0, 0.0158730168, 0)
+QuantomAdmin.Size = UDim2.new(0, 577, 0, 25)
+QuantomAdmin.Font = Enum.Font.SourceSansSemibold
+QuantomAdmin.Text = "QUANTOM ADMIN"
+QuantomAdmin.TextColor3 = Color3.new(1, 1, 1)
+QuantomAdmin.TextSize = 14
+
+EyoZen.Name = "Eyo-Zen"
+EyoZen.Parent = ListboxFrame
+EyoZen.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+EyoZen.BorderSizePixel = 0
+EyoZen.Position = UDim2.new(0, 0, 0.0158730168, 0)
+EyoZen.Size = UDim2.new(0, 577, 0, 25)
+EyoZen.Font = Enum.Font.SourceSansSemibold
+EyoZen.Text = "EYO-ZEN"
+EyoZen.TextColor3 = Color3.new(1, 1, 1)
+EyoZen.TextSize = 14
+
+RedBloodScythe.Name = "Red Blood Scythe"
+RedBloodScythe.Parent = ListboxFrame
+RedBloodScythe.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+RedBloodScythe.BorderSizePixel = 0
+RedBloodScythe.Position = UDim2.new(0, 0, 0.0158730168, 0)
+RedBloodScythe.Size = UDim2.new(0, 577, 0, 25)
+RedBloodScythe.Font = Enum.Font.SourceSansSemibold
+RedBloodScythe.Text = "RED BLOOD SCYTHE"
+RedBloodScythe.TextColor3 = Color3.new(1, 1, 1)
+RedBloodScythe.TextSize = 14
+
+Shacklusterwheelies.Name = "Shackluster wheelies"
+Shacklusterwheelies.Parent = ListboxFrame
+Shacklusterwheelies.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Shacklusterwheelies.BorderSizePixel = 0
+Shacklusterwheelies.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Shacklusterwheelies.Size = UDim2.new(0, 577, 0, 25)
+Shacklusterwheelies.Font = Enum.Font.SourceSansSemibold
+Shacklusterwheelies.Text = "SHACKLUSTER WHEELIES"
+Shacklusterwheelies.TextColor3 = Color3.new(1, 1, 1)
+Shacklusterwheelies.TextSize = 14
+
+LaserPistol.Name = "Laser Pistol"
+LaserPistol.Parent = ListboxFrame
+LaserPistol.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+LaserPistol.BorderSizePixel = 0
+LaserPistol.Position = UDim2.new(0, 0, 0.0158730168, 0)
+LaserPistol.Size = UDim2.new(0, 577, 0, 25)
+LaserPistol.Font = Enum.Font.SourceSansSemibold
+LaserPistol.Text = "LASER PISTOL"
+LaserPistol.TextColor3 = Color3.new(1, 1, 1)
+LaserPistol.TextSize = 14
+
+Nuke.Name = "Nuke"
+Nuke.Parent = ListboxFrame
+Nuke.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Nuke.BorderSizePixel = 0
+Nuke.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Nuke.Size = UDim2.new(0, 577, 0, 25)
+Nuke.Font = Enum.Font.SourceSansSemibold
+Nuke.Text = "NUKE"
+Nuke.TextColor3 = Color3.new(1, 1, 1)
+Nuke.TextSize = 14
+
+Pumpkin.Name = "Pumpkin"
+Pumpkin.Parent = ListboxFrame
+Pumpkin.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Pumpkin.BorderSizePixel = 0
+Pumpkin.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Pumpkin.Size = UDim2.new(0, 577, 0, 25)
+Pumpkin.Font = Enum.Font.SourceSansSemibold
+Pumpkin.Text = "PUMPKIN"
+Pumpkin.TextColor3 = Color3.new(1, 1, 1)
+Pumpkin.TextSize = 14
+
+VuxulForest.Name = "Vuxul Forest"
+VuxulForest.Parent = ListboxFrame
+VuxulForest.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+VuxulForest.BorderSizePixel = 0
+VuxulForest.Position = UDim2.new(0, 0, 0.0158730168, 0)
+VuxulForest.Size = UDim2.new(0, 577, 0, 25)
+VuxulForest.Font = Enum.Font.SourceSansSemibold
+VuxulForest.Text = "VUXUL FOREST"
+VuxulForest.TextColor3 = Color3.new(1, 1, 1)
+VuxulForest.TextSize = 14
+
+GhossDeeriTitan.Name = "GhossDeeri Titan"
+GhossDeeriTitan.Parent = ListboxFrame
+GhossDeeriTitan.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+GhossDeeriTitan.BorderSizePixel = 0
+GhossDeeriTitan.Position = UDim2.new(0, 0, 0.0158730168, 0)
+GhossDeeriTitan.Size = UDim2.new(0, 577, 0, 25)
+GhossDeeriTitan.Font = Enum.Font.SourceSansSemibold
+GhossDeeriTitan.Text = "GHOSSDEERI TITAN"
+GhossDeeriTitan.TextColor3 = Color3.new(1, 1, 1)
+GhossDeeriTitan.TextSize = 14
+
+PurpleGod.Name = "Purple God"
+PurpleGod.Parent = ListboxFrame
+PurpleGod.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+PurpleGod.BorderSizePixel = 0
+PurpleGod.Position = UDim2.new(0, 0, 0.0158730168, 0)
+PurpleGod.Size = UDim2.new(0, 577, 0, 25)
+PurpleGod.Font = Enum.Font.SourceSansSemibold
+PurpleGod.Text = "PURPLE GOD"
+PurpleGod.TextColor3 = Color3.new(1, 1, 1)
+PurpleGod.TextSize = 14
+
+RedSword.Name = "Red Sword"
+RedSword.Parent = ListboxFrame
+RedSword.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+RedSword.BorderSizePixel = 0
+RedSword.Position = UDim2.new(0, 0, 0.0158730168, 0)
+RedSword.Size = UDim2.new(0, 577, 0, 25)
+RedSword.Font = Enum.Font.SourceSansSemibold
+RedSword.Text = "RED SWORD"
+RedSword.TextColor3 = Color3.new(1, 1, 1)
+RedSword.TextSize = 14
+
+DominusCorona.Name = "Dominus Corona"
+DominusCorona.Parent = ListboxFrame
+DominusCorona.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+DominusCorona.BorderSizePixel = 0
+DominusCorona.Position = UDim2.new(0, 0, 0.0158730168, 0)
+DominusCorona.Size = UDim2.new(0, 577, 0, 25)
+DominusCorona.Font = Enum.Font.SourceSansSemibold
+DominusCorona.Text = "DOMINUS CORONA"
+DominusCorona.TextColor3 = Color3.new(1, 1, 1)
+DominusCorona.TextSize = 14
+
+NineTailedfoxunit.Name = "Nine-Tailed fox unit"
+NineTailedfoxunit.Parent = ListboxFrame
+NineTailedfoxunit.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+NineTailedfoxunit.BorderSizePixel = 0
+NineTailedfoxunit.Position = UDim2.new(0, 0, 0.0158730168, 0)
+NineTailedfoxunit.Size = UDim2.new(0, 577, 0, 25)
+NineTailedfoxunit.Font = Enum.Font.SourceSansSemibold
+NineTailedfoxunit.Text = "NINE-TAILED FOX UNIT"
+NineTailedfoxunit.TextColor3 = Color3.new(1, 1, 1)
+NineTailedfoxunit.TextSize = 14
+
+DualPinkGuns.Name = "Dual Pink Guns"
+DualPinkGuns.Parent = ListboxFrame
+DualPinkGuns.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+DualPinkGuns.BorderSizePixel = 0
+DualPinkGuns.Position = UDim2.new(0, 0, 0.0158730168, 0)
+DualPinkGuns.Size = UDim2.new(0, 577, 0, 25)
+DualPinkGuns.Font = Enum.Font.SourceSansSemibold
+DualPinkGuns.Text = "DUAL PINK GUNS"
+DualPinkGuns.TextColor3 = Color3.new(1, 1, 1)
+DualPinkGuns.TextSize = 14
+
+ReaperV2.Name = "Reaper V2"
+ReaperV2.Parent = ListboxFrame
+ReaperV2.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ReaperV2.BorderSizePixel = 0
+ReaperV2.Position = UDim2.new(0, 0, 0.0158730168, 0)
+ReaperV2.Size = UDim2.new(0, 577, 0, 25)
+ReaperV2.Font = Enum.Font.SourceSansSemibold
+ReaperV2.Text = "REAPER V2"
+ReaperV2.TextColor3 = Color3.new(1, 1, 1)
+ReaperV2.TextSize = 14
+
+GrabKnifeV4.Name = "Grab Knife V4"
+GrabKnifeV4.Parent = ListboxFrame
+GrabKnifeV4.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+GrabKnifeV4.BorderSizePixel = 0
+GrabKnifeV4.Position = UDim2.new(0, 0, 0.0158730168, 0)
+GrabKnifeV4.Size = UDim2.new(0, 577, 0, 25)
+GrabKnifeV4.Font = Enum.Font.SourceSansSemibold
+GrabKnifeV4.Text = "GRAB KNIFE V4"
+GrabKnifeV4.TextColor3 = Color3.new(1, 1, 1)
+GrabKnifeV4.TextSize = 14
+
+KitchenGun.Name = "Kitchen Gun"
+KitchenGun.Parent = ListboxFrame
+KitchenGun.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+KitchenGun.BorderSizePixel = 0
+KitchenGun.Position = UDim2.new(0, 0, 0.0158730168, 0)
+KitchenGun.Size = UDim2.new(0, 577, 0, 25)
+KitchenGun.Font = Enum.Font.SourceSansSemibold
+KitchenGun.Text = "KITCHEN GUN"
+KitchenGun.TextColor3 = Color3.new(1, 1, 1)
+KitchenGun.TextSize = 14
+
+Zamazu.Name = "Zamazu"
+Zamazu.Parent = ListboxFrame
+Zamazu.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Zamazu.BorderSizePixel = 0
+Zamazu.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Zamazu.Size = UDim2.new(0, 577, 0, 25)
+Zamazu.Font = Enum.Font.SourceSansSemibold
+Zamazu.Text = "ZAMAZU"
+Zamazu.TextColor3 = Color3.new(1, 1, 1)
+Zamazu.TextSize = 14
+
+InsaneGenocidalManiac.Name = "Insane Genocidal Maniac"
+InsaneGenocidalManiac.Parent = ListboxFrame
+InsaneGenocidalManiac.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+InsaneGenocidalManiac.BorderSizePixel = 0
+InsaneGenocidalManiac.Position = UDim2.new(0, 0, 0.0158730168, 0)
+InsaneGenocidalManiac.Size = UDim2.new(0, 577, 0, 25)
+InsaneGenocidalManiac.Font = Enum.Font.SourceSansSemibold
+InsaneGenocidalManiac.Text = "INSANE GENOCIDAL MANIAC"
+InsaneGenocidalManiac.TextColor3 = Color3.new(1, 1, 1)
+InsaneGenocidalManiac.TextSize = 14
+
+ExecutionerBrutallus.Name = "Executioner Brutallus"
+ExecutionerBrutallus.Parent = ListboxFrame
+ExecutionerBrutallus.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ExecutionerBrutallus.BorderSizePixel = 0
+ExecutionerBrutallus.Position = UDim2.new(0, 0, 0.0158730168, 0)
+ExecutionerBrutallus.Size = UDim2.new(0, 577, 0, 25)
+ExecutionerBrutallus.Font = Enum.Font.SourceSansSemibold
+ExecutionerBrutallus.Text = "EXECUTIONER BRUTALLUS"
+ExecutionerBrutallus.TextColor3 = Color3.new(1, 1, 1)
+ExecutionerBrutallus.TextSize = 14
+
+Ecomode.Name = "Eco mode"
+Ecomode.Parent = ListboxFrame
+Ecomode.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Ecomode.BorderSizePixel = 0
+Ecomode.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Ecomode.Size = UDim2.new(0, 577, 0, 25)
+Ecomode.Font = Enum.Font.SourceSansSemibold
+Ecomode.Text = "ECO MODE"
+Ecomode.TextColor3 = Color3.new(1, 1, 1)
+Ecomode.TextSize = 14
+
+DexExplorer.Name = "Dex Explorer"
+DexExplorer.Parent = ListboxFrame
+DexExplorer.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+DexExplorer.BorderSizePixel = 0
+DexExplorer.Position = UDim2.new(0, 0, 0.0158730168, 0)
+DexExplorer.Size = UDim2.new(0, 577, 0, 25)
+DexExplorer.Font = Enum.Font.SourceSansSemibold
+DexExplorer.Text = "DEX EXPLORER"
+DexExplorer.TextColor3 = Color3.new(1, 1, 1)
+DexExplorer.TextSize = 14
+
+MustardGas.Name = "Mustard Gas"
+MustardGas.Parent = ListboxFrame
+MustardGas.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+MustardGas.BorderSizePixel = 0
+MustardGas.Position = UDim2.new(0, 0, 0.0158730168, 0)
+MustardGas.Size = UDim2.new(0, 577, 0, 25)
+MustardGas.Font = Enum.Font.SourceSansSemibold
+MustardGas.Text = "MUSTARD GAS"
+MustardGas.TextColor3 = Color3.new(1, 1, 1)
+MustardGas.TextSize = 14
+
+Goner.Name = "Goner"
+Goner.Parent = ListboxFrame
+Goner.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Goner.BorderSizePixel = 0
+Goner.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Goner.Size = UDim2.new(0, 577, 0, 25)
+Goner.Font = Enum.Font.SourceSansSemibold
+Goner.Text = "GONER"
+Goner.TextColor3 = Color3.new(1, 1, 1)
+Goner.TextSize = 14
+
+ShadowLord.Name = "Shadow Lord"
+ShadowLord.Parent = ListboxFrame
+ShadowLord.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ShadowLord.BorderSizePixel = 0
+ShadowLord.Position = UDim2.new(0, 0, 0.0158730168, 0)
+ShadowLord.Size = UDim2.new(0, 577, 0, 25)
+ShadowLord.Font = Enum.Font.SourceSansSemibold
+ShadowLord.Text = "SHADOW LORD"
+ShadowLord.TextColor3 = Color3.new(1, 1, 1)
+ShadowLord.TextSize = 14
+
+DarkSwordShield.Name = "Dark Sword, Shield"
+DarkSwordShield.Parent = ListboxFrame
+DarkSwordShield.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+DarkSwordShield.BorderSizePixel = 0
+DarkSwordShield.Position = UDim2.new(0, 0, 0.0158730168, 0)
+DarkSwordShield.Size = UDim2.new(0, 577, 0, 25)
+DarkSwordShield.Font = Enum.Font.SourceSansSemibold
+DarkSwordShield.Text = "DARK SWORD, SHIELD"
+DarkSwordShield.TextColor3 = Color3.new(1, 1, 1)
+DarkSwordShield.TextSize = 14
+
+NuclearGun.Name = "Nuclear Gun"
+NuclearGun.Parent = ListboxFrame
+NuclearGun.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+NuclearGun.BorderSizePixel = 0
+NuclearGun.Position = UDim2.new(0, 0, 0.0158730168, 0)
+NuclearGun.Size = UDim2.new(0, 577, 0, 25)
+NuclearGun.Font = Enum.Font.SourceSansSemibold
+NuclearGun.Text = "NUCLEAR GUN"
+NuclearGun.TextColor3 = Color3.new(1, 1, 1)
+NuclearGun.TextSize = 14
+
+ZeusStaff.Name = "Zeus Staff"
+ZeusStaff.Parent = ListboxFrame
+ZeusStaff.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ZeusStaff.BorderSizePixel = 0
+ZeusStaff.Position = UDim2.new(0, 0, 0.0158730168, 0)
+ZeusStaff.Size = UDim2.new(0, 577, 0, 25)
+ZeusStaff.Font = Enum.Font.SourceSansSemibold
+ZeusStaff.Text = "ZEUS STAFF"
+ZeusStaff.TextColor3 = Color3.new(1, 1, 1)
+ZeusStaff.TextSize = 14
+
+Assassin.Name = "Assassin"
+Assassin.Parent = ListboxFrame
+Assassin.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Assassin.BorderSizePixel = 0
+Assassin.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Assassin.Size = UDim2.new(0, 577, 0, 25)
+Assassin.Font = Enum.Font.SourceSansSemibold
+Assassin.Text = "ASSASSIN"
+Assassin.TextColor3 = Color3.new(1, 1, 1)
+Assassin.TextSize = 14
+
+RedTitan.Name = "Red Titan"
+RedTitan.Parent = ListboxFrame
+RedTitan.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+RedTitan.BorderSizePixel = 0
+RedTitan.Position = UDim2.new(0, 0, 0.0158730168, 0)
+RedTitan.Size = UDim2.new(0, 577, 0, 25)
+RedTitan.Font = Enum.Font.SourceSansSemibold
+RedTitan.Text = "RED TITAN"
+RedTitan.TextColor3 = Color3.new(1, 1, 1)
+RedTitan.TextSize = 14
+
+BomberManUltra.Name = "Bomber Man Ultra"
+BomberManUltra.Parent = ListboxFrame
+BomberManUltra.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+BomberManUltra.BorderSizePixel = 0
+BomberManUltra.Position = UDim2.new(0, 0, 0.0158730168, 0)
+BomberManUltra.Size = UDim2.new(0, 577, 0, 25)
+BomberManUltra.Font = Enum.Font.SourceSansSemibold
+BomberManUltra.Text = "BOMBER MAN ULTRA"
+BomberManUltra.TextColor3 = Color3.new(1, 1, 1)
+BomberManUltra.TextSize = 14
+
+TreeSmasher.Name = "Tree Smasher"
+TreeSmasher.Parent = ListboxFrame
+TreeSmasher.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+TreeSmasher.BorderSizePixel = 0
+TreeSmasher.Position = UDim2.new(0, 0, 0.0158730168, 0)
+TreeSmasher.Size = UDim2.new(0, 577, 0, 25)
+TreeSmasher.Font = Enum.Font.SourceSansSemibold
+TreeSmasher.Text = "TREE SMASHER"
+TreeSmasher.TextColor3 = Color3.new(1, 1, 1)
+TreeSmasher.TextSize = 14
+
+Blindreaper.Name = "Blind reaper"
+Blindreaper.Parent = ListboxFrame
+Blindreaper.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Blindreaper.BorderSizePixel = 0
+Blindreaper.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Blindreaper.Size = UDim2.new(0, 577, 0, 25)
+Blindreaper.Font = Enum.Font.SourceSansSemibold
+Blindreaper.Text = "BLIND REAPER"
+Blindreaper.TextColor3 = Color3.new(1, 1, 1)
+Blindreaper.TextSize = 14
+
+SBModerator.Name = "SB Moderator"
+SBModerator.Parent = ListboxFrame
+SBModerator.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+SBModerator.BorderSizePixel = 0
+SBModerator.Position = UDim2.new(0, 0, 0.0158730168, 0)
+SBModerator.Size = UDim2.new(0, 577, 0, 25)
+SBModerator.Font = Enum.Font.SourceSansSemibold
+SBModerator.Text = "SB MODERATOR"
+SBModerator.TextColor3 = Color3.new(1, 1, 1)
+SBModerator.TextSize = 14
+
+FallenAnger.Name = "Fallen Anger"
+FallenAnger.Parent = ListboxFrame
+FallenAnger.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+FallenAnger.BorderSizePixel = 0
+FallenAnger.Position = UDim2.new(0, 0, 0.0158730168, 0)
+FallenAnger.Size = UDim2.new(0, 577, 0, 25)
+FallenAnger.Font = Enum.Font.SourceSansSemibold
+FallenAnger.Text = "FALLEN ANGER"
+FallenAnger.TextColor3 = Color3.new(1, 1, 1)
+FallenAnger.TextSize = 14
+
+ChatHax.Name = "Chat Hax"
+ChatHax.Parent = ListboxFrame
+ChatHax.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ChatHax.BorderSizePixel = 0
+ChatHax.Position = UDim2.new(0, 0, 0.0158730168, 0)
+ChatHax.Size = UDim2.new(0, 577, 0, 25)
+ChatHax.Font = Enum.Font.SourceSansSemibold
+ChatHax.Text = "CHAT HAX"
+ChatHax.TextColor3 = Color3.new(1, 1, 1)
+ChatHax.TextSize = 14
+
+Glock.Name = "Glock"
+Glock.Parent = ListboxFrame
+Glock.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Glock.BorderSizePixel = 0
+Glock.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Glock.Size = UDim2.new(0, 577, 0, 25)
+Glock.Font = Enum.Font.SourceSansSemibold
+Glock.Text = "GLOCK"
+Glock.TextColor3 = Color3.new(1, 1, 1)
+Glock.TextSize = 14
+
+DualBinarySword.Name = "Dual Binary Sword"
+DualBinarySword.Parent = ListboxFrame
+DualBinarySword.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+DualBinarySword.BorderSizePixel = 0
+DualBinarySword.Position = UDim2.new(0, 0, 0.0158730168, 0)
+DualBinarySword.Size = UDim2.new(0, 577, 0, 25)
+DualBinarySword.Font = Enum.Font.SourceSansSemibold
+DualBinarySword.Text = "DUAL BINARY SWORD"
+DualBinarySword.TextColor3 = Color3.new(1, 1, 1)
+DualBinarySword.TextSize = 14
+
+Yupia.Name = "Yupia"
+Yupia.Parent = ListboxFrame
+Yupia.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Yupia.BorderSizePixel = 0
+Yupia.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Yupia.Size = UDim2.new(0, 577, 0, 25)
+Yupia.Font = Enum.Font.SourceSansSemibold
+Yupia.Text = "YUPIA"
+Yupia.TextColor3 = Color3.new(1, 1, 1)
+Yupia.TextSize = 14
+
+BrutalOverlord.Name = "Brutal Overlord"
+BrutalOverlord.Parent = ListboxFrame
+BrutalOverlord.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+BrutalOverlord.BorderSizePixel = 0
+BrutalOverlord.Position = UDim2.new(0, 0, 0.0158730168, 0)
+BrutalOverlord.Size = UDim2.new(0, 577, 0, 25)
+BrutalOverlord.Font = Enum.Font.SourceSansSemibold
+BrutalOverlord.Text = "BRUTAL OVERLORD"
+BrutalOverlord.TextColor3 = Color3.new(1, 1, 1)
+BrutalOverlord.TextSize = 14
+
+SoulReaper.Name = "Soul Reaper"
+SoulReaper.Parent = ListboxFrame
+SoulReaper.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+SoulReaper.BorderSizePixel = 0
+SoulReaper.Position = UDim2.new(0, 0, 0.0158730168, 0)
+SoulReaper.Size = UDim2.new(0, 577, 0, 25)
+SoulReaper.Font = Enum.Font.SourceSansSemibold
+SoulReaper.Text = "SOUL REAPER"
+SoulReaper.TextColor3 = Color3.new(1, 1, 1)
+SoulReaper.TextSize = 14
+
+Chara.Name = "Chara"
+Chara.Parent = ListboxFrame
+Chara.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Chara.BorderSizePixel = 0
+Chara.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Chara.Size = UDim2.new(0, 577, 0, 25)
+Chara.Font = Enum.Font.SourceSansSemibold
+Chara.Text = "CHARA"
+Chara.TextColor3 = Color3.new(1, 1, 1)
+Chara.TextSize = 14
+
+RuinEX.Name = "RuinEX"
+RuinEX.Parent = ListboxFrame
+RuinEX.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+RuinEX.BorderSizePixel = 0
+RuinEX.Position = UDim2.new(0, 0, 0.0158730168, 0)
+RuinEX.Size = UDim2.new(0, 577, 0, 25)
+RuinEX.Font = Enum.Font.SourceSansSemibold
+RuinEX.Text = "RUINEX"
+RuinEX.TextColor3 = Color3.new(1, 1, 1)
+RuinEX.TextSize = 14
+
+GodSlayer.Name = "God Slayer"
+GodSlayer.Parent = ListboxFrame
+GodSlayer.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+GodSlayer.BorderSizePixel = 0
+GodSlayer.Position = UDim2.new(0, 0, 0.0158730168, 0)
+GodSlayer.Size = UDim2.new(0, 577, 0, 25)
+GodSlayer.Font = Enum.Font.SourceSansSemibold
+GodSlayer.Text = "GOD SLAYER"
+GodSlayer.TextColor3 = Color3.new(1, 1, 1)
+GodSlayer.TextSize = 14
+
+GoodCopBadCop.Name = "Good Cop Bad Cop"
+GoodCopBadCop.Parent = ListboxFrame
+GoodCopBadCop.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+GoodCopBadCop.BorderSizePixel = 0
+GoodCopBadCop.Position = UDim2.new(0, 0, 0.0158730168, 0)
+GoodCopBadCop.Size = UDim2.new(0, 577, 0, 25)
+GoodCopBadCop.Font = Enum.Font.SourceSansSemibold
+GoodCopBadCop.Text = "GOOD COP BAD COP"
+GoodCopBadCop.TextColor3 = Color3.new(1, 1, 1)
+GoodCopBadCop.TextSize = 14
+
+MMLAdminmodified.Name = "MML Admin [modified]"
+MMLAdminmodified.Parent = ListboxFrame
+MMLAdminmodified.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+MMLAdminmodified.BorderSizePixel = 0
+MMLAdminmodified.Position = UDim2.new(0, 0, 0.0158730168, 0)
+MMLAdminmodified.Size = UDim2.new(0, 577, 0, 25)
+MMLAdminmodified.Font = Enum.Font.SourceSansSemibold
+MMLAdminmodified.Text = "MML ADMIN [MODIFIED]"
+MMLAdminmodified.TextColor3 = Color3.new(1, 1, 1)
+MMLAdminmodified.TextSize = 14
+
+BloodHarvester.Name = "Blood Harvester"
+BloodHarvester.Parent = ListboxFrame
+BloodHarvester.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+BloodHarvester.BorderSizePixel = 0
+BloodHarvester.Position = UDim2.new(0, 0, 0.0158730168, 0)
+BloodHarvester.Size = UDim2.new(0, 577, 0, 25)
+BloodHarvester.Font = Enum.Font.SourceSansSemibold
+BloodHarvester.Text = "BLOOD HARVESTER"
+BloodHarvester.TextColor3 = Color3.new(1, 1, 1)
+BloodHarvester.TextSize = 14
+
+Etheralglitcherv2.Name = "Etheral glitcher v2"
+Etheralglitcherv2.Parent = ListboxFrame
+Etheralglitcherv2.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Etheralglitcherv2.BorderSizePixel = 0
+Etheralglitcherv2.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Etheralglitcherv2.Size = UDim2.new(0, 577, 0, 25)
+Etheralglitcherv2.Font = Enum.Font.SourceSansSemibold
+Etheralglitcherv2.Text = "ETHERAL GLITCHER V2"
+Etheralglitcherv2.TextColor3 = Color3.new(1, 1, 1)
+Etheralglitcherv2.TextSize = 14
+
+BlueSword.Name = "Blue Sword"
+BlueSword.Parent = ListboxFrame
+BlueSword.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+BlueSword.BorderSizePixel = 0
+BlueSword.Position = UDim2.new(0, 0, 0.0158730168, 0)
+BlueSword.Size = UDim2.new(0, 577, 0, 25)
+BlueSword.Font = Enum.Font.SourceSansSemibold
+BlueSword.Text = "BLUE SWORD"
+BlueSword.TextColor3 = Color3.new(1, 1, 1)
+BlueSword.TextSize = 14
+
+UltimateTrollingGUIRemake.Name = "Ultimate Trolling GUI [Remake]"
+UltimateTrollingGUIRemake.Parent = ListboxFrame
+UltimateTrollingGUIRemake.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+UltimateTrollingGUIRemake.BorderSizePixel = 0
+UltimateTrollingGUIRemake.Position = UDim2.new(0, 0, 0.0158730168, 0)
+UltimateTrollingGUIRemake.Size = UDim2.new(0, 577, 0, 25)
+UltimateTrollingGUIRemake.Font = Enum.Font.SourceSansSemibold
+UltimateTrollingGUIRemake.Text = "ULTIMATE TROLLING GUI [REMAKE]"
+UltimateTrollingGUIRemake.TextColor3 = Color3.new(1, 1, 1)
+UltimateTrollingGUIRemake.TextSize = 14
+
+ChaoticGlitcher.Name = "Chaotic Glitcher"
+ChaoticGlitcher.Parent = ListboxFrame
+ChaoticGlitcher.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ChaoticGlitcher.BorderSizePixel = 0
+ChaoticGlitcher.Position = UDim2.new(0, 0, 0.0158730168, 0)
+ChaoticGlitcher.Size = UDim2.new(0, 577, 0, 25)
+ChaoticGlitcher.Font = Enum.Font.SourceSansSemibold
+ChaoticGlitcher.Text = "CHAOTIC GLITCHER"
+ChaoticGlitcher.TextColor3 = Color3.new(1, 1, 1)
+ChaoticGlitcher.TextSize = 14
+
+RainbowTitan.Name = "Rainbow Titan"
+RainbowTitan.Parent = ListboxFrame
+RainbowTitan.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+RainbowTitan.BorderSizePixel = 0
+RainbowTitan.Position = UDim2.new(0, 0, 0.0158730168, 0)
+RainbowTitan.Size = UDim2.new(0, 577, 0, 25)
+RainbowTitan.Font = Enum.Font.SourceSansSemibold
+RainbowTitan.Text = "RAINBOW TITAN"
+RainbowTitan.TextColor3 = Color3.new(1, 1, 1)
+RainbowTitan.TextSize = 14
+
+VaporGun.Name = "VaporGun"
+VaporGun.Parent = ListboxFrame
+VaporGun.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+VaporGun.BorderSizePixel = 0
+VaporGun.Position = UDim2.new(0, 0, 0.0158730168, 0)
+VaporGun.Size = UDim2.new(0, 577, 0, 25)
+VaporGun.Font = Enum.Font.SourceSansSemibold
+VaporGun.Text = "VAPORGUN"
+VaporGun.TextColor3 = Color3.new(1, 1, 1)
+VaporGun.TextSize = 14
+
+ThomasTheTankEngine.Name = "Thomas The Tank Engine"
+ThomasTheTankEngine.Parent = ListboxFrame
+ThomasTheTankEngine.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ThomasTheTankEngine.BorderSizePixel = 0
+ThomasTheTankEngine.Position = UDim2.new(0, 0, 0.0158730168, 0)
+ThomasTheTankEngine.Size = UDim2.new(0, 577, 0, 25)
+ThomasTheTankEngine.Font = Enum.Font.SourceSansSemibold
+ThomasTheTankEngine.Text = "THOMAS THE TANK ENGINE"
+ThomasTheTankEngine.TextColor3 = Color3.new(1, 1, 1)
+ThomasTheTankEngine.TextSize = 14
+
+Rogue.Name = "Rogue"
+Rogue.Parent = ListboxFrame
+Rogue.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Rogue.BorderSizePixel = 0
+Rogue.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Rogue.Size = UDim2.new(0, 577, 0, 25)
+Rogue.Font = Enum.Font.SourceSansSemibold
+Rogue.Text = "ROGUE"
+Rogue.TextColor3 = Color3.new(1, 1, 1)
+Rogue.TextSize = 14
+
+AbsylumV2.Name = "Absylum V2"
+AbsylumV2.Parent = ListboxFrame
+AbsylumV2.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+AbsylumV2.BorderSizePixel = 0
+AbsylumV2.Position = UDim2.new(0, 0, 0.0158730168, 0)
+AbsylumV2.Size = UDim2.new(0, 577, 0, 25)
+AbsylumV2.Font = Enum.Font.SourceSansSemibold
+AbsylumV2.Text = "ABSYLUM V2"
+AbsylumV2.TextColor3 = Color3.new(1, 1, 1)
+AbsylumV2.TextSize = 14
+
+SuicideGun.Name = "Suicide Gun"
+SuicideGun.Parent = ListboxFrame
+SuicideGun.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+SuicideGun.BorderSizePixel = 0
+SuicideGun.Position = UDim2.new(0, 0, 0.0158730168, 0)
+SuicideGun.Size = UDim2.new(0, 577, 0, 25)
+SuicideGun.Font = Enum.Font.SourceSansSemibold
+SuicideGun.Text = "SUICIDE GUN"
+SuicideGun.TextColor3 = Color3.new(1, 1, 1)
+SuicideGun.TextSize = 14
+
+CaducustheFallenGod.Name = "Caducus the Fallen God"
+CaducustheFallenGod.Parent = ListboxFrame
+CaducustheFallenGod.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+CaducustheFallenGod.BorderSizePixel = 0
+CaducustheFallenGod.Position = UDim2.new(0, 0, 0.0158730168, 0)
+CaducustheFallenGod.Size = UDim2.new(0, 577, 0, 25)
+CaducustheFallenGod.Font = Enum.Font.SourceSansSemibold
+CaducustheFallenGod.Text = "CADUCUS THE FALLEN GOD"
+CaducustheFallenGod.TextColor3 = Color3.new(1, 1, 1)
+CaducustheFallenGod.TextSize = 14
+
+GoldenGun.Name = "Golden Gun"
+GoldenGun.Parent = ListboxFrame
+GoldenGun.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+GoldenGun.BorderSizePixel = 0
+GoldenGun.Position = UDim2.new(0, 0, 0.0158730168, 0)
+GoldenGun.Size = UDim2.new(0, 577, 0, 25)
+GoldenGun.Font = Enum.Font.SourceSansSemibold
+GoldenGun.Text = "GOLDEN GUN"
+GoldenGun.TextColor3 = Color3.new(1, 1, 1)
+GoldenGun.TextSize = 14
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = ListboxFrame
+InfiniteYield.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0, 0, 0.0158730168, 0)
+InfiniteYield.Size = UDim2.new(0, 577, 0, 25)
+InfiniteYield.Font = Enum.Font.SourceSansSemibold
+InfiniteYield.Text = "INFINITE YIELD"
+InfiniteYield.TextColor3 = Color3.new(1, 1, 1)
+InfiniteYield.TextSize = 14
+
+GreenKatana.Name = "Green Katana"
+GreenKatana.Parent = ListboxFrame
+GreenKatana.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+GreenKatana.BorderSizePixel = 0
+GreenKatana.Position = UDim2.new(0, 0, 0.0158730168, 0)
+GreenKatana.Size = UDim2.new(0, 577, 0, 25)
+GreenKatana.Font = Enum.Font.SourceSansSemibold
+GreenKatana.Text = "GREEN KATANA"
+GreenKatana.TextColor3 = Color3.new(1, 1, 1)
+GreenKatana.TextSize = 14
+
+Glock22.Name = "Glock 22"
+Glock22.Parent = ListboxFrame
+Glock22.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Glock22.BorderSizePixel = 0
+Glock22.Position = UDim2.new(0, 0, 0.0158730168, 0)
+Glock22.Size = UDim2.new(0, 577, 0, 25)
+Glock22.Font = Enum.Font.SourceSansSemibold
+Glock22.Text = "GLOCK 22"
+Glock22.TextColor3 = Color3.new(1, 1, 1)
+Glock22.TextSize = 14
+
+PurpleHeartSword.Name = "Purple Heart Sword"
+PurpleHeartSword.Parent = ListboxFrame
+PurpleHeartSword.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+PurpleHeartSword.BorderSizePixel = 0
+PurpleHeartSword.Position = UDim2.new(0, 0, 0.0158730168, 0)
+PurpleHeartSword.Size = UDim2.new(0, 577, 0, 25)
+PurpleHeartSword.Font = Enum.Font.SourceSansSemibold
+PurpleHeartSword.Text = "PURPLE HEART SWORD"
+PurpleHeartSword.TextColor3 = Color3.new(1, 1, 1)
+PurpleHeartSword.TextSize = 14
+
+NeptunianV.Name = "Neptunian V"
+NeptunianV.Parent = ListboxFrame
+NeptunianV.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+NeptunianV.BorderSizePixel = 0
+NeptunianV.Position = UDim2.new(0, 0, 0.0158730168, 0)
+NeptunianV.Size = UDim2.new(0, 577, 0, 25)
+NeptunianV.Font = Enum.Font.SourceSansSemibold
+NeptunianV.Text = "NEPTUNIAN V"
+NeptunianV.TextColor3 = Color3.new(1, 1, 1)
+NeptunianV.TextSize = 14
+
+UniversalGlitcher.Name = "Universal Glitcher"
+UniversalGlitcher.Parent = ListboxFrame
+UniversalGlitcher.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+UniversalGlitcher.BorderSizePixel = 0
+UniversalGlitcher.Position = UDim2.new(0, 0, 0.0158730168, 0)
+UniversalGlitcher.Size = UDim2.new(0, 577, 0, 25)
+UniversalGlitcher.Font = Enum.Font.SourceSansSemibold
+UniversalGlitcher.Text = "UNIVERSAL GLITCHER"
+UniversalGlitcher.TextColor3 = Color3.new(1, 1, 1)
+UniversalGlitcher.TextSize = 14
+
+DeathNote.Name = "Death Note"
+DeathNote.Parent = ListboxFrame
+DeathNote.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+DeathNote.BorderSizePixel = 0
+DeathNote.Position = UDim2.new(0, 0, 0.0158730168, 0)
+DeathNote.Size = UDim2.new(0, 577, 0, 25)
+DeathNote.Font = Enum.Font.SourceSansSemibold
+DeathNote.Text = "DEATH NOTE"
+DeathNote.TextColor3 = Color3.new(1, 1, 1)
+DeathNote.TextSize = 14
+
+SSGUI.Name = "SS GUI"
+SSGUI.Parent = ListboxFrame
+SSGUI.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+SSGUI.BorderSizePixel = 0
+SSGUI.Position = UDim2.new(0, 0, 0.0158730168, 0)
+SSGUI.Size = UDim2.new(0, 577, 0, 25)
+SSGUI.Font = Enum.Font.SourceSansSemibold
+SSGUI.Text = "SS GUI"
+SSGUI.TextColor3 = Color3.new(1, 1, 1)
+SSGUI.TextSize = 14
+
+SkullKid.Name = "Skull Kid"
+SkullKid.Parent = ListboxFrame
+SkullKid.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+SkullKid.BorderSizePixel = 0
+SkullKid.Position = UDim2.new(0, 0, 0.0158730168, 0)
+SkullKid.Size = UDim2.new(0, 577, 0, 25)
+SkullKid.Font = Enum.Font.SourceSansSemibold
+SkullKid.Text = "SKULL KID"
+SkullKid.TextColor3 = Color3.new(1, 1, 1)
+SkullKid.TextSize = 14
+
+_smoothinputframe.Name = "_smoothinputframe"
+_smoothinputframe.Parent = Listbox
+_smoothinputframe.BackgroundColor3 = Color3.new(1, 1, 1)
+_smoothinputframe.BackgroundTransparency = 1
+_smoothinputframe.BorderSizePixel = 0
+_smoothinputframe.Position = UDim2.new(0, 0, 0.101587296, 0)
+_smoothinputframe.Size = UDim2.new(0, 589, 0, 273)
+_smoothinputframe.ZIndex = 2
+_smoothinputframe.CanvasSize = UDim2.new(0, 0, 0, 2236)
+_smoothinputframe.ScrollBarThickness = 2
+
+Settings.Name = "Settings"
+Settings.Parent = ExecutorFrame
+Settings.BackgroundColor3 = Color3.new(1, 1, 1)
+Settings.BackgroundTransparency = 1
+Settings.Position = UDim2.new(0.85992837, 0, 0.88724035, 0)
+Settings.Size = UDim2.new(0, 33, 0, 31)
+Settings.Image = "rbxassetid://135740223"
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = Settings
+SettingsFrame.Active = true
+SettingsFrame.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+SettingsFrame.BorderColor3 = Color3.new(0.152941, 0.152941, 0.152941)
+SettingsFrame.Position = UDim2.new(-9.81818199, 0, -9.64516163, 0)
+SettingsFrame.Selectable = true
+SettingsFrame.Size = UDim2.new(0, 254, 0, 262)
+SettingsFrame.Visible = false
+
+Border.Name = "Border"
+Border.Parent = SettingsFrame
+Border.BackgroundColor3 = Color3.new(0.203922, 0.34902, 1)
+Border.BorderSizePixel = 0
+Border.Position = UDim2.new(0, 0, 0.112107627, 0)
+Border.Size = UDim2.new(0, 254, 0, 4)
+
+TopText_2.Name = "TopText"
+TopText_2.Parent = Border
+TopText_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TopText_2.BackgroundTransparency = 1
+TopText_2.Position = UDim2.new(0, 0, -6, 0)
+TopText_2.Size = UDim2.new(0, 254, 0, 24)
+TopText_2.Font = Enum.Font.SourceSansSemibold
+TopText_2.Text = "SETTINGS"
+TopText_2.TextColor3 = Color3.new(1, 1, 1)
+TopText_2.TextScaled = true
+TopText_2.TextSize = 14
+TopText_2.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Border
+Close.BackgroundColor3 = Color3.new(1, 1, 1)
+Close.BackgroundTransparency = 1
+Close.Position = UDim2.new(0.819693446, 0, -5.75, 0)
+Close.Size = UDim2.new(0, 45, 0, 23)
+Close.Font = Enum.Font.SourceSansBold
+Close.Text = "X"
+Close.TextColor3 = Color3.new(0.635294, 0.635294, 0.635294)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextTransparency = 0.5
+Close.TextWrapped = true
+
+Setting1.Name = "Setting1"
+Setting1.Parent = SettingsFrame
+Setting1.BackgroundColor3 = Color3.new(1, 1, 1)
+Setting1.BackgroundTransparency = 1
+Setting1.Position = UDim2.new(0.148936108, 0, 0.183856502, 0)
+Setting1.Size = UDim2.new(0, 162, 0, 31)
+Setting1.Font = Enum.Font.SourceSans
+Setting1.Text = "Beta:"
+Setting1.TextColor3 = Color3.new(1, 1, 1)
+Setting1.TextSize = 21
+
+check.Name = "check"
+check.Parent = Setting1
+check.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+check.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+check.Position = UDim2.new(0.88271606, 0, 0.193548441, 0)
+check.Size = UDim2.new(0, 19, 0, 19)
+check.Font = Enum.Font.SourceSans
+check.Text = ""
+check.TextColor3 = Color3.new(0, 0, 0)
+check.TextSize = 14
+
+Setting2.Name = "Setting2"
+Setting2.Parent = SettingsFrame
+Setting2.BackgroundColor3 = Color3.new(1, 1, 1)
+Setting2.BackgroundTransparency = 1
+Setting2.Position = UDim2.new(0.148936108, 0, 0.302177131, 0)
+Setting2.Size = UDim2.new(0, 162, 0, 31)
+Setting2.Font = Enum.Font.SourceSans
+Setting2.Text = "View error messages:"
+Setting2.TextColor3 = Color3.new(1, 1, 1)
+Setting2.TextSize = 18
+Setting2.TextWrapped = true
+Setting2.TextXAlignment = Enum.TextXAlignment.Left
+
+check_2.Name = "check"
+check_2.Parent = Setting2
+check_2.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+check_2.BorderColor3 = Color3.new(0.6, 0.6, 0.6)
+check_2.Position = UDim2.new(0.88271606, 0, 0.193548441, 0)
+check_2.Size = UDim2.new(0, 19, 0, 19)
+check_2.Font = Enum.Font.SourceSans
+check_2.Text = ""
+check_2.TextColor3 = Color3.new(0, 0, 0)
+check_2.TextSize = 14
+
+BorderHorizontal.Name = "BorderHorizontal"
+BorderHorizontal.Parent = MainFrame
+BorderHorizontal.BackgroundColor3 = Color3.new(0.152941, 0.490196, 1)
+BorderHorizontal.BorderSizePixel = 0
+BorderHorizontal.Position = UDim2.new(0, 0, 0.106082566, 0)
+BorderHorizontal.Size = UDim2.new(0, 593, 0, 3)
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0, 0, 0.0315789469, 0)
+Title.Size = UDim2.new(0, 588, 0, 27)
+
+Hide.Name = "Hide"
+Hide.Parent = Title
+Hide.BackgroundColor3 = Color3.new(1, 1, 1)
+Hide.BackgroundTransparency = 1
+Hide.Position = UDim2.new(0.847006738, 0, 0.32905975, -11)
+Hide.Size = UDim2.new(0, 84, 0, 22)
+Hide.Font = Enum.Font.SourceSansSemibold
+Hide.Text = "HIDE"
+Hide.TextColor3 = Color3.new(1, 1, 1)
+Hide.TextSize = 23
+
+Liner.Name = "Liner"
+Liner.Parent = Hide
+Liner.BackgroundColor3 = Color3.new(1, 1, 1)
+Liner.BorderSizePixel = 0
+Liner.Position = UDim2.new(0.583333313, -27, 0.900000155, 0)
+Liner.Size = UDim2.new(0, 39, 0, 2)
+Liner.Visible = false
+
+Version.Name = "Version"
+Version.Parent = Title
+Version.BackgroundColor3 = Color3.new(1, 1, 1)
+Version.BackgroundTransparency = 1
+Version.Position = UDim2.new(0.198979586, -37, 0.648148179, -17)
+Version.Size = UDim2.new(0, 56, 0, 20)
+Version.Font = Enum.Font.SourceSansLight
+Version.Text = "V1.3.0"
+Version.TextColor3 = Color3.new(1, 1, 1)
+Version.TextScaled = true
+Version.TextSize = 14
+Version.TextWrapped = true
+
+SinnerName.Name = "SinnerName"
+SinnerName.Parent = Title
+SinnerName.BackgroundColor3 = Color3.new(1, 1, 1)
+SinnerName.BackgroundTransparency = 1
+SinnerName.Position = UDim2.new(0.00510204071, 0, 0.240740746, -13)
+SinnerName.Size = UDim2.new(0, 88, 0, 27)
+SinnerName.Font = Enum.Font.SourceSansSemibold
+SinnerName.Text = "SINNER"
+SinnerName.TextColor3 = Color3.new(1, 1, 1)
+SinnerName.TextScaled = true
+SinnerName.TextSize = 14
+SinnerName.TextWrapped = true
+
+PanelLeft.Name = "PanelLeft"
+PanelLeft.Parent = MainFrame
+PanelLeft.BackgroundColor3 = Color3.new(1, 1, 1)
+PanelLeft.Size = UDim2.new(0, 100, 0, 100)
+PanelLeft.Visible = false
+
+ErrorMessage.Name = "ErrorMessage"
+ErrorMessage.Parent = SinnerV21
+ErrorMessage.Active = true
+ErrorMessage.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+ErrorMessage.BorderSizePixel = 0
+ErrorMessage.Position = UDim2.new(0.00600000005, 0, 0.462000012, 0)
+ErrorMessage.Selectable = true
+ErrorMessage.Size = UDim2.new(0, 255, 0, 170)
+ErrorMessage.Visible = false
+
+Border_2.Name = "Border"
+Border_2.Parent = ErrorMessage
+Border_2.BackgroundColor3 = Color3.new(0.152941, 0.490196, 1)
+Border_2.BorderSizePixel = 0
+Border_2.Position = UDim2.new(-0.00208183727, 0, 0.160583049, 0)
+Border_2.Size = UDim2.new(0, 255, 0, 7)
+
+TopText_3.Name = "TopText"
+TopText_3.Parent = Border_2
+TopText_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TopText_3.BackgroundTransparency = 1
+TopText_3.Position = UDim2.new(0, 0, -3.14285707, 0)
+TopText_3.Size = UDim2.new(0, 255, 0, 22)
+TopText_3.Font = Enum.Font.SourceSansSemibold
+TopText_3.Text = "AN ERROR HAS OCCURED!"
+TopText_3.TextColor3 = Color3.new(1, 1, 1)
+TopText_3.TextScaled = true
+TopText_3.TextSize = 14
+TopText_3.TextWrapped = true
+
+Error.Name = "Error"
+Error.Parent = ErrorMessage
+Error.BackgroundColor3 = Color3.new(1, 1, 1)
+Error.BackgroundTransparency = 1
+Error.Position = UDim2.new(0, 0, 0.2058824, 0)
+Error.Size = UDim2.new(0, 254, 0, 94)
+Error.Font = Enum.Font.SourceSansSemibold
+Error.Text = "Players.KRKzazaTHAI.PlayerGui.Sinner V2.1.Credits.LocalScript:2: attempt to index field 'Parent' (a nil value) Players.KRKzazaTHAI.PlayerGui.Sinner V2.1.Credits.LocalScript, line 2\n"
+Error.TextColor3 = Color3.new(0.882353, 0.0823529, 0.0823529)
+Error.TextScaled = true
+Error.TextSize = 14
+Error.TextStrokeTransparency = 0
+Error.TextWrapped = true
+
+Dismiss.Name = "Dismiss"
+Dismiss.Parent = ErrorMessage
+Dismiss.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+Dismiss.BorderSizePixel = 0
+Dismiss.Position = UDim2.new(0.34117648, 0, 0.800634742, 0)
+Dismiss.Size = UDim2.new(0, 70, 0, 24)
+Dismiss.Font = Enum.Font.SourceSansSemibold
+Dismiss.Text = "DISMISS"
+Dismiss.TextColor3 = Color3.new(1, 1, 1)
+Dismiss.TextScaled = true
+Dismiss.TextSize = 14
+Dismiss.TextWrapped = true
+
+ErrorFrame.Name = "ErrorFrame"
+ErrorFrame.Parent = SinnerV21
+ErrorFrame.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+ErrorFrame.BorderSizePixel = 0
+ErrorFrame.Position = UDim2.new(0.336625516, 0, 0.263392866, 0)
+ErrorFrame.Size = UDim2.new(0, 396, 0, 212)
+ErrorFrame.Visible = false
+
+TextLabel.Parent = ErrorFrame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Size = UDim2.new(0, 396, 0, 212)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Hey man, you just tried to use Sinner on VSB, don't you know that is against Sinner's rules? Didn't your mom teach you to always follow the rules, now you have to worry about this message not disappearing"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+-- Scripts:
+function SCRIPT_GZLE76_FAKESCRIPT() -- SinnerV21.AntiBan 
+	local script = Instance.new('Script')
+	script.Parent = SinnerV21
+	local getplayers = game.Players:GetChildren()
+	local bannedplayers = {}
+	
+	for i,v in pairs(getplayers) do
+	v.Chatted:Connect(function(msg)
+	local check = string.sub(msg, 1,5) or string.sub(msg, 1,4) or string.sub(msg,1,6)
+	if check == ":ban " or check == ";ban " or check == "ban " or check == ">ban " or check == "!ban " or check == "!kick " or check == ":kick " or check == ";kick " then
+	v:Kick("Don't attempt to ban/kick at this moment.")
+	table.insert(bannedplayers, v.Name)
+	end
+	end)
+	end
+	
+	game.Players.PlayerAdded:Connect(function(player)
+	for i,v in pairs(bannedplayers) do
+	if player.Name == v.Name then
+	player:Kick('Unable to connect to server')
+	end
+	end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_GZLE76_FAKESCRIPT))
+function SCRIPT_UPNY76_FAKESCRIPT() -- SinnerV21.MainScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = SinnerV21
+	local Helper = require(script.Helper)--My module with some useful functions.
+	local Player = Helper:GetPlayer()--Just getting the LocalPlayer
+	local Mouse = Helper:GetMouse()
+	local Gui = script.Parent
+	local ExecutorFrame = Gui.MainFrame.Frames.ExecutorFrame
+	local ExecutorButtons = ExecutorFrame.Buttons
+	local Scroll = ExecutorFrame.CodeScroll
+	local Code = Scroll.Code
+	local Line = Scroll.Lines
+	script.Parent.LoadingFrame.Visible = true
+	script.Parent.MainFrame.Visible = false
+	script.Parent.LoadingFrame.Visible = true
+	--script.Parent.MainFrame.Position = UDim2.new(0.564, -296,3, -158)
+	do
+	local Loading = true
+	local Dots = "."
+	
+	--Loading animation ends.
+	
+	script.Parent.MainFrame.Draggable = true -- Have to use Roblox's deprecated drag feature so that the scrolling works.
+	
+	Mouse.KeyDown:Connect(function(key)
+		if key == 'p' then
+			Gui.MainFrame.Visible = not Gui.MainFrame.Visible
+			if Gui.MainFrame.Visible == true then
+			script.Parent.Show.Visible = false
+			else
+			script.Parent.Show.Visible = true
+			end
+		end
+	end)
+	--Open/Close function ends.
+		
+	--Dimiss Button
+	local Hide = Gui.MainFrame.Title.Hide
+	Hide.MouseEnter:Connect(function()
+	Hide.Liner.Visible = true
+	end)
+	
+	Hide.MouseLeave:Connect(function()
+	Hide.Liner.Visible = false
+	end)
+	
+	Hide.MouseButton1Click:Connect(function()
+	script.Parent.Show.Visible = true
+	script.Parent.MainFrame.Visible = false
+	end)
+	script.Parent.Show.MouseButton1Click:Connect(function()
+	script.Parent.MainFrame.Visible = true
+	script.Parent.Show.Visible = false
+	end)
+	--Dimiss Button ends.
+	
+	--Always Server-Side Tick
+	local AlwaysServerSideButton = Gui.MainFrame.Frames.ExecutorFrame.Buttons.AlwaysServerSide
+	local AlwaysServerSideIsActive = true
+	AlwaysServerSideButton.MouseButton1Click:Connect(function()
+		AlwaysServerSideButton.Tick.Visible = not AlwaysServerSideIsActive
+		AlwaysServerSideIsActive = not AlwaysServerSideIsActive
+	end)
+	--Always Server-Side Tick ends
+	
+	
+	--ExecuteFrame Setting.
+	ExecutorButtons.Execute.MouseButton1Click:Connect(function()
+		if AlwaysServerSideIsActive then
+			script.Remote:InvokeServer({Function = "Execute",Args={Code.Text}})
+		else
+			local Env = setmetatable({},{__index=function(_,Function)
+				return getfenv(0)[Function] or function(...)
+					local Data = {}
+					Data["Function"] = Function
+					Data["Args"] = {...}
+					return script.Remote:InvokeServer(Data)
+				end
+			end})
+			Env["LocalPlayer"] = Player
+			Env["Mouse"] = Mouse
+			Env["loadstring"] = function(...) return Helper:loadstring(...) end
+			Helper:loadstring(Code.Text,Env)()
+		end
+	end)
+	
+	ExecutorButtons.Clear.MouseButton1Click:Connect(function()
+	for i = 1,10 do
+	Code.TextTransparency = Code.TextTransparency + 0.1
+	wait()
+	end
+	Code.TextTransparency = 0
+	Code.Text = ''
+	end)
+	
+	--[[
+	ExecutorButtons.Clear.OpenListbox.MouseButton1Click:Connect(function()
+		
+		ExecutorButtons.Clear.Listbox.Visible = true
+		ExecutorButtons.Clear.OpenListbox.Visible = false
+	end)]]
+	
+	--ExecuteFrame Setting ends.
+	
+	local Lua_Highlight = {"and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"}
+	local Env_Highlight = {"getrawmetatable", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16"}
+	local Tokens_Highlight = {["="] = true,["."] = true,[","] = true,["("] = true,[")"] = true,["["] = true,["]"] = true,["{"] = true,["}"] = true,[":"] = true,["*"] = true,["/"] = true,["+"] = true,["-"] = true,["%"] = true,[";"] = true,["~"] = true}
+	local Events_Highlight = {"FireServer", "fireServer", "InvokeServer", "invokeServer"}
+	local Custom_Highlight = script.Remote:InvokeServer({Function = "GetFunctions",Args={}})
+	
+	local function Highlight(String, Keywords)
+		local ToHighlight = {}
+		for _, Word in pairs(Keywords) do
+			ToHighlight[Word] = true
+		end
+		String = String:gsub(".",function(Character)
+			return Tokens_Highlight[Character] and "\32" or Character
+		end)
+	    return String:gsub("%S+", function(Word)
+	  		return ToHighlight[Word] and Word or ("\32"):rep(#Word)
+	    end)
+	end
+	
+	local function Strings(String)
+	    local QuoteOpen = false
+	    return String:gsub("%S", function(Character)
+			if Character == '"' or Character == "'" then
+				QuoteOpen = not QuoteOpen
+				return Character
+			end
+			return QuoteOpen and Character or "\32"
+	    end)
+	end
+	
+	local function Comments(String)
+		local CommentaryOpen = false
+		String = String:gsub("%-%-",function(Commentary) return "\255" end)
+		String = String:gsub("\n",function(Commentary) return "\254" end)
+		return String:gsub("%S",function(Character)
+			if Character == "\255" then
+				CommentaryOpen = true
+				return "--"
+			elseif Character == "\254" then
+				CommentaryOpen = false
+				return "\n"
+			end
+			return CommentaryOpen and Character or "\32"
+		end)
+	end
+	
+	local function Numbers(String)
+		return String:gsub("%S",function(Character)
+				return type(tonumber(Character)) == "number" and Character  or "\32"
+			end)
+	end
+	
+	local function HighlightCode(Property)
+		if Property == "Text" then
+			local Lines = 1
+			Code.Text:gsub("\n",function() Lines = ' ' ..Lines+1 end)
+			local LinesText = ""
+			for i = 1,Lines do
+				LinesText = LinesText..i.."\n"
+			end
+			local Extents = (#tostring(Lines)*7)+3
+			local TextSize = Code.TextBounds
+			Line.Text = LinesText
+			Code.Position = UDim2.new(0,Extents+1,0,0)
+			Scroll.CanvasSize = UDim2.new(0,TextSize.X+Extents+1,0,TextSize.Y)
+			Code.Size = UDim2.new(0, TextSize.X > 558 and TextSize.X or 600,0,TextSize.Y > 246 and TextSize.Y or 300)
+			Line.Size = UDim2.new(0, Extents,0, TextSize.Y > 183 and TextSize.Y or 1000)
+			Code.Keywords.Text = Highlight(Code.Text, Lua_Highlight)
+			Code.Globals.Text = Highlight(Code.Text, Env_Highlight)
+			Code.RemoteHighlight.Text = Highlight(Code.Text, Events_Highlight)
+			Code.Custom.Text = Highlight(Code.Text,Custom_Highlight)
+			Code.Numbers.Text = Numbers(Code.Text)
+			Code.Strings.Text = Strings(Code.Text)
+			Code.Comments.Text = Comments(Code.Text)
+		end
+	end
+	
+	Code.Changed:Connect(HighlightCode)
+	
+	HighlightCode('Text')
+	
+	for _,_Button in pairs(Gui.MainFrame.PanelLeft:GetChildren()) do
+		_Button.MouseButton1Click:Connect(function()
+			for _,Button in pairs(_Button.Parent:GetChildren()) do
+				Gui.MainFrame.Frames[Button.Name.."Frame"].Visible = Button == _Button
+			end	
+		end)
+	end
+	end
+	
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_UPNY76_FAKESCRIPT))
+function SCRIPT_NQQQ75_FAKESCRIPT() -- Frames.FramesHandler 
+	local script = Instance.new('LocalScript')
+	script.Parent = Frames
+	script.Parent.ClipsDescendants = true
+	
+	script.Parent.ExecutorFrame.CodeScroll.Code.Text = [[
+	print("Hello world!")
+	]]
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_NQQQ75_FAKESCRIPT))
+function SCRIPT_GJKX84_FAKESCRIPT() -- TweenExecutor.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = TweenExecutor
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent.ExecutorFrame:TweenPosition(UDim2.new(-0.004, 0,0.001, 0))
+	script.Parent.Parent.TopText.Visible = false
+	script.Parent.Parent:TweenPosition(UDim2.new(-1.005, 0,-0.012, 0))
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_GJKX84_FAKESCRIPT))
+function SCRIPT_BUFJ82_FAKESCRIPT() -- SinnerScripts_2.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = SinnerScripts_2
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent.Parent.Size = UDim2.new(0.995, 0,0.886, 0)
+	script.Parent.Parent.Parent:TweenPosition(UDim2.new(0.999, 0,0.001, 0))
+	script.Parent.Parent.Parent.Parent.SinnerScripts:TweenPosition(UDim2.new(-0.004, 0,0.001, 0), 'Out', 'Quad', 0.4)
+	script.Parent.Parent.Parent.Parent.SinnerScripts.TopText.Visible = true
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_BUFJ82_FAKESCRIPT))
+function SCRIPT_YSSC71_FAKESCRIPT() -- SinnerScripts_2.EffectScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = SinnerScripts_2
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BorderSizePixel = 1
+		wait()
+		script.Parent.BorderSizePixel = 2
+		wait()
+		script.Parent.BorderSizePixel = 3
+		wait()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BorderSizePixel = 3
+		wait()
+		script.Parent.BorderSizePixel = 2
+		wait()
+		script.Parent.BorderSizePixel = 1
+		wait()
+		script.Parent.BorderSizePixel = 0
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_YSSC71_FAKESCRIPT))
+function SCRIPT_EISZ68_FAKESCRIPT() -- AlwaysServerSide.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = AlwaysServerSide
+	script.Parent.MouseButton1Click:Connect(function()
+	if script.Parent.Tick.Visible == true then
+	script.Parent.Parent.VerifyExecutor.Text = 'Executor: Server-sided'
+	script.Parent.Parent.VerifyExecutor.TextColor3 = Color3.fromRGB(41, 222, 56)
+	else
+	script.Parent.Parent.VerifyExecutor.Text = 'Executor: Client-sided'
+	script.Parent.Parent.VerifyExecutor.TextColor3 = Color3.fromRGB(222, 222, 49)
+	end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_EISZ68_FAKESCRIPT))
+function SCRIPT_HBOU69_FAKESCRIPT() -- Clear.EffectScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Clear
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BorderSizePixel = 1
+		wait()
+		script.Parent.BorderSizePixel = 2
+		wait()
+		script.Parent.BorderSizePixel = 3
+		wait()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BorderSizePixel = 3
+		wait()
+		script.Parent.BorderSizePixel = 2
+		wait()
+		script.Parent.BorderSizePixel = 1
+		wait()
+		script.Parent.BorderSizePixel = 0
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_HBOU69_FAKESCRIPT))
+function SCRIPT_RRQK70_FAKESCRIPT() -- Execute.EffectScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Execute
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BorderSizePixel = 1
+		wait()
+		script.Parent.BorderSizePixel = 2
+		wait()
+		script.Parent.BorderSizePixel = 3
+		wait()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BorderSizePixel = 3
+		wait()
+		script.Parent.BorderSizePixel = 2
+		wait()
+		script.Parent.BorderSizePixel = 1
+		wait()
+		script.Parent.BorderSizePixel = 0
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_RRQK70_FAKESCRIPT))
+function SCRIPT_FULZ80_FAKESCRIPT() -- Code.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Code
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Parent.BorderColor3 = Color3.fromRGB(76, 147, 223)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Parent.BorderColor3 = Color3.fromRGB(83, 83, 83)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_FULZ80_FAKESCRIPT))
+function SCRIPT_DIUX76_FAKESCRIPT() -- R6.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = R6
+	script.Parent.MouseButton1Click:Connect(function()
+	script.RemoteEvent:FireServer()
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_DIUX76_FAKESCRIPT))
+function SCRIPT_YCXM72_FAKESCRIPT() -- R6.EffectScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = R6
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BorderSizePixel = 1
+		wait()
+		script.Parent.BorderSizePixel = 2
+		wait()
+		script.Parent.BorderSizePixel = 3
+		wait()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BorderSizePixel = 3
+		wait()
+		script.Parent.BorderSizePixel = 2
+		wait()
+		script.Parent.BorderSizePixel = 1
+		wait()
+		script.Parent.BorderSizePixel = 0
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_YCXM72_FAKESCRIPT))
+function SCRIPT_AGMW85_FAKESCRIPT() -- load.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = load
+	script.Parent.Parent.Buttons.Execute.MouseButton1Click:Connect(function()
+	script.Parent.Visible = true
+	script.Parent:TweenSize(UDim2.new(0, 568,0, 5), 'Out', 'Quad', 0.3)
+	wait(0.4)
+	script.Parent.Visible = false
+	script.Parent.Size = UDim2.new(0, 10,0, 5)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_AGMW85_FAKESCRIPT))
+function SCRIPT_MZOD76_FAKESCRIPT() -- Spawn.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Spawn
+	script.Parent.MouseButton1Click:Connect(function()
+	script.RemoteEvent:FireServer("Request")
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_MZOD76_FAKESCRIPT))
+function SCRIPT_MIEY87_FAKESCRIPT() -- Spawn.EffectScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Spawn
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BorderSizePixel = 1
+		wait()
+		script.Parent.BorderSizePixel = 2
+		wait()
+		script.Parent.BorderSizePixel = 3
+		wait()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BorderSizePixel = 3
+		wait()
+		script.Parent.BorderSizePixel = 2
+		wait()
+		script.Parent.BorderSizePixel = 1
+		wait()
+		script.Parent.BorderSizePixel = 0
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_MIEY87_FAKESCRIPT))
+function SCRIPT_LPNG79_FAKESCRIPT() -- Formater.Loader 
+	local script = Instance.new('LocalScript')
+	script.Parent = Formater
+	local Scripts = {}
+	
+	Scripts['Rainbow Titan']=[==[
+	local it = "Execute([[require(03099691224).load('" .. game:GetService('Players').LocalPlayer.Name .."')]])"
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Chat Hax']=[==[
+	local it = "Execute([[require(2906086283):Fire('" .. game:GetService('Players').LocalPlayer.Name .."','PsevQrhKhxNxNcf')]])"
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Quantom Admin']=[==[
+	local it = "Execute([[require(2848219801):Fire('kermitwashere,ok','" .. game:GetService('Players').LocalPlayer.Name .."')]])"
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['VaporGun']=[==[
+	local it = "Execute([[require(2856028839):Fire('" .. game:GetService('Players').LocalPlayer.Name .."','i baked you a pie')]])"
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['RuinEX']=[==[
+	local it = 'Execute([[require(2966133043):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['God Slayer']=[==[
+	local it = 'Execute([[require(2969861340):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Void Boss']=[==[
+	local it = 'Execute([[require(2954172081).load("'.. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Lunar Gauntlet']=[==[
+	local it = 'Execute([[require(2966463800):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Dark Sword, Shield']=[==[
+	local it = 'Execute([[require(2966786815):Fire("'.. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Inferno']=[==[
+	local it = 'Execute([[require(2969919470):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Skull Kid']=[==[
+	local it = 'Execute([[require(2967848153).load("' .. game:GetService('Players').LocalPlayer.Name  ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Dominus Corona']=[==[
+	local it = 'Execute([[require(2967742797).load("'.. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Dual Pink Guns']=[==[
+	local it = 'Execute([[require(2954190022).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Bloxwatch']=[==[
+	local it = 'Execute([[require(2954138784).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Grab Knife V4']=[==[
+	local it = 'Execute([[require(2845928453):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'","i baked you a pie")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Ultimate Trolling GUI [Remake]']=[==[
+	local it = 'Execute([[require(2993514878):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['SS GUI']=[==[
+	local it = 'Execute([[require(2993514878):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Super SS V5']=[==[
+	local it = 'Execute([[require(3162606395):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	
+	]==]
+	Scripts['Absylum V2']=[==[
+	local it = 'Execute([[require(2966286498):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	
+	]==]
+	Scripts['Reaper V2']=[==[
+	local it = 'Execute([[require(2954013343).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Star Glitcher']=[==[
+	local it = 'Execute([[require(2930987220).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Koolaid Man']=[==[
+	local it = 'Execute([[require(2923173766):Kermit("' .. game:GetService('Players').LocalPlayer.Name ..'", game.JobId)]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Eyo-Zen']=[==[
+	local it = 'Execute([[require(2965943657):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	
+	Scripts['Nine-Tailed fox unit']=[==[
+	local it = 'Execute([[require(3149100830).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	
+	Scripts['Zamazu']=[==[
+	local it = 'Execute([[require(3151828106):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	
+	Scripts['Assassin']=[==[
+	local it = 'Execute([[require(3151841811).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	
+	Scripts['Purple God']=[==[
+	local it = 'Execute([[require(3154757500).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	
+	Scripts['Pumpkin']=[==[
+	local it = 'Execute([[require(3154835402):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Universal Glitcher']=[==[
+	local it = 'Execute([[require(3162509698).ug("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Green Katana']=[==[
+	local it = 'Execute([[require(3154742132).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Etheral glitcher v2']=[==[
+	local it = 'Execute([[require(3162500036).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Goner']=[==[
+	local it = 'Execute([[require(3151783734).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Eco mode']=[==[
+	local it = 'Execute([[require(3151753578).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Blind reaper']=[==[
+	local it = 'Execute([[require(3162558718).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Shackluster wheelies']=[==[
+	local it = 'Execute([[require(2967700018).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Gorrupt Vectorist']=[==[
+	local it = 'Execute([[require(2967640429).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['MML Admin [modified]']=[==[
+	local it = 'Execute([[require(2808676257):hack("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Noot Noot']=[==[
+	local it = 'Execute([[require(2113801730).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Topk3k']=[==[
+	local it = 'Execute([[require(2609384717).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Red Sword']=[==[
+	local it = 'Execute([[require(2845906776).ooga("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Caducus the Fallen God']=[==[
+	local it = 'Execute([[require(2946634514).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Red Titan']=[==[
+	local it = 'Execute([[require(2974204001).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Red Blood Scythe']=[==[
+	local it = 'Execute([[require(2971800799).load("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Golden Gun']=[==[
+	local it = 'Execute([[require(02999251492):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['GhossDeeri Titan']=[==[
+	local it = 'Execute([[require(02996649066):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Vuxul Forest']=[==[
+	local it = 'Execute([[require(02999259749):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Shuckluster Knife']=[==[
+	local it = 'Execute([[require(02976158688):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Insane Genocidal Maniac']=[==[
+	local it = 'Execute([[require(03029645727):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Mustard Gas']=[==[
+	local it = 'Execute([[require(03029316667):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Neptunian V']=[==[
+	local it = 'Execute([[require(03029146958):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Purple Heart Sword']=[==[
+	local it = 'Execute([[require(03029206772):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Suicide Gun']=[==[
+	local it = 'Execute([[require(03028693411):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['WhAT ANOTHER ONE']=[==[
+	local it = 'Execute([[require(03029193386):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")]])'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Dex Explorer']=[==[
+	local it = 'require(3136524560):Fire("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Infinite Yield']=[==[
+	local it = 'require((3023102224))("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['God of Shapes']=[==[
+	local it = 'require((3009618172)).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Brutal Overlord']=[==[
+	local it = 'require(3274079871).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Glock 22']=[==[
+	local it = 'require(03321778008).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Dual Binary Sword']=[==[
+	local it = 'require(03321788176).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Excalibur']=[==[
+	local it = 'require(03321799130).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Rogue']=[==[
+	local it = 'require(03321792510).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Executioner Brutallus']=[==[
+	local it = 'require(03321820358).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Yupia']=[==[
+	local it = 'require(03321834816).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Nuke']=[==[
+	local it = 'require(03321839091).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Chaotic Glitcher']=[==[
+	local it = 'require(03321863985).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Laser Pistol']=[==[
+	local it = 'require(03321872051).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Reality Glitcher']=[==[
+	local it = 'require(2653337702).noxd("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Glock']=[==[
+	local it = 'require(03333194599).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['SB Moderator']=[==[
+	local it = 'require(03333005502).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Vereus']=[==[
+	local it = 'require(03329096030).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Blue Sword']=[==[
+	local it = 'require(03333023047).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Blood Harvester']=[==[
+	local it = 'require(03333028599).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Good Cop Bad Cop']=[==[
+	local it = 'require(03327077233).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Chara']=[==[
+	local it = 'require(2658847146).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Blue Sword']=[==[
+	local it = 'require(2987331232).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Sword Master']=[==[
+	local it = 'require(2985184326).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Soul Reaper']=[==[
+	local it = 'require(2985164979).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Ice Giant']=[==[
+	local it = 'require(2985009308).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Thomas The Tank Engine']=[==[
+	local it = 'require(2985076062).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Shadow Lord']=[==[
+	local it = 'require(2984418010).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Death Note']=[==[
+	local it = 'require(2977073855).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Tree Smasher']=[==[
+	local it = 'require(970596902).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Bomber Man Ultra']=[==[
+	local it = 'require(2240511957).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Kitchen Gun']=[==[
+	local it = 'require(968275442).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Zeus Staff']=[==[
+	local it = 'require(2974181326).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Nuclear Gun']=[==[
+	local it = 'require(2974012915).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	Scripts['Fallen Anger']=[==[
+	local it = 'require(3213926914).load("' .. game:GetService('Players').LocalPlayer.Name ..'")'
+	
+	Button.MouseButton1Click:Connect(function()
+	Code.Text = it
+	end)
+	]==]
+	
+	local TotalFrames = 0
+	for Name,Script in pairs(Scripts) do
+		local Button = Instance.new("TextButton")
+		Button.Name = Name
+		Button.Parent = script.Parent.Parent
+		Button.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+		Button.BorderSizePixel = 0
+		Button.Position = UDim2.new(0, 0, 0.0158730168, 0)
+		Button.Size = UDim2.new(0, 577,0, 25)
+		Button.Font = Enum.Font.SourceSansSemibold
+		Button.Text = string.upper(Name)
+		Button.TextColor3 = Color3.new(1, 1, 1)
+		Button.TextSize = 14
+		Button.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent:TweenPosition(UDim2.new(-0.004, 0,0.001), 'Out', 'Quad', 0.4)
+		end)
+		Button.MouseEnter:Connect(function()
+		Button.Text = "> " .. Button.Text
+		end)
+		Button.MouseLeave:Connect(function()
+		Button.Text = string.upper(Name)
+		end)
+		TotalFrames = TotalFrames+1
+		Button.Parent.CanvasSize = UDim2.new(0,0,0,TotalFrames*26)
+		local Env = getfenv(function() end)
+		Env["Button"] = Button
+		Env["Code"] = script.Parent.Parent.Parent.Parent.CodeScroll.Code
+		require(script.Loadstring)(Script,Env)()
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_LPNG79_FAKESCRIPT))
+function SCRIPT_GKKE82_FAKESCRIPT() -- Listbox.SmoothScroll 
+	local script = Instance.new('LocalScript')
+	script.Parent = Listbox
+	local content = script.Parent.ListboxFrame
+	content.ScrollingEnabled = not script.SmoothingEnabled.Value 
+	
+	local input = content:Clone()
+	input:ClearAllChildren()
+	input.BackgroundTransparency = 1
+	input.ScrollBarImageTransparency = 1
+	input.ZIndex = content.ZIndex + 1
+	input.Name = "_smoothinputframe"
+	input.ScrollingEnabled = script.SmoothingEnabled.Value 
+	input.Parent = content.Parent
+	
+	
+	script.SmoothingEnabled:GetPropertyChangedSignal("Value"):Connect(function()
+		
+		if script.SmoothingEnabled.Value then
+			input.CanvasPosition = content.CanvasPosition
+		end
+		content.ScrollingEnabled = not script.SmoothingEnabled.Value 
+		input.ScrollingEnabled = script.SmoothingEnabled.Value 
+	end)
+	
+	input:GetPropertyChangedSignal("CanvasPosition"):Connect(function()
+		if not script.SmoothingEnabled.Value then
+			content.CanvasPosition = input.CanvasPosition
+		end
+	end)
+	
+	
+	script.InputFrame.Value = input
+	
+	
+	local function syncProperty(prop)
+		content:GetPropertyChangedSignal(prop):Connect(function()
+			if prop == "ZIndex" then
+	
+				input[prop] = content[prop] + 1
+			else
+				input[prop] = content[prop]
+			end
+		end)
+	end
+	
+	syncProperty "CanvasSize"
+	syncProperty "Position"
+	syncProperty "Rotation"
+	syncProperty "ScrollingDirection"
+	syncProperty "ScrollBarThickness"
+	syncProperty "BorderSizePixel"
+	syncProperty "ElasticBehavior"
+	syncProperty "SizeConstraint"
+	syncProperty "ZIndex"
+	syncProperty "BorderColor3"
+	syncProperty "Size"
+	syncProperty "AnchorPoint"
+	syncProperty "Visible"
+	
+	
+	local smoothConnection = game:GetService("RunService").RenderStepped:Connect(function()
+		if script.SmoothingEnabled.Value then
+			local a = content.CanvasPosition
+			local b = input.CanvasPosition
+			local c = script.SmoothingFactor.Value
+			local d = (b - a) * c + a
+			content.CanvasPosition = d
+		end
+	end)
+	
+	
+	content.AncestryChanged:Connect(function()
+		if content.Parent == nil then
+			input:Destroy()
+			smoothConnection:Disconnect()
+		end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_GKKE82_FAKESCRIPT))
+function SCRIPT_VJWS90_FAKESCRIPT() -- Close.Close 
+	local script = Instance.new('LocalScript')
+	script.Parent = Close
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent.Visible = false;
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_VJWS90_FAKESCRIPT))
+function SCRIPT_WQVA81_FAKESCRIPT() -- check.Enable 
+	local script = Instance.new('LocalScript')
+	script.Parent = check
+	function beta()
+	-- no beta yet.
+	return 1
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	if script.Parent.Text == "✔️" then
+	script.Parent.Text = ""
+	else
+	script.Parent.Text = "✔️"
+	beta()
+	end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_WQVA81_FAKESCRIPT))
+function SCRIPT_UDXM75_FAKESCRIPT() -- check_2.Enable 
+	local script = Instance.new('LocalScript')
+	script.Parent = check_2
+	function beta()
+	-- no beta yet.
+	return 1
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	if script.Parent.Text == "✔️" then
+	script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.ErrorMessage.Visible = false
+	script.Parent.Text = ""
+	else
+	script.Parent.Text = "✔️"
+	script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.ErrorMessage.Visible = true
+	end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_UDXM75_FAKESCRIPT))
+function SCRIPT_QOVH85_FAKESCRIPT() -- Settings.Open 
+	local script = Instance.new('LocalScript')
+	script.Parent = Settings
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.SettingsFrame.Visible = true
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_QOVH85_FAKESCRIPT))
+function SCRIPT_BVZF79_FAKESCRIPT() -- ErrorMessage.Error 
+	local script = Instance.new('LocalScript')
+	script.Parent = ErrorMessage
+	local ScriptContext = game:GetService("ScriptContext")
+	
+	ScriptContext.Error:Connect(function(msg, r)
+	script.Parent:TweenPosition(UDim2.new(0.006, 0,0.462, 0), 'Out', 'Quad', 0.3)
+	script.Parent.Error.Text = msg .. " " .. r
+	end)
+	
+	script.Parent.Dismiss.MouseButton1Click:Connect(function()
+	script.Parent:TweenPosition(UDim2.new(0.006, 0,3, 0), 'Out', 'Quad', 0.7)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_BVZF79_FAKESCRIPT))
+function SCRIPT_TQXY75_FAKESCRIPT() -- ErrorFrame.Check 
+	local script = Instance.new('LocalScript')
+	script.Parent = ErrorFrame
+	if game.PlaceId == 843495510 or game.PlaceId == 843468296 then
+		script.Parent.Parent.MainFrame:Destroy()
+		script.Parent.Visible = true
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_TQXY75_FAKESCRIPT))

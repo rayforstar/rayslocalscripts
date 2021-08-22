@@ -1,0 +1,5 @@
+_G.Autoreset = true
+while _G.Autoreset do
+wait(0.5)
+game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+end

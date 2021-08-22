@@ -1,0 +1,32 @@
+local Player = game.Players.LocalPlayer
+local Character = Player.Character
+local Humanoid = Character:FindFirstChildWhichIsA("Humanoid")
+
+_G.AutoFarm = true
+
+local Refill_Teleport = game.Workspace:FindFirstChild("Game"):FindFirstChild("PresentEvent"):FindFirstChild("Pickup")
+local DropOffs = game.Workspace:FindFirstChild("Game"):FindFirstChild("PresentEvent"):FindFirstChild("Dropoffs"):GetChildren()
+
+function makePlayerWalk()
+   Humanoid:Move(Vector3.new(-20, -20, 0))
+   Humanoid:Move(Vector3.new(-10, -10, 0))
+   Humanoid:Move(Vector3.new(-20, -20, 0))
+   Humanoid:Move(Vector3.new(-10, -10, 0))
+end
+
+function findDropOff()
+   for i,v in pairs(DropOffs) do
+       if v.Main.Beam.Enabled == true then
+           Character.HumanoidRootPart.CFrame = CFrame.new(v.Position)
+       end
+   end
+end
+
+while _G.AutoFarm == true do
+   wait()
+   Character.HumanoidRootPart.CFrame = CFrame.new(Refill_Teleport.Position)
+   wait(7)
+   makePlayerWalk()
+   wait(20)
+   findDropOff()
+end

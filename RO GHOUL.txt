@@ -1,0 +1,225 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local quesfarm = Instance.new("TextButton")
+local repfarm = Instance.new("TextButton")
+local farmbutton = Instance.new("TextButton")
+local AUTOATTACK = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local speed = Instance.new("TextButton")
+local wh = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+--Properties:
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.Draggable = true
+Frame.Position = UDim2.new(0.152645797, 105, 0.366951555, -147)
+Frame.Size = UDim2.new(0, 239, 0, 304)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BorderColor3 = Color3.new(1, 1, 1)
+TextLabel.Position = UDim2.new(0.0761048347, 0, 0.0607127547, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 26)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Farm"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 25
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BorderColor3 = Color3.new(0.164706, 0.262745, 0.329412)
+TextLabel_2.Position = UDim2.new(0.0376569033, 0, 0.193821043, 0)
+TextLabel_2.Size = UDim2.new(0, 221, 0, 8)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextSize = 14
+
+quesfarm.Name = "quesfarm"
+quesfarm.Parent = Frame
+quesfarm.BackgroundColor3 = Color3.new(1, 1, 1)
+quesfarm.Position = UDim2.new(0.079497911, 0, 0.32578817, 0)
+quesfarm.Size = UDim2.new(0, 200, 0, 27)
+quesfarm.Font = Enum.Font.SourceSans
+quesfarm.Text = "AUTO GET QUEST"
+quesfarm.TextColor3 = Color3.new(0, 0, 0)
+quesfarm.TextSize = 14
+quesfarm.MouseButton1Down:connect(function()
+local lp = game.Players.LocalPlayer
+local rs = game:GetService("RunService").RenderStepped
+local pfs = game:GetService("PathfindingService")
+local path = pfs:FindPathAsync(lp.Character.HumanoidRootPart.Position, game.Workspace.Anteiku.Yoshimura:FindFirstChild("HumanoidRootPart").Position)
+local points = path:GetWaypoints()
+           
+for _,v in pairs(points) do
+rs:wait()
+                   
+lp.Character.HumanoidRootPart.CFrame = CFrame.new(v.Position)
+end
+wait()
+    local Event = game:GetService("ReplicatedStorage").Remotes.Yoshimura.Task
+Event:InvokeServer()
+end)
+
+repfarm.Name = "repfarm"
+repfarm.Parent = Frame
+repfarm.BackgroundColor3 = Color3.new(1, 1, 1)
+repfarm.Position = UDim2.new(0.079497911, 0, 0.472799391, 0)
+repfarm.Size = UDim2.new(0, 200, 0, 27)
+repfarm.Font = Enum.Font.SourceSans
+repfarm.Text = "AUTO REDEME REP"
+repfarm.TextColor3 = Color3.new(0, 0, 0)
+repfarm.TextSize = 14
+repfarm.MouseButton1Down:connect(function()
+    local lp = game.Players.LocalPlayer
+local rs = game:GetService("RunService").RenderStepped
+local pfs = game:GetService("PathfindingService")
+local path = pfs:FindPathAsync(lp.Character.HumanoidRootPart.Position, game.Workspace.Anteiku.Yoshimura:FindFirstChild("HumanoidRootPart").Position)
+local points = path:GetWaypoints()
+           
+for _,v in pairs(points) do
+rs:wait()
+                   
+lp.Character.HumanoidRootPart.CFrame = CFrame.new(v.Position)
+end
+wait()
+local Event = game:GetService("ReplicatedStorage").Remotes.ReputationCashOut
+Event:InvokeServer()
+end)
+
+farmbutton.Name = "farmbutton"
+farmbutton.Parent = Frame
+farmbutton.BackgroundColor3 = Color3.new(1, 1, 1)
+farmbutton.Position = UDim2.new(0.075313814, 0, 0.628495514, 0)
+farmbutton.Size = UDim2.new(0, 200, 0, 27)
+farmbutton.Font = Enum.Font.SourceSans
+farmbutton.Text = "AUTO-FARM"
+farmbutton.TextColor3 = Color3.new(0, 0, 0)
+farmbutton.TextSize = 14
+farmbutton.MouseButton1Down:connect(function()
+    if farmf.Visible == false then
+        farmf.Visible = true
+        default.Visible = false
+        mobf.Visible = false
+        superspeed.Visible = false
+        questf.Visible = false
+        else
+        default.Visible = true
+        farmf.Visible = false
+    end
+end)
+
+AUTOATTACK.Name = "AUTOATTACK"
+AUTOATTACK.Parent = Frame
+AUTOATTACK.BackgroundColor3 = Color3.new(1, 1, 1)
+AUTOATTACK.Position = UDim2.new(0.075313814, 0, 0.806127071, 0)
+AUTOATTACK.Size = UDim2.new(0, 200, 0, 27)
+AUTOATTACK.Font = Enum.Font.SourceSans
+AUTOATTACK.Text = "Auto Attack"
+AUTOATTACK.TextColor3 = Color3.new(0, 0, 0)
+AUTOATTACK.TextSize = 14
+AUTOATTACK.MouseButton1Down:connect(function()
+    while true do
+        wait(0.001)
+        local key = "\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140"
+local remote = game:GetService("Players").LocalPlayer.Character.Remotes.KeyEvent
+remote:FireServer(key,"Mouse1","Down",CFrame.new(0,0,0))
+        wait(0.002)
+local key = "\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140"
+local remote = game:GetService("Players").LocalPlayer.Character.Remotes.KeyEvent
+remote:FireServer(key,"E","Down",CFrame.new(0,0,0))
+        wait(0.003)
+local key = "\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140"
+local remote = game:GetService("Players").LocalPlayer.Character.Remotes.KeyEvent
+remote:FireServer(key,"R","Down",CFrame.new(0,0,0))
+        wait(0.005)
+local key = "\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140"
+local remote = game:GetService("Players").LocalPlayer.Character.Remotes.KeyEvent
+remote:FireServer(key,"F","Down",CFrame.new(0,0,0))
+        wait(0.004)
+local key = "\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140\240\159\146\166\240\159\146\148\240\159\141\145\240\159\145\140"
+local remote = game:GetService("Players").LocalPlayer.Character.Remotes.KeyEvent
+remote:FireServer(key,"C","Down",CFrame.new(0,0,0))
+        wait(0.006)
+    end
+end)
+
+Frame_2.Parent = ScreenGui
+Frame_2.Active = true
+Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_2.Draggable = true
+Frame_2.Position = UDim2.new(0.564109504, -51, 0.164916635, 14)
+Frame_2.Size = UDim2.new(0, 239, 0, 217)
+
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BorderColor3 = Color3.new(1, 1, 1)
+TextLabel_3.Position = UDim2.new(0.0802889392, 0, 0.065321058, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 26)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "SetGui"
+TextLabel_3.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_3.TextSize = 25
+
+TextLabel_4.Parent = Frame_2
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BorderColor3 = Color3.new(0.164706, 0.262745, 0.329412)
+TextLabel_4.Position = UDim2.new(0.0334728025, 0, 0.282636821, 0)
+TextLabel_4.Size = UDim2.new(0, 221, 0, 8)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_4.TextSize = 14
+
+speed.Name = "speed"
+speed.Parent = Frame_2
+speed.BackgroundColor3 = Color3.new(1, 1, 1)
+speed.Position = UDim2.new(0.079497911, 0, 0.437630266, 0)
+speed.Size = UDim2.new(0, 200, 0, 27)
+speed.Font = Enum.Font.SourceSans
+speed.Text = "Speed Hack Press[Q]"
+speed.TextColor3 = Color3.new(0, 0, 0)
+speed.TextSize = 14
+speed.MouseButton1Down:connect(function()
+    local plr = game:GetService("Players").LocalPlayer
+local char = plr.Character
+local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+local hum = char:FindFirstChild("HumanoidRootPart")
+local speed = 3
+mouse.KeyDown:connect(function(key)
+    if key == "q"  then
+        loop = true
+        while loop do
+            hum.CFrame = hum.CFrame + hum.CFrame.lookVector * speed
+            wait()
+        end
+        end
+end)
+ 
+mouse.KeyUp:connect(function(key)
+    if key == "q"  then
+        loop = false
+    end
+end)
+end)
+
+
+
+TextLabel_5.Parent = Frame_2
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.Position = UDim2.new(9.31322575e-10, 0, 0.907834053, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 20)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Credits:Arfi~Riski~Ilham"
+TextLabel_5.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_5.TextSize = 14

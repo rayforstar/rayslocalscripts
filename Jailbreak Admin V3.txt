@@ -1,0 +1,907 @@
+
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+    local env = getfenv(func)
+    local newenv = setmetatable({},{
+        __index = function(self,k)
+            if k=="script" then
+                return var
+            else
+                return env[k]
+            end
+        end,
+    })
+    setfenv(func,newenv)
+    return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+ScreenGui0 = Instance.new("ScreenGui")
+Frame1 = Instance.new("Frame")
+TextButton2 = Instance.new("TextButton")
+Script3 = Instance.new("Script")
+TextButton4 = Instance.new("TextButton")
+Script5 = Instance.new("Script")
+Frame6 = Instance.new("Frame")
+ScrollingFrame7 = Instance.new("ScrollingFrame")
+TextLabel8 = Instance.new("TextLabel")
+TextLabel9 = Instance.new("TextLabel")
+TextLabel10 = Instance.new("TextLabel")
+TextLabel11 = Instance.new("TextLabel")
+TextLabel12 = Instance.new("TextLabel")
+TextLabel13 = Instance.new("TextLabel")
+TextLabel14 = Instance.new("TextLabel")
+TextLabel15 = Instance.new("TextLabel")
+TextLabel16 = Instance.new("TextLabel")
+TextLabel17 = Instance.new("TextLabel")
+TextLabel18 = Instance.new("TextLabel")
+TextLabel19 = Instance.new("TextLabel")
+TextLabel20 = Instance.new("TextLabel")
+TextLabel21 = Instance.new("TextLabel")
+TextLabel22 = Instance.new("TextLabel")
+TextLabel23 = Instance.new("TextLabel")
+TextButton24 = Instance.new("TextButton")
+Script25 = Instance.new("Script")
+LocalScript26 = Instance.new("LocalScript")
+Frame27 = Instance.new("Frame")
+Script28 = Instance.new("Script")
+ImageLabel29 = Instance.new("ImageLabel")
+TextLabel30 = Instance.new("TextLabel")
+LocalScript31 = Instance.new("LocalScript")
+ScreenGui0.Name = "Auto shit battles"
+ScreenGui0.Parent = mas
+Frame1.Name = "TopBar"
+Frame1.Parent = ScreenGui0
+Frame1.Size = UDim2.new(0, 4701, 0, 36)
+Frame1.BackgroundColor = BrickColor.new("Institutional white")
+Frame1.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame1.Style = Enum.FrameStyle.RobloxSquare
+TextButton2.Parent = Frame1
+TextButton2.Position = UDim2.new(-0.00170176558, 0, -0.361111104, 0)
+TextButton2.Transparency = 0
+TextButton2.Size = UDim2.new(0, 37, 0, 32)
+TextButton2.BackgroundColor = BrickColor.new("Institutional white")
+TextButton2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton2.BackgroundTransparency = 1
+TextButton2.Font = Enum.Font.SourceSans
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "R"
+TextButton2.TextColor = BrickColor.new("Institutional white")
+TextButton2.TextColor3 = Color3.new(1, 1, 1)
+TextButton2.TextScaled = true
+TextButton2.TextSize = 14
+TextButton2.TextWrap = true
+TextButton2.TextWrapped = true
+Script3.Parent = TextButton2
+table.insert(cors,sandbox(Script3,function()
+button1 = script.Parent
+
+function click()
+    if (script.Parent.Parent.CMDS.Visible == true) then
+        script.Parent.Parent.CMDS.Visible = false
+    else
+        script.Parent.Parent.CMDS.Visible = true
+        end
+end
+
+button1.MouseButton1Down:connect(click)
+end))
+TextButton4.Name                   = "CMDS"
+TextButton4.Parent                 = Frame1
+TextButton4.Position               = UDim2.new(0.00829610787, 0, 0.222222239, 0)
+TextButton4.Transparency           = 0
+TextButton4.Size                   = UDim2.new(0, 92, 0, 14)
+TextButton4.BackgroundColor        = BrickColor.new("Institutional white")
+TextButton4.BackgroundColor3       = Color3.new(1, 1, 1)
+TextButton4.BackgroundTransparency = 1
+TextButton4.Font                   = Enum.Font.SourceSans
+TextButton4.FontSize               = Enum.FontSize.Size14
+TextButton4.Text                   = "Commands"
+TextButton4.TextColor              = BrickColor.new("Institutional white")
+TextButton4.TextColor3             = Color3.new(1, 1, 1)
+TextButton4.TextScaled             = true
+TextButton4.TextSize               = 14
+TextButton4.TextWrap               = true
+TextButton4.TextWrapped            = true
+TextButton4.TextXAlignment         = Enum.TextXAlignment.Left
+Script5.Parent                     = TextButton4
+table.insert(cors,sandbox(Script5,function()
+button1 = script.Parent
+
+function click()
+    script.Parent.Parent.Parent.CMDS.Active = true
+            script.Parent.Parent.Parent.CMDS.Draggable = true
+script.Parent.Parent.Parent.CMDS.Visible = true
+end
+
+button1.MouseButton1Down:connect(click)
+end))
+Frame6.Name = "CMDS"
+Frame6.Parent = ScreenGui0
+Frame6.Position = UDim2.new(0.0198863633, 0, 0.536645949, 0)
+Frame6.Visible = false
+Frame6.Size = UDim2.new(0, 307, 0, 328)
+Frame6.Active = true
+Frame6.BackgroundColor = BrickColor.new("Institutional white")
+Frame6.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame6.Draggable = true
+Frame6.Style = Enum.FrameStyle.RobloxSquare
+ScrollingFrame7.Parent = Frame6
+ScrollingFrame7.Position = UDim2.new(0, -1, 0.0799999982, 0)
+ScrollingFrame7.Size = UDim2.new(0, 294, 0, 282)
+ScrollingFrame7.BackgroundColor = BrickColor.new("Black")
+ScrollingFrame7.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+TextLabel8.Name = "Vote1"
+TextLabel8.Parent = ScrollingFrame7
+TextLabel8.Position = UDim2.new(0.0273549147, 0, 0.0116329351, 0)
+TextLabel8.Transparency = 0
+TextLabel8.Size = UDim2.new(0, 116, 0, 15)
+TextLabel8.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel8.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel8.BackgroundTransparency = 1
+TextLabel8.Font = Enum.Font.SourceSans
+TextLabel8.FontSize = Enum.FontSize.Size14
+TextLabel8.Text = ";key me"
+TextLabel8.TextColor = BrickColor.new("Institutional white")
+TextLabel8.TextColor3 = Color3.new(1, 1, 1)
+TextLabel8.TextSize = 14
+TextLabel8.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel9.Name = "Vote1"
+TextLabel9.Parent = ScrollingFrame7
+TextLabel9.Position = UDim2.new(0.0273549147, 0, 0.0648244247, 0)
+TextLabel9.Transparency = 0
+TextLabel9.Size = UDim2.new(0, 116, 0, 15)
+TextLabel9.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel9.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel9.BackgroundTransparency = 1
+TextLabel9.Font = Enum.Font.SourceSans
+TextLabel9.FontSize = Enum.FontSize.Size14
+TextLabel9.Text = ";cmds"
+TextLabel9.TextColor = BrickColor.new("Institutional white")
+TextLabel9.TextColor3 = Color3.new(1, 1, 1)
+TextLabel9.TextSize = 14
+TextLabel9.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel10.Name = "Vote1"
+TextLabel10.Parent = ScrollingFrame7
+TextLabel10.Position = UDim2.new(0.0273549147, 0, 0.118015915, 0)
+TextLabel10.Transparency = 0
+TextLabel10.Size = UDim2.new(0, 116, 0, 15)
+TextLabel10.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel10.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel10.BackgroundTransparency = 1
+TextLabel10.Font = Enum.Font.SourceSans
+TextLabel10.FontSize = Enum.FontSize.Size14
+TextLabel10.Text = ";gravity low or normal"
+TextLabel10.TextColor = BrickColor.new("Institutional white")
+TextLabel10.TextColor3 = Color3.new(1, 1, 1)
+TextLabel10.TextSize = 14
+TextLabel10.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel11.Name = "Vote1"
+TextLabel11.Parent = ScrollingFrame7
+TextLabel11.Position = UDim2.new(0.0273549147, 0, 0.171207398, 0)
+TextLabel11.Transparency = 0
+TextLabel11.Size = UDim2.new(0, 116, 0, 15)
+TextLabel11.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel11.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel11.BackgroundTransparency = 1
+TextLabel11.Font = Enum.Font.SourceSans
+TextLabel11.FontSize = Enum.FontSize.Size14
+TextLabel11.Text = ";fly me"
+TextLabel11.TextColor = BrickColor.new("Institutional white")
+TextLabel11.TextColor3 = Color3.new(1, 1, 1)
+TextLabel11.TextSize = 14
+TextLabel11.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel12.Name = "Vote1"
+TextLabel12.Parent = ScrollingFrame7
+TextLabel12.Position = UDim2.new(0.0273549147, 0, 0.224398881, 0)
+TextLabel12.Transparency = 0
+TextLabel12.Size = UDim2.new(0, 116, 0, 15)
+TextLabel12.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel12.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel12.BackgroundTransparency = 1
+TextLabel12.Font = Enum.Font.SourceSans
+TextLabel12.FontSize = Enum.FontSize.Size14
+TextLabel12.Text = ";arrest all"
+TextLabel12.TextColor = BrickColor.new("Institutional white")
+TextLabel12.TextColor3 = Color3.new(1, 1, 1)
+TextLabel12.TextSize = 14
+TextLabel12.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel13.Name = "Vote1"
+TextLabel13.Parent = ScrollingFrame7
+TextLabel13.Position = UDim2.new(0.0273549147, 0, 0.277590364, 0)
+TextLabel13.Transparency = 0
+TextLabel13.Size = UDim2.new(0, 116, 0, 15)
+TextLabel13.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel13.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel13.BackgroundTransparency = 1
+TextLabel13.Font = Enum.Font.SourceSans
+TextLabel13.FontSize = Enum.FontSize.Size14
+TextLabel13.Text = ";btools me"
+TextLabel13.TextColor = BrickColor.new("Institutional white")
+TextLabel13.TextColor3 = Color3.new(1, 1, 1)
+TextLabel13.TextSize = 14
+TextLabel13.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel14.Name = "Vote1"
+TextLabel14.Parent = ScrollingFrame7
+TextLabel14.Position = UDim2.new(0.0273549147, 0, 0.330781847, 0)
+TextLabel14.Transparency = 0
+TextLabel14.Size = UDim2.new(0, 116, 0, 15)
+TextLabel14.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel14.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel14.BackgroundTransparency = 1
+TextLabel14.Font = Enum.Font.SourceSans
+TextLabel14.FontSize = Enum.FontSize.Size14
+TextLabel14.Text = ";items me"
+TextLabel14.TextColor = BrickColor.new("Institutional white")
+TextLabel14.TextColor3 = Color3.new(1, 1, 1)
+TextLabel14.TextSize = 14
+TextLabel14.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel15.Name = "Vote1"
+TextLabel15.Parent = ScrollingFrame7
+TextLabel15.Position = UDim2.new(0.0273549147, 0, 0.388870865, 0)
+TextLabel15.Transparency = 0
+TextLabel15.Size = UDim2.new(0, 116, 0, 15)
+TextLabel15.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel15.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel15.BackgroundTransparency = 1
+TextLabel15.Font = Enum.Font.SourceSans
+TextLabel15.FontSize = Enum.FontSize.Size14
+TextLabel15.Text = ";tp me bank"
+TextLabel15.TextColor = BrickColor.new("Institutional white")
+TextLabel15.TextColor3 = Color3.new(1, 1, 1)
+TextLabel15.TextSize = 14
+TextLabel15.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel16.Name = "Vote1"
+TextLabel16.Parent = ScrollingFrame7
+TextLabel16.Position = UDim2.new(0.0273549147, 0, 0.439175725, 0)
+TextLabel16.Transparency = 0
+TextLabel16.Size = UDim2.new(0, 116, 0, 15)
+TextLabel16.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel16.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel16.BackgroundTransparency = 1
+TextLabel16.Font = Enum.Font.SourceSans
+TextLabel16.FontSize = Enum.FontSize.Size14
+TextLabel16.Text = ";tp me jew"
+TextLabel16.TextColor = BrickColor.new("Institutional white")
+TextLabel16.TextColor3 = Color3.new(1, 1, 1)
+TextLabel16.TextSize = 14
+TextLabel16.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel17.Name = "Vote1"
+TextLabel17.Parent = ScrollingFrame7
+TextLabel17.Position = UDim2.new(0.0273549147, 0, 0.49557817, 0)
+TextLabel17.Transparency = 0
+TextLabel17.Size = UDim2.new(0, 116, 0, 15)
+TextLabel17.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel17.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel17.BackgroundTransparency = 1
+TextLabel17.Font = Enum.Font.SourceSans
+TextLabel17.FontSize = Enum.FontSize.Size14
+TextLabel17.Text = ";tp me base"
+TextLabel17.TextColor = BrickColor.new("Institutional white")
+TextLabel17.TextColor3 = Color3.new(1, 1, 1)
+TextLabel17.TextSize = 14
+TextLabel17.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel18.Name = "Vote1"
+TextLabel18.Parent = ScrollingFrame7
+TextLabel18.Position = UDim2.new(0.0273549147, 0, 0.550456226, 0)
+TextLabel18.Transparency = 0
+TextLabel18.Size = UDim2.new(0, 116, 0, 15)
+TextLabel18.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel18.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel18.BackgroundTransparency = 1
+TextLabel18.Font = Enum.Font.SourceSans
+TextLabel18.FontSize = Enum.FontSize.Size14
+TextLabel18.Text = ";autorob bank"
+TextLabel18.TextColor = BrickColor.new("Institutional white")
+TextLabel18.TextColor3 = Color3.new(1, 1, 1)
+TextLabel18.TextSize = 14
+TextLabel18.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel19.Name = "Vote1"
+TextLabel19.Parent = ScrollingFrame7
+TextLabel19.Position = UDim2.new(0.0273549147, 0, 0.602285504, 0)
+TextLabel19.Transparency = 0
+TextLabel19.Size = UDim2.new(0, 116, 0, 15)
+TextLabel19.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel19.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel19.BackgroundTransparency = 1
+TextLabel19.Font = Enum.Font.SourceSans
+TextLabel19.FontSize = Enum.FontSize.Size14
+TextLabel19.Text = ";autorob jew"
+TextLabel19.TextColor = BrickColor.new("Institutional white")
+TextLabel19.TextColor3 = Color3.new(1, 1, 1)
+TextLabel19.TextSize = 14
+TextLabel19.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel20.Name = "Vote1"
+TextLabel20.Parent = ScrollingFrame7
+TextLabel20.Position = UDim2.new(0.0273549147, 0, 0.654114783, 0)
+TextLabel20.Transparency = 0
+TextLabel20.Size = UDim2.new(0, 116, 0, 15)
+TextLabel20.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel20.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel20.BackgroundTransparency = 1
+TextLabel20.Font = Enum.Font.SourceSans
+TextLabel20.FontSize = Enum.FontSize.Size14
+TextLabel20.Text = ";destroy doors"
+TextLabel20.TextColor = BrickColor.new("Institutional white")
+TextLabel20.TextColor3 = Color3.new(1, 1, 1)
+TextLabel20.TextSize = 14
+TextLabel20.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel21.Name = "Vote1"
+TextLabel21.Parent = ScrollingFrame7
+TextLabel21.Position = UDim2.new(0.0273549147, 0, 0.710517228, 0)
+TextLabel21.Transparency = 0
+TextLabel21.Size = UDim2.new(0, 116, 0, 15)
+TextLabel21.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel21.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel21.BackgroundTransparency = 1
+TextLabel21.Font = Enum.Font.SourceSans
+TextLabel21.FontSize = Enum.FontSize.Size14
+TextLabel21.Text = ";speed on"
+TextLabel21.TextColor = BrickColor.new("Institutional white")
+TextLabel21.TextColor3 = Color3.new(1, 1, 1)
+TextLabel21.TextSize = 14
+TextLabel21.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel22.Name = "Vote1"
+TextLabel22.Parent = ScrollingFrame7
+TextLabel22.Position = UDim2.new(0.0273549147, 0, 0.768444061, 0)
+TextLabel22.Transparency = 0
+TextLabel22.Size = UDim2.new(0, 116, 0, 15)
+TextLabel22.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel22.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel22.BackgroundTransparency = 1
+TextLabel22.Font = Enum.Font.SourceSans
+TextLabel22.FontSize = Enum.FontSize.Size14
+TextLabel22.Text = ";speed off"
+TextLabel22.TextColor = BrickColor.new("Institutional white")
+TextLabel22.TextColor3 = Color3.new(1, 1, 1)
+TextLabel22.TextSize = 14
+TextLabel22.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel23.Parent = Frame6
+TextLabel23.Position = UDim2.new(-0.00325732911, 0, -0.00609756075, 0)
+TextLabel23.Transparency = 0
+TextLabel23.Size = UDim2.new(0, 116, 0, 15)
+TextLabel23.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel23.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel23.BackgroundTransparency = 1
+TextLabel23.Font = Enum.Font.SourceSans
+TextLabel23.FontSize = Enum.FontSize.Size14
+TextLabel23.Text = "Jailbreak Admin V3 CMDS"
+TextLabel23.TextColor = BrickColor.new("Institutional white")
+TextLabel23.TextColor3 = Color3.new(1, 1, 1)
+TextLabel23.TextSize = 14
+TextLabel23.TextXAlignment = Enum.TextXAlignment.Left
+TextButton24.Name = "Close"
+TextButton24.Parent = Frame6
+TextButton24.Position = UDim2.new(0.957654715, 0, -0.0121951215, 0)
+TextButton24.Transparency = 0
+TextButton24.Size = UDim2.new(0, 20, 0, 17)
+TextButton24.BackgroundColor = BrickColor.new("Institutional white")
+TextButton24.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton24.BackgroundTransparency = 1
+TextButton24.Font = Enum.Font.SourceSans
+TextButton24.FontSize = Enum.FontSize.Size14
+TextButton24.Text = "X"
+TextButton24.TextColor = BrickColor.new("Institutional white")
+TextButton24.TextColor3 = Color3.new(1, 1, 1)
+TextButton24.TextScaled = true
+TextButton24.TextSize = 14
+TextButton24.TextWrap = true
+TextButton24.TextWrapped = true
+Script25.Parent = TextButton24
+table.insert(cors,sandbox(Script25,function()
+
+button1 = script.Parent
+
+function click()
+script.Parent.Parent.Visible = false
+end
+
+button1.MouseButton1Down:connect(click)
+end))
+LocalScript26.Parent = ScreenGui0
+table.insert(cors,sandbox(LocalScript26,function()
+local TpMethod = 1
+
+function JailbreakTp(...)
+    getfenv()["TpMethod" .. TpMethod](...)
+end
+
+function TpMethod1(...)
+    local char = game:GetService("Players").LocalPlayer.Character
+    local root = char.HumanoidRootPart
+    local args = {...}
+    for i=0,1,0.05 do
+        wait()
+        root.CFrame = root.CFrame:lerp(CFrame.new(unpack(args,1,3)), i)
+    end
+end
+
+function TpMethod2(...)
+    local args = {...}
+    local char = game:GetService("Players").LocalPlayer.Character
+    local target = Vector3.new(unpack(args,1,3))
+    local dist = (char:WaitForChild"HumanoidRootPart".Position - target).magnitude
+    dist = math.floor(dist / 100) + 1
+    for i=0,dist * 4 do
+        wait()
+        char:MoveTo(Vector3.new(...))
+    end
+    if args[#args] == true then
+        wait()
+        char:WaitForChild'HumanoidRootPart'.CFrame = CFrame.new(unpack(args,1,#args - 1))
+    end
+end
+
+--[[
+        OnChatted Scripting Template - created by 1WOOF1 
+
+            Use this script to match what a player says 
+            and turn it into a command. This does NOT have
+            any admin's but if you find a way to make it
+            admin only, that is good, also, if you do
+            find a way, it would be nice if you PM me
+            how you did it!
+]]
+
+    game:GetService("Players").LocalPlayer.Chatted:connect(function(msg) 
+        if (msg:lower() == ";key me") then --------------- This is a basic "Reset" command.
+             
+            game:GetService("Players").LocalPlayer.TeamValue.Value= "Police"
+            
+        elseif (msg:lower() == ";items me") then  ---------- This is just a command when you say something, a 
+            if not workspace:FindFirstChild("Givers") then return end
+    if Giver then
+        for i,v in pairs(Giver) do
+            v.ClickDetector.Parent = v.OriginalParent
+            v.Event:Disconnect()
+        end
+        getmetatable(Giver):Destroy()
+    end
+    Giver = {}
+    local g = Giver
+    local p = Instance.new("Part", workspace)
+    p.Anchored = true
+    p.CanCollide = false
+    p.CFrame = game:GetService("Players").LocalPlayer.Character:WaitForChild"HumanoidRootPart".CFrame
+    setmetatable(Giver, {__metatable = p})
+    for i,v in pairs(workspace.Givers:GetChildren()) do
+        local cd = v:FindFirstChildOfClass"ClickDetector"
+        if cd then
+            local newt = {}
+            newt.ClickDetector = cd
+            newt.OriginalParent = v
+            cd.Parent = p
+            newt.Event = cd.MouseClick:connect(function()
+                cd.Parent = v
+            end)
+            table.insert(Giver, newt)
+        end
+    end
+    spawn(function()
+        wait(10)
+        if Giver == g then
+            Giver = nil
+            for i,v in pairs(g) do
+                v.ClickDetector.Parent = v.OriginalParent
+                v.Event:Disconnect()
+            end
+            getmetatable(g):Destroy()
+        end
+    end)
+
+
+        elseif (msg:lower() == ";cmds") then 
+
+            script.Parent.CMDS.Active = true
+            script.Parent.CMDS.Draggable = true
+                        script.Parent.CMDS.Visible = true
+
+        elseif (msg:lower() == ";btools me") then 
+
+             game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
+for index, child in pairs(game:GetService("Workspace"):GetChildren()) do
+   if child.ClassName == "Part" then
+       child.Locked = false
+   end
+   if child.ClassName == "MeshPart" then
+       child.Locked = false
+   end
+   if child.ClassName == "UnionOperation" then
+       child.Locked = false
+   end
+   if child.ClassName == "Model" then
+       for index, chil in pairs(child:GetChildren()) do
+           if chil.ClassName == "Part" then
+               chil.Locked = false
+           end
+           if chil.ClassName == "MeshPart" then
+               chil.Locked = false
+           end
+           if chil.ClassName == "UnionOperation" then
+               chil.Locked = false
+           end
+           if chil.ClassName == "Model" then
+               for index, childe in pairs(chil:GetChildren()) do
+                   if childe.ClassName == "Part" then
+                       childe.Locked = false
+                   end
+                   if childe.ClassName == "MeshPart" then
+                       childe.Locked = false
+                   end
+                   if childe.ClassName == "UnionOperation" then
+                       childe.Locked = false
+                   end
+                   if childe.ClassName == "Model" then
+                       for index, childeo in pairs(childe:GetChildren()) do
+                           if childeo.ClassName == "Part" then
+                               childeo.Locked = false
+                           end
+                           if childeo.ClassName == "MeshPart" then
+                               childeo.Locked = false
+                           end
+                           if childeo.ClassName == "UnionOperation" then
+                               childeo.Locked = false
+                           end
+                           if childeo.ClassName == "Model" then
+                           end
+                       end
+                   end
+               end
+           end
+       end
+   end
+end
+c         = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
+c.BinType = Enum.BinType.Hammer
+c         = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
+c.BinType = Enum.BinType.Clone
+c         = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
+c.BinType = Enum.BinType.Grab
+
+        elseif (msg:lower() == ";arrest all") then 
+
+            local Player = game:GetService("Players").LocalPlayer
+    wait(0.5)
+    for i,v in pairs(game.Teams.Criminal:GetPlayers()) do
+        repeat
+            wait()
+            Player.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
+        until v.Team.Name ~= "Criminal"
+    end
+            
+        elseif (msg:lower() == ";fly me") then 
+            
+repeat wait()
+     game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Jailbreak Admin V3",
+                Text = "Press E 2 stop flying",
+                Duration = 15,
+                })
+    
+    until game:GetService"Players".LocalPlayer and game:GetService"Players".LocalPlayer.Character and game:GetService"Players".LocalPlayer.Character:findFirstChild("UpperTorso") and game:GetService"Players".LocalPlayer.Character:findFirstChild("Humanoida")
+local mouse = game:GetService"Players".LocalPlayer:GetMouse()
+repeat wait() until mouse
+    local plr   = game:GetService"Players".LocalPlayer
+    local torso = plr.Character.UpperTorso
+local flying   = true
+local deb      = true
+local ctrl     = {f = 0, b = 0, l = 0, r = 0}
+local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+local maxspeed = 50
+local speed    = 0
+ 
+function Fly()
+local bg = Instance.new("BodyGyro", torso)
+bg.P = 9e4
+bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+bg.cframe = torso.CFrame
+local bv = Instance.new("BodyVelocity", torso)
+bv.velocity = Vector3.new(0,0.1,0)
+bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+repeat wait()
+    plr.Character.Humanoida.PlatformStand = true
+if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+speed = speed+.5+(speed/maxspeed)
+if speed > maxspeed then
+speed = maxspeed
+end
+elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+speed = speed-1
+if speed < 0 then
+speed = 0
+end
+end
+if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+bv.velocity = ((game:GetService("Workspace").CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game:GetService("Workspace").CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game:GetService("Workspace").CurrentCamera.CoordinateFrame.p))*speed
+lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+bv.velocity = ((game:GetService("Workspace").CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game:GetService("Workspace").CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game:GetService("Workspace").CurrentCamera.CoordinateFrame.p))*speed
+else
+bv.velocity = Vector3.new(0,0.1,0)
+end
+bg.cframe = game:GetService("Workspace").CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+until not flying
+ctrl = {f = 0, b = 0, l = 0, r = 0}
+lastctrl = {f = 0, b = 0, l = 0, r = 0}
+speed = 0
+bg:Destroy()
+bv:Destroy()
+plr.Character.Humanoida.PlatformStand = false
+end
+mouse.KeyDown:connect(function(key)
+if key:lower() == "e" then
+if flying then flying = false
+else
+flying = true
+Fly()
+end
+elseif key:lower() == "w" then
+ctrl.f = 1
+elseif key:lower() == "s" then
+ctrl.b = -1
+elseif key:lower() == "a" then
+ctrl.l = -1
+elseif key:lower() == "d" then
+ctrl.r = 1
+end
+end)
+mouse.KeyUp:connect(function(key)
+if key:lower() == "w" then
+ctrl.f = 0
+elseif key:lower() == "s" then
+ctrl.b = 0
+elseif key:lower() == "a" then
+ctrl.l = 0
+elseif key:lower() == "d" then
+ctrl.r = 0
+end
+end)
+Fly()
+
+        elseif (msg:lower() == ";gravity low") then 
+            
+            game:GetService("Workspace").Gravity = "50"
+
+    
+    elseif(msg:lower() == ";gravity normal") then
+    
+    game:GetService("Workspace").Gravity = "196.2"
+    
+    
+    elseif (msg:lower() == ";carfly me") then 
+            
+                     local plr = game:GetService"Players".LocalPlayer
+local m = plr:GetMouse()
+m.KeyDown:connect(function(k)
+if k == "m" then
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+wait()
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Seated")
+end
+end)
+
+        elseif (msg:lower() == ";autorob bank") then
+        RobTheBank()
+        
+        elseif (msg:lower() == ";tp me bank") then
+            JailbreakTp(10, 18, 784)
+        
+        elseif (msg:lower() == ";tp me jew") then
+            JailbreakTp(142, 18, 1365)
+
+        elseif (msg:lower() == ";tp me base") then
+            JailbreakTp(-226, 18, 1590, true)
+            
+            elseif (msg:lower() == ";destroy doors") then
+            local doors = workspace:FindFirstChild("Doors")
+    if not doors then return end
+    for i,v in pairs(doors:GetChildren()) do
+        v:Destroy()
+    end
+    
+        elseif (msg:lower() == ";autorob jew") then
+            velocity = Instance.new("BodyPosition", game:GetService("Players").LocalPlayer.Character.UpperTorso)
+    velocity.maxForce = Vector3.new(100000, 100000, 100000)
+    velocity.Position = Vector3.new(-6.3, 17.86, 827.9)
+    gyro = Instance.new("BodyGyro", game:GetService("Players").LocalPlayer.Character.UpperTorso)
+    gyro.maxTorque = Vector3.new(100000, 100000, 100000)
+    
+                        game:GetService("Players").LocalPlayer.Character.Humanoid.PlatformStand = true
+            velocity.Position = Vector3.new(142.99,18.6,1349.5)
+            wait(3)
+            velocity.Position = Vector3.new(122.173,16.52,1308.727)
+            wait(4)
+            velocity.Position = Vector3.new(111.2,17.39,1332.67)
+            wait(4)
+            velocity.Position = Vector3.new(125.43,17.75,1328.31)
+            wait(4)
+            velocity.Position = Vector3.new(141.287, 18.2,1315.98)
+            wait(4)
+            velocity.Position = Vector3.new(108.606,17.131,1320.33)
+            wait(4)
+            velocity.Position = Vector3.new(123.107,18.13,1321.723)
+            wait(4)
+            velocity.Position = Vector3.new(122.56,17.39,1312.67)
+            wait(4)
+            velocity.Position = Vector3.new(138.37,17.76,1308.8)
+            wait(4)
+            game:GetService("Players").LocalPlayer.Character.Humanoid.PlatformStand = false
+            velocity.Position = Vector3.new(-264.7,18.31,1563.9)
+            
+        elseif (msg:lower() == ";speed on") then
+game:GetService('Players').LocalPlayer.Character.Humanoida.WalkSpeed = 160
+        
+
+        elseif (msg:lower() == ";speed off") then
+game:GetService('Players').LocalPlayer.Character.Humanoida.WalkSpeed = 16
+end
+      
+    
+        -- If you run out, just copy and paste more of the line 'elseif (msg:lower() == "") then'
+    end)
+
+--AutoRob stuff--
+local DuffelBag = game:GetService("MarketplaceService"):PlayerOwnsAsset(game:GetService"Players".LocalPlayer, 2219040)
+local BankAutoRob = {
+    {
+        Pos = {51, 18.06, 856.5},
+        Yield = 2,
+        Status = "Starting the robbery"
+    },
+    {
+        Pos = {29.71, 0.73, 815.25},
+        Yield = 15,
+        Status = "Opening the vault"
+    },
+    {
+        Pos = {18.37, 0.7659, 822.25},
+        Yield = DuffelBag and 50 or 25,
+        Status = "Collecting $$$"
+    },
+    {
+        Pos = {10, 18, 784},
+        Status = "Finishing the robbery"
+    }
+}
+
+local function Tp(...)
+    local char = game:GetService"Players".LocalPlayer.Character
+    for i=1,2 do
+        wait()
+        char:WaitForChild'HumanoidRootPart'.CFrame = CFrame.new(...)
+    end
+end
+
+function RobTheBank()
+    for _,v in pairs(BankAutoRob) do
+        Tp(unpack(v.Pos))
+        wait(v.Yield)
+    end
+end
+
+
+
+pcall(function()
+    local Bank = workspace:FindFirstChild("Banks"):GetChildren()[1]
+    local Info = Bank.Extra.Sign.Decal
+    Info:GetPropertyChangedSignal("Transparency"):Connect(function()
+        if Info.Transparency ~= 0 then
+            local cb = Instance.new("BindableFunction")
+            cb.OnInvoke = function(arg)
+                if arg == "Teleport" then
+                    JailbreakTp(10, 18, 784)
+                elseif arg == "AutoRob" then
+                    RobTheBank()
+                end
+            end
+            game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Bank is ready!",
+                Text = "Bank is ready!",
+                Duration = 15,
+                Button1 = "Dismiss",
+                Button2 = (Vector3.new(Info.Parent.Position.X,0,Info.Parent.Position.Z) - Vector3.new(plr.Character.HumanoidRootPart.Position.X,0,plr.Character.HumanoidRootPart.Position.Z)).magnitude < 150 and "AutoRob" or "Teleport",
+                Callback = cb
+            })
+        else
+            
+        end
+    end)
+    
+end)
+--Jewelry notification--
+pcall(function()
+    local Jewelry = workspace:FindFirstChild("Jewelrys"):GetChildren()[1]
+    local Info = Jewelry.Extra.Sign.Decal
+    Info:GetPropertyChangedSignal("Transparency"):Connect(function()
+        if Info.Transparency ~= 0 then
+            
+            local cb = Instance.new("BindableFunction")
+            cb.OnInvoke = function(arg)
+                if arg == "Teleport" then
+                    JailbreakTp(142, 18, 1365)
+                end
+            end
+            game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Jewelry is ready!",
+                Text = "Jewelry is ready!",
+                Duration = 15,
+                Button1 = "Dismiss",
+                Button2 = "Teleport",
+                Callback = cb
+            })
+        else
+   
+        end
+    end)
+end)
+end))
+Frame27.Name = "Notification"
+Frame27.Parent = ScreenGui0
+Frame27.Position = UDim2.new(0.00853889901, 0, 0.0621118024, 0)
+Frame27.Visible = false
+Frame27.Size = UDim2.new(0, 250, 0, 100)
+Frame27.BackgroundColor = BrickColor.new("Institutional white")
+Frame27.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame27.Style = Enum.FrameStyle.RobloxSquare
+Script28.Parent = Frame27
+table.insert(cors,sandbox(Script28,function()
+game.Players.PlayerAdded:connect(function(player)
+    if player:IsFriendsWith(game:GetService("Players").LocalPlayer.UserId) then
+        script.Parent.Visible = true
+        script.Parent.ImageLabel.Image= "http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&username="..player.Name
+        script.Parent.TextLabel.Text = "A Friend has joined! : "..player.Name
+        wait(5)
+        script.Parent.Visible = false
+    end
+end)
+
+game.Players.PlayerRemoving:connect(function(player)
+    if player:IsFriendsWith(game:GetService("Players").LocalPlayer.UserId) then
+        script.Parent.Visible = true
+        script.Parent.ImageLabel.Image= "http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&username="..player.Name
+        script.Parent.TextLabel.Text = "A Friend has left! : "..player.Name
+        wait(5)
+        script.Parent.Visible = false
+    end
+end)
+
+
+end))
+ImageLabel29.Parent = Frame27
+ImageLabel29.Position = UDim2.new(0.0199999996, 0, 0.139999986, 0)
+ImageLabel29.Transparency = 0
+ImageLabel29.Size = UDim2.new(0, 66, 0, 63)
+ImageLabel29.BackgroundColor = BrickColor.new("Institutional white")
+ImageLabel29.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel29.BackgroundTransparency = 1
+ImageLabel29.Image = "rbxassetid://924320031"
+TextLabel30.Parent = Frame27
+TextLabel30.Position = UDim2.new(0.340000004, 0, 0.340000004, 0)
+TextLabel30.Transparency = 0
+TextLabel30.Size = UDim2.new(0, 154, 0, 20)
+TextLabel30.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel30.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel30.BackgroundTransparency = 0
+TextLabel30.Font = Enum.Font.SourceSans
+TextLabel30.FontSize = Enum.FontSize.Size14
+TextLabel30.Text = "A Friend has joined! : Hacker7106"
+TextLabel30.TextColor = BrickColor.new("Institutional white")
+TextLabel30.TextColor3 = Color3.new(1, 1, 1)
+TextLabel30.TextScaled = true
+TextLabel30.TextSize = 14
+TextLabel30.TextWrap = true
+TextLabel30.TextWrapped = true
+LocalScript31.Parent = ScreenGui0
+table.insert(cors,sandbox(LocalScript31,function()
+game:GetService('Players').LocalPlayer.Character.Humanoid.Name = "Humanoida"
+end))
+for i,v in pairs(mas:GetChildren()) do
+    v.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+    pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+    spawn(function()
+        pcall(v)
+    end)
+end

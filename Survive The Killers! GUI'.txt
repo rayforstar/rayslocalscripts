@@ -1,0 +1,171 @@
+-- Gui to Lua
+-- Version: 3
+
+-- Instances:
+
+local SurviveTheKillersHaxV52 = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local JQHWAHSZ = Instance.new("Frame")
+local REMOTES = Instance.new("TextLabel")
+local InfinitePoints = Instance.new("TextButton")
+local RedeemAllCodes = Instance.new("TextButton")
+local CrownTrail = Instance.new("TextButton")
+local MagicTrail = Instance.new("TextButton")
+local Main2 = Instance.new("Frame")
+local JQHWAHSZ2 = Instance.new("Frame")
+local TELEPORTS = Instance.new("TextLabel")
+local VIPROOM = Instance.new("TextButton")
+
+--Properties:
+
+SurviveTheKillersHaxV52.Name = "SurviveTheKillersHax V5.2"
+SurviveTheKillersHaxV52.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = SurviveTheKillersHaxV52
+Main.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0993537977, 0, 0.0995145664, 0)
+Main.Size = UDim2.new(0, 153, 0, 311)
+Main.Active = true
+Main.Draggable = true
+
+JQHWAHSZ.Name = "JQHWAHSZ"
+JQHWAHSZ.Parent = Main
+JQHWAHSZ.BackgroundColor3 = Color3.new(1, 0, 0)
+JQHWAHSZ.BorderSizePixel = 0
+JQHWAHSZ.Position = UDim2.new(0, 0, 0.153256699, 0)
+JQHWAHSZ.Size = UDim2.new(0, 153, 0, 8)
+
+REMOTES.Name = "REMOTES"
+REMOTES.Parent = Main
+REMOTES.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+REMOTES.BorderSizePixel = 0
+REMOTES.Size = UDim2.new(0, 153, 0, 39)
+REMOTES.Font = Enum.Font.SourceSansLight
+REMOTES.Text = "REMOTES"
+REMOTES.TextColor3 = Color3.new(0.333333, 0.333333, 0.498039)
+REMOTES.TextScaled = true
+REMOTES.TextSize = 14
+REMOTES.TextWrapped = true
+
+InfinitePoints.Name = "Infinite Points"
+InfinitePoints.Parent = Main
+InfinitePoints.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+InfinitePoints.BorderSizePixel = 0
+InfinitePoints.Position = UDim2.new(0, 0, 0.198962688, 0)
+InfinitePoints.Size = UDim2.new(0, 153, 0, 60)
+InfinitePoints.Font = Enum.Font.SourceSansSemibold
+InfinitePoints.Text = "Infinite Points"
+InfinitePoints.TextColor3 = Color3.new(0.666667, 0, 1)
+InfinitePoints.TextScaled = true
+InfinitePoints.TextSize = 14
+InfinitePoints.TextWrapped = true
+InfinitePoints.MouseButton1Down:connect(function()
+    local A_1 = 99999999
+local A_2 = "approved"
+local Event = game:GetService("ReplicatedStorage").RS.GivePoints
+Event:FireServer(A_1, A_2)
+end)
+
+RedeemAllCodes.Name = "Redeem All Codes"
+RedeemAllCodes.Parent = Main
+RedeemAllCodes.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+RedeemAllCodes.BorderSizePixel = 0
+RedeemAllCodes.Position = UDim2.new(0, 0, 0.391703933, 0)
+RedeemAllCodes.Size = UDim2.new(0, 153, 0, 50)
+RedeemAllCodes.Font = Enum.Font.SourceSansSemibold
+RedeemAllCodes.Text = "Redeem All Codes"
+RedeemAllCodes.TextColor3 = Color3.new(0, 0.333333, 1)
+RedeemAllCodes.TextScaled = true
+RedeemAllCodes.TextSize = 14
+RedeemAllCodes.TextWrapped = true
+RedeemAllCodes.MouseButton1Down:connect(function()
+    local A_1 = "Release"
+local Event = game:GetService("ReplicatedStorage").RS.RedeemCode
+Event:FireServer(A_1)
+end)
+
+CrownTrail.Name = "Crown Trail"
+CrownTrail.Parent = Main
+CrownTrail.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+CrownTrail.BorderSizePixel = 0
+CrownTrail.Position = UDim2.new(0, 0, 0.578778088, 0)
+CrownTrail.Size = UDim2.new(0, 153, 0, 50)
+CrownTrail.Font = Enum.Font.SourceSansSemibold
+CrownTrail.Text = "Equip Crown Trail"
+CrownTrail.TextColor3 = Color3.new(1, 0.333333, 0)
+CrownTrail.TextScaled = true
+CrownTrail.TextSize = 14
+CrownTrail.TextWrapped = true
+CrownTrail.MouseButton1Down:connect(function()
+local A_1 = game:GetService("ReplicatedStorage").Trails.Crown.Trail
+local A_2 = "equip"
+local Event = game:GetService("ReplicatedStorage").ParticleShop.Check
+Event:FireServer(A_1, A_2)
+
+end)
+
+MagicTrail.Name = "Magic Trail"
+MagicTrail.Parent = Main
+MagicTrail.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+MagicTrail.BorderSizePixel = 0
+MagicTrail.Position = UDim2.new(0, 0, 0.794212162, 0)
+MagicTrail.Size = UDim2.new(0, 153, 0, 50)
+MagicTrail.Font = Enum.Font.SourceSansSemibold
+MagicTrail.Text = "Equip Magic Trail"
+MagicTrail.TextColor3 = Color3.new(0.666667, 0.333333, 1)
+MagicTrail.TextScaled = true
+MagicTrail.TextSize = 14
+MagicTrail.TextWrapped = true
+MagicTrail.MouseButton1Down:connect(function()
+local A_1 = game:GetService("ReplicatedStorage").Trails.Magic.Trail
+local A_2 = "equip"
+local Event = game:GetService("ReplicatedStorage").ParticleShop.Check
+Event:FireServer(A_1, A_2)
+
+end)
+
+Main2.Name = "Main2"
+Main2.Parent = SurviveTheKillersHaxV52
+Main2.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+Main2.BorderSizePixel = 0
+Main2.Position = UDim2.new(0.297253639, 0, 0.0995145664, 0)
+Main2.Size = UDim2.new(0, 153, 0, 200)
+Main2.Active = true
+Main2.Draggable = true
+
+JQHWAHSZ2.Name = "JQHWAHSZ2"
+JQHWAHSZ2.Parent = Main2
+JQHWAHSZ2.BackgroundColor3 = Color3.new(1, 0, 0)
+JQHWAHSZ2.BorderSizePixel = 0
+JQHWAHSZ2.Position = UDim2.new(0, 0, 0.198256701, 0)
+JQHWAHSZ2.Size = UDim2.new(0, 153, 0, 8)
+
+TELEPORTS.Name = "TELEPORTS"
+TELEPORTS.Parent = Main2
+TELEPORTS.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+TELEPORTS.BorderSizePixel = 0
+TELEPORTS.Size = UDim2.new(0, 153, 0, 39)
+TELEPORTS.Font = Enum.Font.SourceSansLight
+TELEPORTS.Text = "TELEPORTS"
+TELEPORTS.TextColor3 = Color3.new(0.666667, 1, 0.498039)
+TELEPORTS.TextScaled = true
+TELEPORTS.TextSize = 14
+TELEPORTS.TextWrapped = true
+
+VIPROOM.Name = "VIP ROOM"
+VIPROOM.Parent = Main2
+VIPROOM.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+VIPROOM.BorderSizePixel = 0
+VIPROOM.Position = UDim2.new(0, 0, 0.310000002, 0)
+VIPROOM.Size = UDim2.new(0, 153, 0, 70)
+VIPROOM.Font = Enum.Font.SourceSansSemibold
+VIPROOM.Text = "VIP ROOM TP"
+VIPROOM.TextColor3 = Color3.new(1, 1, 0)
+VIPROOM.TextScaled = true
+VIPROOM.TextSize = 14
+VIPROOM.TextWrapped = true
+VIPROOM.MouseButton1Down:connect(function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(56, 9, -201)
+end)
